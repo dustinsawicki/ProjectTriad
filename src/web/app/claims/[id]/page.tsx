@@ -1,7 +1,7 @@
 "use client";
 
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { useState, use } from "react";
+import { useState } from "react";
 import { api } from "@/lib/api";
 
 type Doc = { DocumentId: string; DocType: string; Title: string | null; RawText: string; ExtractedJson: Record<string, unknown> | null };
@@ -16,8 +16,8 @@ type Claim = {
 type Policy = { PolicyId: string; PolicyNumber: string; ProductLine: string; CoverageJson: Record<string, number | null>; Status: string };
 type Bundle = { claim: Claim; policy: Policy; documents: Doc[]; fraud_signals: Fraud[]; decisions: Decision[]; audit: AuditEntry[] };
 
-export default function ClaimWorkspace({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params);
+export default function ClaimWorkspace({ params }: { params: { id: string } }) {
+  const { id } = params;
   const qc = useQueryClient();
   const [settle, setSettle] = useState<string>("");
 
