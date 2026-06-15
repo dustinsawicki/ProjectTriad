@@ -1,16 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Graph from "@/components/Graph";
-import { api, apiBaseUrl } from "@/lib/api";
+import { api } from "@/lib/api";
 
 interface GraphData {
   nodes: Array<{ id: string; label: string; is_focus?: boolean }>;
   edges: Array<{ id: string; from: string; to: string; type: string; weight: number; label: string }>;
 }
 
-export default function SiuGraphPage() {
+function SiuGraphContent() {
   const searchParams = useSearchParams();
   const claimId = searchParams.get("claim") || "";
   const [data, setData] = useState<GraphData | null>(null);
@@ -70,5 +70,13 @@ export default function SiuGraphPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function SiuGraphPage() {
+  return (
+    <Suspense fallback={<div className="p-6"><p className="text-gray-400">Loading...</p></div>}>
+      <SiuGraphContent />
+    </Suspense>
   );
 }
