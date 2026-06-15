@@ -33,7 +33,31 @@ class Settings(BaseSettings):
     # Telemetry
     applicationinsights_connection_string: str | None = None
 
+    # v2: Cosmos DB
+    cosmos_endpoint: str = ""
+    cosmos_database: str = "claims"
+
+    # v2: Blob Storage
+    blob_account_name: str = ""
+    blob_endpoint: str = ""
+
+    # v2: Event Hubs
+    event_hub_namespace_fqdn: str = ""
+
+    # v2: Document Intelligence
+    docintel_endpoint: str = ""
+
+    # v2: AI Search
+    search_endpoint: str = ""
+    search_index_name: str = "historical-claims"
+
+    # v2: External APIs
+    external_api_base_url: str = "http://localhost:8001"
+
 
 @lru_cache
 def get_settings() -> Settings:
     return Settings()  # type: ignore[call-arg]
+
+
+settings = get_settings()

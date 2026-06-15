@@ -1,0 +1,2252 @@
+[
+  {
+    "identifier": "11982b289151e0b8ae296e911d7fe3ec717bfb9c5ad9f96919e450bbc1be5e31",
+    "vin": "HBUSRJGF4CBFPR9BN",
+    "match_id": "ISO-000001",
+    "claim_date": "2025-08-22",
+    "loss_type": "bodily_injury",
+    "amount": 27882.68,
+    "claimant_name": "Allison Hill"
+  },
+  {
+    "identifier": "3e834e3c0aa94bda55a420beaf814cf051bfdfbb3aaa072b3140937d64faee48",
+    "vin": "3R5UAL4YUKPYGF1GZ",
+    "match_id": "ISO-000002",
+    "claim_date": "2026-02-14",
+    "loss_type": "hail_damage",
+    "amount": 25955.56,
+    "claimant_name": "Javier Johnson"
+  },
+  {
+    "identifier": "77b8265ecd769e5d36860a54bed7af82317fdaeb26ce6eb54f9c380e6bc1f4ad",
+    "vin": "C6H1FV0NECRVFRG1U",
+    "match_id": "ISO-000003",
+    "claim_date": "2024-10-27",
+    "loss_type": "property_water",
+    "amount": 27289.83,
+    "claimant_name": "Cristian Santos"
+  },
+  {
+    "identifier": "fe0473cfc9cefd182d9ed5e8d29dd898ded442944fdb7c87d48f5a76264bc7dc",
+    "vin": "0L0ZPUELSL61URXDR",
+    "match_id": "ISO-000004",
+    "claim_date": "2023-11-24",
+    "loss_type": "auto_collision",
+    "amount": 34360.66,
+    "claimant_name": "Rhonda Smith"
+  },
+  {
+    "identifier": "276049118dd692085363ba5d2044ae0fa8709a0231efc873743bec14495b2e99",
+    "vin": "2UEPXP826KTJST420",
+    "match_id": "ISO-000005",
+    "claim_date": "2021-10-28",
+    "loss_type": "auto_theft",
+    "amount": 42388.35,
+    "claimant_name": "Daniel Gallagher"
+  },
+  {
+    "identifier": "07175e9a54571afbe533df749e73efcf6fd5361b09dc7567f0844c4f9f687b58",
+    "vin": "J98FDHKL4E116TAHU",
+    "match_id": "ISO-000006",
+    "claim_date": "2025-07-25",
+    "loss_type": "bodily_injury",
+    "amount": 14952.33,
+    "claimant_name": "Gregory Baker"
+  },
+  {
+    "identifier": "1b7d9a6bc3a8a0c5487e69a3daf7d5a41cb1831d3809662e541dc708207246a8",
+    "vin": "V4L6AT9M9GW9NK0LA",
+    "match_id": "ISO-000007",
+    "claim_date": "2025-11-29",
+    "loss_type": "property_fire",
+    "amount": 14283.52,
+    "claimant_name": "Thomas Miller"
+  },
+  {
+    "identifier": "7bb83bf27d2a0a2ac7100ee5696702e184cad8f74718e868e5292fa95f1fa974",
+    "vin": "BH0WSDSFF8EJJ7LT4",
+    "match_id": "ISO-000008",
+    "claim_date": "2022-12-25",
+    "loss_type": "auto_theft",
+    "amount": 39532.14,
+    "claimant_name": "Benjamin Stanley"
+  },
+  {
+    "identifier": "a9905ad9659cc2e58c22ea4f1cacc4e34af0e451a29ef1e451699e9e80b8b748",
+    "vin": "NW2055HSREYBRRAED",
+    "match_id": "ISO-000009",
+    "claim_date": "2024-02-25",
+    "loss_type": "auto_theft",
+    "amount": 3563.96,
+    "claimant_name": "Jamie Chavez"
+  },
+  {
+    "identifier": "250701736e43145d7c61a84df283bc39252d4940aed4676b12f3d1ae36d1d7a7",
+    "vin": "CYE9SU8PJ7S73NGG4",
+    "match_id": "ISO-000010",
+    "claim_date": "2026-03-08",
+    "loss_type": "hail_damage",
+    "amount": 18434.41,
+    "claimant_name": "Michael Miles"
+  },
+  {
+    "identifier": "44184498ea2a3372d95c608a0bca41dfa374c95760bed9697b4bb5fb8b7701ce",
+    "vin": "6DGD2YGSNN5J4MU6S",
+    "match_id": "ISO-000011",
+    "claim_date": "2026-06-12",
+    "loss_type": "auto_collision",
+    "amount": 19250.71,
+    "claimant_name": "Kimberly Sanchez"
+  },
+  {
+    "identifier": "e092608db84c23aa2fea03923c55be80ceee9ab3681482bf24b6f3136d0a5c65",
+    "vin": "GDAFSL387P2DL1A1T",
+    "match_id": "ISO-000012",
+    "claim_date": "2021-04-10",
+    "loss_type": "property_water",
+    "amount": 12659.16,
+    "claimant_name": "Colleen Nguyen"
+  },
+  {
+    "identifier": "012da8881dec0ed12899a354a39f50e98adfa042b56fe2f16344378237227455",
+    "vin": "8KNVPDDXDD79LD9FM",
+    "match_id": "ISO-000013",
+    "claim_date": "2022-10-23",
+    "loss_type": "auto_collision",
+    "amount": 25592.72,
+    "claimant_name": "Jennifer Jones"
+  },
+  {
+    "identifier": "b8da1f3018fd66c49cbcc0cf6bed496b280f65b8062bcc225c114a1f842278d3",
+    "vin": "S2HSCF3XTPXST2JW6",
+    "match_id": "ISO-000014",
+    "claim_date": "2022-03-10",
+    "loss_type": "hail_damage",
+    "amount": 39536.52,
+    "claimant_name": "Jennifer Rocha"
+  },
+  {
+    "identifier": "1e3c78bab27de906d366edd305a1a641c56ccc9a75a9061b61a30f3f924208cf",
+    "vin": "EA6GEP9TJZES0VL5W",
+    "match_id": "ISO-000015",
+    "claim_date": "2024-05-25",
+    "loss_type": "property_fire",
+    "amount": 41825.88,
+    "claimant_name": "Justin Baker"
+  },
+  {
+    "identifier": "41a9854a1c23ce3d4b6d6a9303a7351862920408f9852f61f4badae6782bb885",
+    "vin": "AWGJTHGKUVPYPT98T",
+    "match_id": "ISO-000016",
+    "claim_date": "2021-12-07",
+    "loss_type": "auto_collision",
+    "amount": 4603.46,
+    "claimant_name": "Zachary Taylor"
+  },
+  {
+    "identifier": "15a01aec6b68920baf45800f038b17d4b3015cc744214ef41bbe81cd9e337e30",
+    "vin": "4UCAYJTL54AHEKC0K",
+    "match_id": "ISO-000017",
+    "claim_date": "2024-03-31",
+    "loss_type": "property_water",
+    "amount": 6070.85,
+    "claimant_name": "Christopher Becker"
+  },
+  {
+    "identifier": "9b83ad962e1f5f268cb8ad68fda87cd40bed13eec82b814a2421db510a5a8edc",
+    "vin": "W0CZPSGZ3KSLM3BMY",
+    "match_id": "ISO-000018",
+    "claim_date": "2025-07-27",
+    "loss_type": "property_water",
+    "amount": 34243.32,
+    "claimant_name": "Julie King"
+  },
+  {
+    "identifier": "f6af206a7f927482332bd446ccd3c906247908c204e322383b2bbdeadeb74438",
+    "vin": "SULG1C7RN6ZWRRBN2",
+    "match_id": "ISO-000019",
+    "claim_date": "2024-11-10",
+    "loss_type": "hail_damage",
+    "amount": 12381.68,
+    "claimant_name": "Patricia Peterson"
+  },
+  {
+    "identifier": "9c0afea7f1a72e6ad96b7ffe59a70c4ab40a871515a9dd0a087fc2b29ba8bb76",
+    "vin": "EUZ92YBHTMTCG4ZX4",
+    "match_id": "ISO-000020",
+    "claim_date": "2025-04-27",
+    "loss_type": "property_fire",
+    "amount": 41841.85,
+    "claimant_name": "Nathan Cortez"
+  },
+  {
+    "identifier": "8eaf230ae7d1a45003333ac388f7ce22c7de01fb776afc24e3e0e535d97cda74",
+    "vin": "H1NTC4AN04EYXHW9W",
+    "match_id": "ISO-000021",
+    "claim_date": "2022-09-10",
+    "loss_type": "bodily_injury",
+    "amount": 17800.4,
+    "claimant_name": "Sheila Evans"
+  },
+  {
+    "identifier": "ff265b74ab7ee3e48b2dc095761a001f0b623a2566b1392b51b694dd3af68f9b",
+    "vin": "2VJN31MW2AWVP4X65",
+    "match_id": "ISO-000022",
+    "claim_date": "2026-02-04",
+    "loss_type": "property_water",
+    "amount": 28957.44,
+    "claimant_name": "Phillip Ryan"
+  },
+  {
+    "identifier": "abb99083d0bca5194447adb56fc2b6799147664f83e5cf17abc2bdae6c8e602f",
+    "vin": "97LFV9YFSWRNKBCS7",
+    "match_id": "ISO-000023",
+    "claim_date": "2021-06-29",
+    "loss_type": "property_fire",
+    "amount": 36226.55,
+    "claimant_name": "Alec Hickman"
+  },
+  {
+    "identifier": "0bc13401ba11abfe82f875acf54e5b772e60195fa623d53f8dac3dff267eaa14",
+    "vin": "E63N182SKAG4RM6DS",
+    "match_id": "ISO-000024",
+    "claim_date": "2025-07-14",
+    "loss_type": "auto_collision",
+    "amount": 19807.28,
+    "claimant_name": "Keith Miller"
+  },
+  {
+    "identifier": "4939c35c4d2f18ce62a38c16010de43c97898e976776ce492dfb0fc74bbbb9cf",
+    "vin": "6X5945L75TSU8SU5E",
+    "match_id": "ISO-000025",
+    "claim_date": "2025-06-28",
+    "loss_type": "bodily_injury",
+    "amount": 12679.15,
+    "claimant_name": "Betty Alvarez"
+  },
+  {
+    "identifier": "728c5cab99cd9e964deb73c79e8b9c7312b750e75768d6b66dc174db5c2a247a",
+    "vin": "UYXFJKR1KPE33Y63D",
+    "match_id": "ISO-000026",
+    "claim_date": "2023-08-27",
+    "loss_type": "auto_theft",
+    "amount": 35523.21,
+    "claimant_name": "Jenny Lewis"
+  },
+  {
+    "identifier": "439c473346f41f479b3938feac786d83cb4e5186a97051b94d5ff46e321d910e",
+    "vin": "1B17AZW13R8RU48B1",
+    "match_id": "ISO-000027",
+    "claim_date": "2023-02-10",
+    "loss_type": "hail_damage",
+    "amount": 28675.47,
+    "claimant_name": "Michael Brooks"
+  },
+  {
+    "identifier": "3a39babb1dd0be768002c9d4ee889ce6d51b471ebb3998570c76ac645be324a1",
+    "vin": "2L6JB2BF4J6MDT1XP",
+    "match_id": "ISO-000028",
+    "claim_date": "2021-01-23",
+    "loss_type": "property_water",
+    "amount": 14395.81,
+    "claimant_name": "George Chapman"
+  },
+  {
+    "identifier": "a71ab9da180e887bcfe59a1f049c27a344876fd3c947952a12defdd5fc272c12",
+    "vin": "1U3TF7BDZRECBSNBK",
+    "match_id": "ISO-000029",
+    "claim_date": "2025-05-17",
+    "loss_type": "auto_theft",
+    "amount": 6019.73,
+    "claimant_name": "Mark Perez"
+  },
+  {
+    "identifier": "d9f23cf3b2b85bf14c595adc3bc263b00636fd759dc5775ba308107031393e0e",
+    "vin": "HP6T0LHLWGBW12NES",
+    "match_id": "ISO-000030",
+    "claim_date": "2025-11-26",
+    "loss_type": "auto_collision",
+    "amount": 29857.81,
+    "claimant_name": "Michael Lewis"
+  },
+  {
+    "identifier": "90d944e3aa0c7bffa3943a4ba9e75fad98f5167d4595e75187e94f550bd356af",
+    "vin": "WHCZ40E9YA38G406K",
+    "match_id": "ISO-000031",
+    "claim_date": "2024-09-01",
+    "loss_type": "property_water",
+    "amount": 8103.72,
+    "claimant_name": "Richard Aguirre"
+  },
+  {
+    "identifier": "7db946a7af99f46c4a4bf6fa65d1aecdae6411832ae851f8b23ffbc9d1a08f95",
+    "vin": "U764UXSFU5S61YB8X",
+    "match_id": "ISO-000032",
+    "claim_date": "2021-07-08",
+    "loss_type": "auto_theft",
+    "amount": 21105.21,
+    "claimant_name": "Jason Shields"
+  },
+  {
+    "identifier": "7390b2f02be194fe80446365d692e825cc2655a0ca636f0f5fc724c4c2515eb7",
+    "vin": "ZTYUUANFS38S785BF",
+    "match_id": "ISO-000033",
+    "claim_date": "2025-07-25",
+    "loss_type": "hail_damage",
+    "amount": 10001.65,
+    "claimant_name": "Gerald Hensley"
+  },
+  {
+    "identifier": "d469298b203fd39bdc2a183bc791122e28a46034eccb875bd8dc814d6914096a",
+    "vin": "SW07Z4YZ6UWTRHNXH",
+    "match_id": "ISO-000034",
+    "claim_date": "2025-09-06",
+    "loss_type": "bodily_injury",
+    "amount": 23122.32,
+    "claimant_name": "Javier Ramirez"
+  },
+  {
+    "identifier": "21f0665b06cf3f9ed6df0cb5caacb1a55a6e4981d7dea3d37c3f7d5fa687599a",
+    "vin": "MNP7UVGNVR0MWAJUC",
+    "match_id": "ISO-000035",
+    "claim_date": "2022-06-01",
+    "loss_type": "auto_collision",
+    "amount": 23852.74,
+    "claimant_name": "Matthew Fernandez"
+  },
+  {
+    "identifier": "ea689b6830548174ffb6946d363f8fc1e9176ebae167c5b5cc360ee529f67622",
+    "vin": "J8GAV775YMDT7HE28",
+    "match_id": "ISO-000036",
+    "claim_date": "2021-01-07",
+    "loss_type": "auto_collision",
+    "amount": 24840.63,
+    "claimant_name": "John Hancock"
+  },
+  {
+    "identifier": "4e0815ff9a6ef3f53e85640a05e708d6a24167b8c6cb10a7d99cf40d0f84d725",
+    "vin": "DKKWFSH3R155W4WDG",
+    "match_id": "ISO-000037",
+    "claim_date": "2025-02-21",
+    "loss_type": "auto_theft",
+    "amount": 26865.25,
+    "claimant_name": "Mrs. Rachel Gibson"
+  },
+  {
+    "identifier": "e0bac8f40c3193219c4371bc77f59fde03d4cb0a51f3aabe90a6634bbd10b980",
+    "vin": "TFLSMELA357VCRVV6",
+    "match_id": "ISO-000038",
+    "claim_date": "2021-07-09",
+    "loss_type": "auto_collision",
+    "amount": 29448.32,
+    "claimant_name": "Edward Novak"
+  },
+  {
+    "identifier": "7c4b37a0776e127eba735346e1b55dbb1a1b6160576e3d59cd2d8279939673f2",
+    "vin": "TN4HRKUKEDLWV5H6W",
+    "match_id": "ISO-000039",
+    "claim_date": "2021-06-26",
+    "loss_type": "bodily_injury",
+    "amount": 17554.73,
+    "claimant_name": "Amy Silva"
+  },
+  {
+    "identifier": "0d58a8287d8b81e30f328d637e657393efb3734e964d9d58889433013fa05ac3",
+    "vin": "U985FC4XTBFRBUCM7",
+    "match_id": "ISO-000040",
+    "claim_date": "2024-06-08",
+    "loss_type": "property_fire",
+    "amount": 27950.52,
+    "claimant_name": "Angela Lopez"
+  },
+  {
+    "identifier": "71253007d060c495f85640388eb9f792d93866e7bee5ecc2e1c5169455946c01",
+    "vin": "UM48F7Z3YXGLY38V2",
+    "match_id": "ISO-000041",
+    "claim_date": "2024-07-26",
+    "loss_type": "property_fire",
+    "amount": 2282.11,
+    "claimant_name": "Steve Sanchez"
+  },
+  {
+    "identifier": "ee2978a269e79e7aaab26d7dc1eaa925f650e29a68146c9a12ce8a36ea517db7",
+    "vin": "FXTXH29A63DN085DP",
+    "match_id": "ISO-000042",
+    "claim_date": "2023-01-12",
+    "loss_type": "hail_damage",
+    "amount": 23679.92,
+    "claimant_name": "Krystal Stewart"
+  },
+  {
+    "identifier": "6324301c9cb75b782b95cae5a570ec9590234df3f7c70d68f92c5636e37ca327",
+    "vin": "V58HBSLWA3FRH6HK8",
+    "match_id": "ISO-000043",
+    "claim_date": "2021-01-29",
+    "loss_type": "bodily_injury",
+    "amount": 12935.22,
+    "claimant_name": "Carlos Brewer"
+  },
+  {
+    "identifier": "16c97eb5788c6506021c9c2f86d6bd076b10eea14792eaa687d8c9f45c99d714",
+    "vin": "U377S6K1N9JEU3Y9U",
+    "match_id": "ISO-000044",
+    "claim_date": "2025-04-21",
+    "loss_type": "auto_collision",
+    "amount": 12558.53,
+    "claimant_name": "Zachary Ferrell"
+  },
+  {
+    "identifier": "7b21df65b66e530b90cd729894c29884b81ab51ea26dfe92c63a521911193eeb",
+    "vin": "W8K57ZY16XNS1R3CX",
+    "match_id": "ISO-000045",
+    "claim_date": "2022-05-06",
+    "loss_type": "bodily_injury",
+    "amount": 20496.76,
+    "claimant_name": "Timothy Ibarra"
+  },
+  {
+    "identifier": "36f6f0bc8acfb7af83e5f91f47e75ec117bb4956ec8cdb334dc1f0ece865c3d8",
+    "vin": "11K8CJ9YG5G6AK3KE",
+    "match_id": "ISO-000046",
+    "claim_date": "2021-01-25",
+    "loss_type": "property_water",
+    "amount": 33378.68,
+    "claimant_name": "Joshua Turner"
+  },
+  {
+    "identifier": "f971011467618a8f73502ca80c6bbfb98e1c88e75c49503976ae0166112e5f22",
+    "vin": "TY2FY1X8CESVRF4GG",
+    "match_id": "ISO-000047",
+    "claim_date": "2021-12-25",
+    "loss_type": "property_water",
+    "amount": 7695.73,
+    "claimant_name": "Kristen Huynh"
+  },
+  {
+    "identifier": "db3bcf8afbe9117c63a52be47ed3e0c3a36467896aa45233aa882756bbbf552b",
+    "vin": "WBCXDVZ04KS3MLMF1",
+    "match_id": "ISO-000048",
+    "claim_date": "2023-12-02",
+    "loss_type": "property_fire",
+    "amount": 29270.87,
+    "claimant_name": "Natalie Moore"
+  },
+  {
+    "identifier": "9959301ff72116fc42faf0032b4e983dd03d2dba9563d292412743adcca629aa",
+    "vin": "8KR6T6TA6VLE5ZW4T",
+    "match_id": "ISO-000049",
+    "claim_date": "2021-10-14",
+    "loss_type": "property_water",
+    "amount": 36041.44,
+    "claimant_name": "Mark Baker"
+  },
+  {
+    "identifier": "f31e09b060a517bd19a09630e0ced0c1c37015cbcac55c6e26bf306c384c9fe0",
+    "vin": "N17GS1ZVVB2UAD8VR",
+    "match_id": "ISO-000050",
+    "claim_date": "2026-06-03",
+    "loss_type": "property_fire",
+    "amount": 34230.66,
+    "claimant_name": "Sandra Williams"
+  },
+  {
+    "identifier": "609534eeae06f3934b712a2b1822444f9668ff5226e45c5885cfbc560cabd681",
+    "vin": "RNTJGCW5C0JFVX3MN",
+    "match_id": "ISO-000051",
+    "claim_date": "2021-01-31",
+    "loss_type": "auto_theft",
+    "amount": 33586.91,
+    "claimant_name": "Candice Ramos"
+  },
+  {
+    "identifier": "e88dfee5322b6b3484f6da18ae84044d0d17adceaaead6bbc862716ac854bb29",
+    "vin": "09ULT7VYH6EKR20F2",
+    "match_id": "ISO-000052",
+    "claim_date": "2024-02-22",
+    "loss_type": "auto_collision",
+    "amount": 11791.15,
+    "claimant_name": "Tony Vazquez"
+  },
+  {
+    "identifier": "083ace1d8026146094afd05f18fb48b48b804fd82dd31c33c091a850ad3c81ba",
+    "vin": "H60T10GR7BXRE6W3H",
+    "match_id": "ISO-000053",
+    "claim_date": "2024-01-17",
+    "loss_type": "auto_theft",
+    "amount": 2643.23,
+    "claimant_name": "Brittany Anderson"
+  },
+  {
+    "identifier": "14528b3d6194ac0d97fcc281b429cbb034ec98a5a0f7155974725d958fb4b3be",
+    "vin": "CW8HGSJ1603K3G83U",
+    "match_id": "ISO-000054",
+    "claim_date": "2026-04-13",
+    "loss_type": "auto_collision",
+    "amount": 29569.22,
+    "claimant_name": "David Garcia"
+  },
+  {
+    "identifier": "d25f2e08ebf606b216fb9c0cfcb55a63227f4c7c21891c7d7a57679e4d55b211",
+    "vin": "P55S0G0ZD2UNH6FPB",
+    "match_id": "ISO-000055",
+    "claim_date": "2021-03-19",
+    "loss_type": "auto_collision",
+    "amount": 33598.67,
+    "claimant_name": "Tammy Young"
+  },
+  {
+    "identifier": "0fb0c6b7efb853147f119fab48e53f9c31e990d4e32a4cf86158cfb7336e90e4",
+    "vin": "SJPEPPRYKAUKJTMHB",
+    "match_id": "ISO-000056",
+    "claim_date": "2023-04-09",
+    "loss_type": "auto_theft",
+    "amount": 1370.42,
+    "claimant_name": "Tim Patton"
+  },
+  {
+    "identifier": "58f52daec621f63b740fd2b214bf24bc9762e32ff1f8bb307c080031401b0f99",
+    "vin": "SXBMTDJ3HE7509G59",
+    "match_id": "ISO-000057",
+    "claim_date": "2022-09-13",
+    "loss_type": "auto_theft",
+    "amount": 40221.1,
+    "claimant_name": "Michael Reyes"
+  },
+  {
+    "identifier": "8c01ae392aefee3ce88c5c70f10acf59b053373a650bac8217afe31b1c2352ae",
+    "vin": "CW6BD724G85EFXKEJ",
+    "match_id": "ISO-000058",
+    "claim_date": "2021-03-15",
+    "loss_type": "hail_damage",
+    "amount": 26815.26,
+    "claimant_name": "Julia Torres"
+  },
+  {
+    "identifier": "de2673d981d53db062c69696ccadc51be0b054d24d28176325dffe9129a2c303",
+    "vin": "X1V694GHP45R3Y623",
+    "match_id": "ISO-000059",
+    "claim_date": "2023-12-27",
+    "loss_type": "bodily_injury",
+    "amount": 4719.83,
+    "claimant_name": "Jennifer Ramirez"
+  },
+  {
+    "identifier": "dbbb088c13bfd287e93b79d84ea11f49de9ac22ec9d9bcee1be3bfda5c1ece44",
+    "vin": "4XT0K7EFFF4G0JDYH",
+    "match_id": "ISO-000060",
+    "claim_date": "2021-12-25",
+    "loss_type": "property_water",
+    "amount": 15512.72,
+    "claimant_name": "Jennifer Zavala"
+  },
+  {
+    "identifier": "87205332a2cacf8b638da4d9bedc7bdbe88330e5ddf4dff57089c4d82fee8113",
+    "vin": "4DVWZG9PK7RGZ0HUR",
+    "match_id": "ISO-000061",
+    "claim_date": "2026-01-28",
+    "loss_type": "property_water",
+    "amount": 36035.23,
+    "claimant_name": "Debbie Carpenter"
+  },
+  {
+    "identifier": "f9e058c106838d525bf502efb8b5492fffc772bb1f75c9a035cdd94c8cc3ffbd",
+    "vin": "BUBMUWYZAMK2EKBFP",
+    "match_id": "ISO-000062",
+    "claim_date": "2024-04-11",
+    "loss_type": "property_water",
+    "amount": 18278.01,
+    "claimant_name": "Nicholas Edwards"
+  },
+  {
+    "identifier": "593fe8b8818862ef44c41eca0bb75b7cdaf36ec284cc07fb64bdcfb4ea8545ce",
+    "vin": "YL0WXFDKLDFU54853",
+    "match_id": "ISO-000063",
+    "claim_date": "2025-07-31",
+    "loss_type": "hail_damage",
+    "amount": 9750.0,
+    "claimant_name": "Cheryl Williams"
+  },
+  {
+    "identifier": "ff3eb991eebcfbefdf5ac0f4647528aef3dc5f937718e62e7f81758b206d79ff",
+    "vin": "9HZ4HV8WCR2DAPWPJ",
+    "match_id": "ISO-000064",
+    "claim_date": "2021-08-06",
+    "loss_type": "hail_damage",
+    "amount": 12834.42,
+    "claimant_name": "Teresa Mclaughlin"
+  },
+  {
+    "identifier": "ef0c97f9f8ec9d9c6fae70a82971f458ace2883ac84104e4f783420dc1e2869c",
+    "vin": "HA84MJ1R9ZE2C4B6E",
+    "match_id": "ISO-000065",
+    "claim_date": "2025-04-25",
+    "loss_type": "hail_damage",
+    "amount": 24787.94,
+    "claimant_name": "Tammie Hanson"
+  },
+  {
+    "identifier": "5acd24d2e66763f0faf1919420c2b2d2ca79b0fe097a36cc981b202fe1eb3044",
+    "vin": "23VH2BXL60F4GS42F",
+    "match_id": "ISO-000066",
+    "claim_date": "2022-08-20",
+    "loss_type": "property_water",
+    "amount": 37094.39,
+    "claimant_name": "Jason Powell"
+  },
+  {
+    "identifier": "4363477ec52f04e75000319fd0bfde321f40d730a1b6cb203c34222e954becf2",
+    "vin": "YRYLE9H9NZZKSGKTN",
+    "match_id": "ISO-000067",
+    "claim_date": "2023-07-25",
+    "loss_type": "auto_theft",
+    "amount": 25900.16,
+    "claimant_name": "Todd Byrd"
+  },
+  {
+    "identifier": "7609eb8d4877696c334e84cfe0ade63c24ac3c088927597bf7ed9b5bd7a8cd5d",
+    "vin": "EM865XXK5E75WUDZ9",
+    "match_id": "ISO-000068",
+    "claim_date": "2026-02-28",
+    "loss_type": "auto_collision",
+    "amount": 13709.53,
+    "claimant_name": "Roy Torres"
+  },
+  {
+    "identifier": "bb3fc9999a7f74a9666692ef2ea06acccb7f1229a79eb286a6b88ab19c061532",
+    "vin": "5CD0VEF916C5NX79K",
+    "match_id": "ISO-000069",
+    "claim_date": "2022-06-12",
+    "loss_type": "auto_collision",
+    "amount": 19559.34,
+    "claimant_name": "Julie Ramos"
+  },
+  {
+    "identifier": "edccb930bcd9c689d8db71b3ea0061ed0b90690e4676095876a8d663c67f09df",
+    "vin": "YF9MCS55L00V13YDY",
+    "match_id": "ISO-000070",
+    "claim_date": "2022-12-31",
+    "loss_type": "auto_collision",
+    "amount": 14514.59,
+    "claimant_name": "Diane Beck"
+  },
+  {
+    "identifier": "d8a056ef7b3e4b3a1ef7f1e585a5299a62343644f33a628b1889d3d1defd8784",
+    "vin": "1VTKYFKZW2JFW1YJF",
+    "match_id": "ISO-000071",
+    "claim_date": "2025-01-16",
+    "loss_type": "bodily_injury",
+    "amount": 28741.54,
+    "claimant_name": "Courtney Gonzalez"
+  },
+  {
+    "identifier": "41263fe950be4def8fbe96e327a113a956ec1d88eb95df232d5e6b6cc61e0196",
+    "vin": "90B0WMPY8NRJKEVG9",
+    "match_id": "ISO-000072",
+    "claim_date": "2024-04-07",
+    "loss_type": "property_fire",
+    "amount": 35616.25,
+    "claimant_name": "Patricia Gibson"
+  },
+  {
+    "identifier": "a136bb63f39884574be7a0f96e46a52a78ffc6e6d15f3c1c3b3f6dff75d0652a",
+    "vin": "CYJ1KLML5C30S5V5R",
+    "match_id": "ISO-000073",
+    "claim_date": "2024-08-13",
+    "loss_type": "property_fire",
+    "amount": 10735.28,
+    "claimant_name": "David Douglas Jr."
+  },
+  {
+    "identifier": "ac575970dee38696f9cc6b95c4acdb4e8f7120742379b90a5c16c3c54a799c90",
+    "vin": "7N056V193LNJTD70G",
+    "match_id": "ISO-000074",
+    "claim_date": "2023-02-14",
+    "loss_type": "bodily_injury",
+    "amount": 36066.0,
+    "claimant_name": "Robert Dominguez"
+  },
+  {
+    "identifier": "0755f2872c87ba72355642eccd8fe7241197cffb87b364d9a42c460184867579",
+    "vin": "HVFLU59K4FR5ZB3D2",
+    "match_id": "ISO-000075",
+    "claim_date": "2025-10-03",
+    "loss_type": "property_fire",
+    "amount": 16362.89,
+    "claimant_name": "Barbara Anderson"
+  },
+  {
+    "identifier": "aa5523b9015223aa7a2019d58663c4d0435d6be26df94d992be7e06f5402e562",
+    "vin": "1F0RBXGYKJCV7J75A",
+    "match_id": "ISO-000076",
+    "claim_date": "2024-08-18",
+    "loss_type": "auto_collision",
+    "amount": 1543.41,
+    "claimant_name": "Tiffany Vance"
+  },
+  {
+    "identifier": "a4008c05bfa61bfc41b424c99a85ac86f2e15e681097efa8026a18bbb3fa1275",
+    "vin": "PK4HVSWHDS36EH8B9",
+    "match_id": "ISO-000077",
+    "claim_date": "2023-03-17",
+    "loss_type": "property_fire",
+    "amount": 10850.92,
+    "claimant_name": "Kimberly Merritt"
+  },
+  {
+    "identifier": "c4bfa49b17cc6615f0ddc0253dcbd7663f724c2ce793df23ae6eaef4907071e9",
+    "vin": "KV4AZS3MF0E99B17C",
+    "match_id": "ISO-000078",
+    "claim_date": "2026-05-02",
+    "loss_type": "bodily_injury",
+    "amount": 16902.3,
+    "claimant_name": "Sara Ramirez"
+  },
+  {
+    "identifier": "1dc0fff928f172a7d652f88b97030bd181556089d67a1bfb32e7aef123e55851",
+    "vin": "0TBZEZSGYJCZYM67M",
+    "match_id": "ISO-000079",
+    "claim_date": "2023-09-21",
+    "loss_type": "auto_theft",
+    "amount": 3384.45,
+    "claimant_name": "Jeremiah Reeves"
+  },
+  {
+    "identifier": "705e6145c59bbd0e4a468d0a35636734974407013b38c10f9c83ce2d4c435e2f",
+    "vin": "6CVNCNCXW927TCNVZ",
+    "match_id": "ISO-000080",
+    "claim_date": "2022-10-27",
+    "loss_type": "auto_collision",
+    "amount": 36897.08,
+    "claimant_name": "Angela Hernandez"
+  },
+  {
+    "identifier": "62bce1ebe822b1a62616799023c44ab4e145c85a3e27c1575c76d945da5d34f1",
+    "vin": "YUH04251YM880UF4F",
+    "match_id": "ISO-000081",
+    "claim_date": "2024-07-29",
+    "loss_type": "property_water",
+    "amount": 25902.43,
+    "claimant_name": "Jason Daniels"
+  },
+  {
+    "identifier": "94ff2169bfcd0eebad48294bbaea3ebda9e212eba26c1f98d681b4c9440775a3",
+    "vin": "MVXGFXVW54L5Z5CZ4",
+    "match_id": "ISO-000082",
+    "claim_date": "2024-03-27",
+    "loss_type": "hail_damage",
+    "amount": 27447.84,
+    "claimant_name": "Randy Shah"
+  },
+  {
+    "identifier": "2b0003715842669ba7f76997f154cd9e1ef2e3d6fbdbd3e288fd93a29d9b4907",
+    "vin": "DE209LBK5CJES001C",
+    "match_id": "ISO-000083",
+    "claim_date": "2025-08-24",
+    "loss_type": "property_fire",
+    "amount": 7156.04,
+    "claimant_name": "Tommy Evans"
+  },
+  {
+    "identifier": "da916456f31d3cb7174c357de3fa3a1549cf1f554d777b4f53910cf6dcfda116",
+    "vin": "5005EJ02XUSHBM81H",
+    "match_id": "ISO-000084",
+    "claim_date": "2021-04-01",
+    "loss_type": "hail_damage",
+    "amount": 33104.77,
+    "claimant_name": "Stephanie Freeman"
+  },
+  {
+    "identifier": "1fc500cd7398ade19d0d1eb1bf50d49994ba3b3ec482fec5b25875c09cc15ba4",
+    "vin": "5PV8NHJE5M5FXZEVW",
+    "match_id": "ISO-000085",
+    "claim_date": "2022-02-01",
+    "loss_type": "auto_theft",
+    "amount": 30468.03,
+    "claimant_name": "Michael Yates"
+  },
+  {
+    "identifier": "6ab8f2b320cabd5a92614e65fdf669652ce8320770374d798a2aa602e5bf2492",
+    "vin": "M09RHNJS8B006JFEW",
+    "match_id": "ISO-000086",
+    "claim_date": "2024-08-24",
+    "loss_type": "property_water",
+    "amount": 42483.09,
+    "claimant_name": "Ms. Susan Vargas"
+  },
+  {
+    "identifier": "3332bec7275b7b09b153eaf2cd200eca6a84efae69c0930742aa4e4f9ca0c575",
+    "vin": "733EJXE56ZJMJ49DH",
+    "match_id": "ISO-000087",
+    "claim_date": "2024-11-13",
+    "loss_type": "property_fire",
+    "amount": 7138.4,
+    "claimant_name": "Joel Williams"
+  },
+  {
+    "identifier": "a0304af4129556f270a4d07df396d1dea65c07388ed50808a40d548a559f7058",
+    "vin": "LLXRZVFTNUJWF9LKL",
+    "match_id": "ISO-000088",
+    "claim_date": "2021-09-12",
+    "loss_type": "bodily_injury",
+    "amount": 26822.01,
+    "claimant_name": "Philip Gray"
+  },
+  {
+    "identifier": "893fe44827adfe27a1a076f1faf85df59538ecd38a910045609197c5e501e994",
+    "vin": "YCBFCTP3B8VW7S2W6",
+    "match_id": "ISO-000089",
+    "claim_date": "2021-05-06",
+    "loss_type": "auto_collision",
+    "amount": 29499.62,
+    "claimant_name": "Paul Williams"
+  },
+  {
+    "identifier": "7d9cf2aa45cd667a048c43473d474a99c39e83bedddddf44e4954a93a4ae5bf4",
+    "vin": "L5376PYKXXZ2J09GX",
+    "match_id": "ISO-000090",
+    "claim_date": "2023-01-12",
+    "loss_type": "auto_theft",
+    "amount": 20225.23,
+    "claimant_name": "Tiffany Gonzalez"
+  },
+  {
+    "identifier": "40feb47ab8f00b1e5a363d936dd2c5a700147263aad2288bf32c0bc5ac5f9a83",
+    "vin": "U5SKGDV13SLXXNL89",
+    "match_id": "ISO-000091",
+    "claim_date": "2024-02-21",
+    "loss_type": "property_water",
+    "amount": 21573.22,
+    "claimant_name": "Michael Elliott"
+  },
+  {
+    "identifier": "b15c6ebede5c62ab7560e9bdf96aaa0ba4abc830c664840a9b19e934ef50ce12",
+    "vin": "W8BF296SPZDDV87VA",
+    "match_id": "ISO-000092",
+    "claim_date": "2021-12-02",
+    "loss_type": "auto_collision",
+    "amount": 18741.23,
+    "claimant_name": "Lawrence Adkins"
+  },
+  {
+    "identifier": "98003acba78defa90e37bec67a0a16c387d1a18f90daf615dfe6ba278161cc31",
+    "vin": "T020C2DN0VE195UHJ",
+    "match_id": "ISO-000093",
+    "claim_date": "2021-08-25",
+    "loss_type": "auto_collision",
+    "amount": 17195.48,
+    "claimant_name": "Tanya Johnston"
+  },
+  {
+    "identifier": "b76ce4ecc023d85b226adb4f0d069e0798f986ad6e1d16b016e3d80276e56e54",
+    "vin": "Y0KN929CCCJY76K9J",
+    "match_id": "ISO-000094",
+    "claim_date": "2026-02-09",
+    "loss_type": "hail_damage",
+    "amount": 39634.64,
+    "claimant_name": "Sandra Sanchez"
+  },
+  {
+    "identifier": "b5123a0cc20a73769ebf329ddf12afd39012f83f492b17cbed1821d4a8885f36",
+    "vin": "XL2WY998W7B0YH3WB",
+    "match_id": "ISO-000095",
+    "claim_date": "2024-08-23",
+    "loss_type": "property_fire",
+    "amount": 20564.14,
+    "claimant_name": "Rebecca Knight"
+  },
+  {
+    "identifier": "6a371257e5b05bde0fbc6a0abf9420988ef57b83d0b36a7c2e19f31f80a30c29",
+    "vin": "RD7L1KSCHNB5X3K3P",
+    "match_id": "ISO-000096",
+    "claim_date": "2021-11-24",
+    "loss_type": "property_water",
+    "amount": 21700.96,
+    "claimant_name": "Andrea Holland"
+  },
+  {
+    "identifier": "6a4635d203fedf48cb6562ad71d6c6e247a4c486319e7c024a93d9f985d7d75d",
+    "vin": "7DJPX71XM6YZT7NSU",
+    "match_id": "ISO-000097",
+    "claim_date": "2024-09-15",
+    "loss_type": "property_fire",
+    "amount": 13212.34,
+    "claimant_name": "Jack Snow"
+  },
+  {
+    "identifier": "2f9ae784c0e991035fa711ab3cf5c68e62e03f6dd257ac2bad2500650b21a813",
+    "vin": "WVP8X7ZUVH12ZKVCV",
+    "match_id": "ISO-000098",
+    "claim_date": "2024-12-15",
+    "loss_type": "bodily_injury",
+    "amount": 4049.48,
+    "claimant_name": "Joseph Santos"
+  },
+  {
+    "identifier": "f0c97039cd2318357c2f1d7a74b4630627dd1bdc8e918c571523b48b20343073",
+    "vin": "5T7PNUUJGSSDRRDG3",
+    "match_id": "ISO-000099",
+    "claim_date": "2023-05-17",
+    "loss_type": "hail_damage",
+    "amount": 30699.7,
+    "claimant_name": "Nicholas Adams"
+  },
+  {
+    "identifier": "28e210c5d0a88f0c4b3d5a36915482577ef53062fe6676469f638c50f8f7c3f0",
+    "vin": "GJAL377NVXVDFRCM3",
+    "match_id": "ISO-000100",
+    "claim_date": "2023-11-12",
+    "loss_type": "auto_theft",
+    "amount": 39741.27,
+    "claimant_name": "Dana Marshall"
+  },
+  {
+    "identifier": "37426da3fcff25e2aad1ff72ca39f49c24b13af50280ead825b8be2e1ab4ed99",
+    "vin": "C28MVCAWGYV68J96U",
+    "match_id": "ISO-000101",
+    "claim_date": "2023-11-24",
+    "loss_type": "auto_theft",
+    "amount": 34517.98,
+    "claimant_name": "Samuel White"
+  },
+  {
+    "identifier": "da577cc9ca5b50f75c930a0f1229ffb0281cd922ce8e953a30d07c37a3fb445a",
+    "vin": "YL6TMAYVNM249XF2G",
+    "match_id": "ISO-000102",
+    "claim_date": "2022-08-17",
+    "loss_type": "auto_theft",
+    "amount": 41735.36,
+    "claimant_name": "Kyle Beard"
+  },
+  {
+    "identifier": "1f1e20d68fd8f0e9d92ff902d363abe0ec7c6b311800a638408bf42afab26491",
+    "vin": "7XSAT1S5UYWAT0SDH",
+    "match_id": "ISO-000103",
+    "claim_date": "2025-03-05",
+    "loss_type": "property_water",
+    "amount": 13559.16,
+    "claimant_name": "Nathan Freeman"
+  },
+  {
+    "identifier": "255a2f00e217000bdc60957f3016d857e99d8edacc73d6b5fdc111d00813f316",
+    "vin": "29WHV0RRJ7K6037PS",
+    "match_id": "ISO-000104",
+    "claim_date": "2023-08-10",
+    "loss_type": "bodily_injury",
+    "amount": 32260.38,
+    "claimant_name": "Alan Phillips"
+  },
+  {
+    "identifier": "0841f93a5a66b3e8998a4b34d8368759ce32e86c26a226f4240168a4af5a6bf3",
+    "vin": "F50EHD9NKLX5HP8F9",
+    "match_id": "ISO-000105",
+    "claim_date": "2023-10-25",
+    "loss_type": "property_water",
+    "amount": 34512.89,
+    "claimant_name": "Jackie Tran"
+  },
+  {
+    "identifier": "bda37f8b4681ad7517e69dd6aaa76f05d49fffc5f990882b77d2e6b9d4c91cc7",
+    "vin": "6J936D6WB2TAPEC4Z",
+    "match_id": "ISO-000106",
+    "claim_date": "2023-09-08",
+    "loss_type": "bodily_injury",
+    "amount": 3411.98,
+    "claimant_name": "Jesse Parker"
+  },
+  {
+    "identifier": "ecaeeaa7f943ec5295a84208eeb90a45d65f683f05439aa384d3452ff6e1f610",
+    "vin": "DE7CV3MJ301511FJZ",
+    "match_id": "ISO-000107",
+    "claim_date": "2025-02-13",
+    "loss_type": "auto_collision",
+    "amount": 8201.27,
+    "claimant_name": "Joshua Gill"
+  },
+  {
+    "identifier": "8dc5f89f7827cd600e64ca2d3dd7f5b1ca28083afc81b817f74e034cc0b9baeb",
+    "vin": "2JRABW641RS6ZKUNH",
+    "match_id": "ISO-000108",
+    "claim_date": "2022-08-27",
+    "loss_type": "auto_collision",
+    "amount": 34545.71,
+    "claimant_name": "Kevin Wolf"
+  },
+  {
+    "identifier": "09f44adb30751c5526343d1e3ae5ff17cef2b2676a2cba686f6cb489c5786c28",
+    "vin": "3BSPEGC5DSC25RPDJ",
+    "match_id": "ISO-000109",
+    "claim_date": "2023-05-03",
+    "loss_type": "property_fire",
+    "amount": 42227.93,
+    "claimant_name": "Isaac Turner"
+  },
+  {
+    "identifier": "7edf5075d6e67dfa0c2e18f5b6d34564427601303b77887f9de2b000b37afc1b",
+    "vin": "RXXSWKR3WUDM48DZ1",
+    "match_id": "ISO-000110",
+    "claim_date": "2021-11-15",
+    "loss_type": "property_fire",
+    "amount": 14057.16,
+    "claimant_name": "Anthony Carter"
+  },
+  {
+    "identifier": "41d319a3da6dcadb117b501f6c6e30c293749243be4219953717b0ae20ee5916",
+    "vin": "33KW1M7SRWK6D33J1",
+    "match_id": "ISO-000111",
+    "claim_date": "2021-06-09",
+    "loss_type": "auto_theft",
+    "amount": 11396.07,
+    "claimant_name": "Laura Harrison"
+  },
+  {
+    "identifier": "656cb1f0ad61eebc671fb2f5c90af43fa88162175a8e0c181c3838a0e389177c",
+    "vin": "YF50FNDU1CENP7PYW",
+    "match_id": "ISO-000112",
+    "claim_date": "2021-08-19",
+    "loss_type": "auto_collision",
+    "amount": 9592.97,
+    "claimant_name": "Scott Wilson"
+  },
+  {
+    "identifier": "45023fb37ee1347dd23e7306f5fcec53272484ed16f7b54dbd78d7cbe9aac96a",
+    "vin": "NH7SP2SXV16ZWT098",
+    "match_id": "ISO-000113",
+    "claim_date": "2021-09-22",
+    "loss_type": "property_water",
+    "amount": 4866.89,
+    "claimant_name": "Melissa Hernandez"
+  },
+  {
+    "identifier": "a185f27060dac06005948d1b8a8b273562271d3507a8526352fc3a74dbb334ae",
+    "vin": "7XP0X3CRKBT3VKNYR",
+    "match_id": "ISO-000114",
+    "claim_date": "2025-06-12",
+    "loss_type": "property_water",
+    "amount": 24538.71,
+    "claimant_name": "Bailey Duran DDS"
+  },
+  {
+    "identifier": "564366486d735bcde01f2ea99b5766b41507853cd9ecb6a43dfb52a3a5b02149",
+    "vin": "S8YT886LZLJ8MDCED",
+    "match_id": "ISO-000115",
+    "claim_date": "2025-11-02",
+    "loss_type": "auto_collision",
+    "amount": 17967.38,
+    "claimant_name": "Terry Evans"
+  },
+  {
+    "identifier": "42402f307fa32ca4f7497d75a8a31c81d2838be2a7897ecd8a4bca4fa686bf94",
+    "vin": "REKAP960D78BA3ABU",
+    "match_id": "ISO-000116",
+    "claim_date": "2023-04-03",
+    "loss_type": "property_fire",
+    "amount": 41559.76,
+    "claimant_name": "Lisa Singh"
+  },
+  {
+    "identifier": "5246ecfb4e3cbe81dfa35a811ac3e617397a80e79384139719eeeacd19de7ed9",
+    "vin": "B94MGGKSNTZU2F026",
+    "match_id": "ISO-000117",
+    "claim_date": "2024-06-23",
+    "loss_type": "property_fire",
+    "amount": 10903.93,
+    "claimant_name": "Brooke Thompson"
+  },
+  {
+    "identifier": "cd639c35f7bbf1ec3d26d74aa92701971fa330f38860098c446ca712bd5e293c",
+    "vin": "RWFCF2117DALF84YG",
+    "match_id": "ISO-000118",
+    "claim_date": "2024-11-11",
+    "loss_type": "property_fire",
+    "amount": 39124.6,
+    "claimant_name": "Kirk Carter"
+  },
+  {
+    "identifier": "bfdd4a00c341d450bf7a9776a362feccf1bf727ce2afa8fc20b6588e09ed3c91",
+    "vin": "RP7UCEUCMXBPK2EWL",
+    "match_id": "ISO-000119",
+    "claim_date": "2022-09-07",
+    "loss_type": "property_fire",
+    "amount": 10789.71,
+    "claimant_name": "David Baker"
+  },
+  {
+    "identifier": "bb6597d93ec5e7bedf938c9a67dd284f7aa0824babddbcedb4b578b2b301d1d2",
+    "vin": "1Y1JF9ZDG4REY2XBU",
+    "match_id": "ISO-000120",
+    "claim_date": "2021-07-05",
+    "loss_type": "property_water",
+    "amount": 21232.69,
+    "claimant_name": "Joshua Holland"
+  },
+  {
+    "identifier": "6fca5cbc670cbfbea866aed5d1c0e0b41027eb9ee0a79882e30ed6ec1c495175",
+    "vin": "Z14M1FVSEFUK1K1X0",
+    "match_id": "ISO-000121",
+    "claim_date": "2022-01-22",
+    "loss_type": "auto_collision",
+    "amount": 4570.98,
+    "claimant_name": "Eric Curry"
+  },
+  {
+    "identifier": "6b3e3fcf40275763c9612e786f6e6b60c353ee1933ddc6a0488109e6f015ffbe",
+    "vin": "W50UGJFM4593GBFZF",
+    "match_id": "ISO-000122",
+    "claim_date": "2025-03-15",
+    "loss_type": "property_fire",
+    "amount": 25718.33,
+    "claimant_name": "Eric Powell"
+  },
+  {
+    "identifier": "3ed4515811437db8c9c4c5b176614a6ff9bc3ed64e4abc34c4de5308a90601f3",
+    "vin": "X1AV31FSL1LJUWU8K",
+    "match_id": "ISO-000123",
+    "claim_date": "2023-02-17",
+    "loss_type": "auto_collision",
+    "amount": 7730.91,
+    "claimant_name": "Kyle Preston"
+  },
+  {
+    "identifier": "c82e5f2fa336634a56be10621e49e81cce8026b7462a1d809135ea4880e0cd2a",
+    "vin": "U3W7E0TS8N6GJWA2Y",
+    "match_id": "ISO-000124",
+    "claim_date": "2021-03-06",
+    "loss_type": "property_fire",
+    "amount": 16610.41,
+    "claimant_name": "Darryl Craig"
+  },
+  {
+    "identifier": "46b0d6db4b4d0492789498862b30813fff79f18a56124bd55bf57be0144b9a77",
+    "vin": "Y5Y4JWXN7XM2XV8SX",
+    "match_id": "ISO-000125",
+    "claim_date": "2023-05-15",
+    "loss_type": "property_water",
+    "amount": 12452.53,
+    "claimant_name": "Miss Debra Williams PhD"
+  },
+  {
+    "identifier": "4c3ecc8b8289a86be54bf29d603473cad9cba7afdc24ce466d6935725517def7",
+    "vin": "20HNMB6P5VE38JWST",
+    "match_id": "ISO-000126",
+    "claim_date": "2023-12-18",
+    "loss_type": "bodily_injury",
+    "amount": 7185.48,
+    "claimant_name": "Kevin Walters"
+  },
+  {
+    "identifier": "7bf81cb1b3173318a34aba5ca8df58898c0d7d15dcd80dd333352d369587f74c",
+    "vin": "41E57293C0FGSZLC2",
+    "match_id": "ISO-000127",
+    "claim_date": "2025-03-20",
+    "loss_type": "hail_damage",
+    "amount": 41068.68,
+    "claimant_name": "Frank Garcia"
+  },
+  {
+    "identifier": "e705fe05ba8dbd1a115f1d91ac26f3ffe34196cc99b51ba75dcd48e7c0741be2",
+    "vin": "4GAGTR9R50269KZB7",
+    "match_id": "ISO-000128",
+    "claim_date": "2021-10-01",
+    "loss_type": "auto_collision",
+    "amount": 13084.3,
+    "claimant_name": "Tony Cervantes"
+  },
+  {
+    "identifier": "a521f51030ee220a17b827561b48576162f56d3f3ce8eedda6e042cafd520ac5",
+    "vin": "FHKZWY6P7Z7G55XEW",
+    "match_id": "ISO-000129",
+    "claim_date": "2025-08-13",
+    "loss_type": "auto_collision",
+    "amount": 34575.26,
+    "claimant_name": "Frank Cordova"
+  },
+  {
+    "identifier": "6cf55a4a99aab8874235210301dc3ebf626e18fcb4ef69d3f73b84eafe8f036d",
+    "vin": "HBYGLSMLY46R2MM42",
+    "match_id": "ISO-000130",
+    "claim_date": "2026-04-28",
+    "loss_type": "auto_collision",
+    "amount": 31535.96,
+    "claimant_name": "Anthony Stone"
+  },
+  {
+    "identifier": "efabb4d0337f740b981bd4a64cd51a4a11bf9a2796e83addae218dadd2ed4361",
+    "vin": "N541APPUEGM0XN6HT",
+    "match_id": "ISO-000131",
+    "claim_date": "2025-02-14",
+    "loss_type": "bodily_injury",
+    "amount": 36765.08,
+    "claimant_name": "Anthony Adams"
+  },
+  {
+    "identifier": "1ce50e3462a079837db6521f9aedcf013fa18320e2c5737564db46fa7adc2096",
+    "vin": "X12HZZ6MWFJXHSWHM",
+    "match_id": "ISO-000132",
+    "claim_date": "2023-08-24",
+    "loss_type": "hail_damage",
+    "amount": 29700.98,
+    "claimant_name": "William Lynch"
+  },
+  {
+    "identifier": "14587efad31c1d57810ab57ac50063c617c1ef8357ec64670a73b985ec46006b",
+    "vin": "913J14M8ML8VJMX5D",
+    "match_id": "ISO-000133",
+    "claim_date": "2021-12-31",
+    "loss_type": "hail_damage",
+    "amount": 40489.4,
+    "claimant_name": "Kristen Davis"
+  },
+  {
+    "identifier": "2e4f56f471f676a17f478fabf5491515bec0850dbc906fa13ab07578d6340dcb",
+    "vin": "8JN19838358LFBRVC",
+    "match_id": "ISO-000134",
+    "claim_date": "2024-07-14",
+    "loss_type": "hail_damage",
+    "amount": 10137.21,
+    "claimant_name": "Brittany Cantu"
+  },
+  {
+    "identifier": "a23271d8dac124f9f007f4cf9ead79a02800d5eec27a54f1e5c8f18652aab76f",
+    "vin": "VL689HHU0C5P4GSWC",
+    "match_id": "ISO-000135",
+    "claim_date": "2022-08-16",
+    "loss_type": "property_water",
+    "amount": 11722.54,
+    "claimant_name": "Veronica Sanchez"
+  },
+  {
+    "identifier": "b1a36ad846e9a79b66f4a73eb3e9e5f972bac0a9297852778c0ab44aba819580",
+    "vin": "F5HSPZ4LJPPDZULXV",
+    "match_id": "ISO-000136",
+    "claim_date": "2024-07-13",
+    "loss_type": "hail_damage",
+    "amount": 24661.71,
+    "claimant_name": "Katie Suarez"
+  },
+  {
+    "identifier": "e49012c340e753767b9c1aa37846686b1a03533c52b2b4185c0ecc1ea7b29e9b",
+    "vin": "9GJ3DUJJSKXS28KU3",
+    "match_id": "ISO-000137",
+    "claim_date": "2025-12-29",
+    "loss_type": "property_water",
+    "amount": 19620.65,
+    "claimant_name": "Richard Adams"
+  },
+  {
+    "identifier": "5a0af9770565a8bcc022c524ff74221fa9e596c32260452879253d0f17ddc633",
+    "vin": "F29U068XAF6ZE2P4P",
+    "match_id": "ISO-000138",
+    "claim_date": "2023-12-09",
+    "loss_type": "property_water",
+    "amount": 11961.41,
+    "claimant_name": "Mary Grimes"
+  },
+  {
+    "identifier": "9b049a59bc9bbaed2adeb455bbb01221faad5033f379127906d222ca88e081e4",
+    "vin": "VYJ8YDCG6BHL56A4N",
+    "match_id": "ISO-000139",
+    "claim_date": "2025-11-12",
+    "loss_type": "bodily_injury",
+    "amount": 38717.75,
+    "claimant_name": "Phillip Bennett"
+  },
+  {
+    "identifier": "24b329341b6f61a955b403732220cfee4a7141f9bd6acc19432aeef741354e3f",
+    "vin": "WLUF0TF0LD2WR4FGA",
+    "match_id": "ISO-000140",
+    "claim_date": "2024-03-30",
+    "loss_type": "auto_theft",
+    "amount": 20656.68,
+    "claimant_name": "Scott Jenkins"
+  },
+  {
+    "identifier": "7e55d5c498f9501e21e79a9deafabfddb2d709cfb2f90856a2bfead3d21823ab",
+    "vin": "JR5AAYH4J7ER1FGGX",
+    "match_id": "ISO-000141",
+    "claim_date": "2022-01-28",
+    "loss_type": "hail_damage",
+    "amount": 37531.29,
+    "claimant_name": "Matthew Hoover"
+  },
+  {
+    "identifier": "2f06b86478c748671f6e331b56fe927827cc347096beb256b722d93e91e8eb9a",
+    "vin": "J1JKEAL5ZPK35PFGJ",
+    "match_id": "ISO-000142",
+    "claim_date": "2025-06-23",
+    "loss_type": "auto_collision",
+    "amount": 25364.71,
+    "claimant_name": "Leslie Kane"
+  },
+  {
+    "identifier": "b0fc189de1c9ed1a8284398c9c47ccc1a6043a4f9bc45ea06647a4d0e459a6b4",
+    "vin": "1Z4XJSUFSVBWP9N2V",
+    "match_id": "ISO-000143",
+    "claim_date": "2021-08-21",
+    "loss_type": "bodily_injury",
+    "amount": 3028.26,
+    "claimant_name": "Alexis Thomas"
+  },
+  {
+    "identifier": "253ba6e9587a22777042ecc30c31e7539f4763e8bd6cea2a07af43c3801b816d",
+    "vin": "S81HS8EA0XJ130M7E",
+    "match_id": "ISO-000144",
+    "claim_date": "2023-10-18",
+    "loss_type": "auto_collision",
+    "amount": 25272.43,
+    "claimant_name": "Wayne Morgan"
+  },
+  {
+    "identifier": "72859d0561c80dc00bbcef4d61d8c06150e2784372c7c1f9cf0d903d4bcdf929",
+    "vin": "ATPCD29V9342FKUFW",
+    "match_id": "ISO-000145",
+    "claim_date": "2025-08-08",
+    "loss_type": "auto_collision",
+    "amount": 22096.97,
+    "claimant_name": "Shannon James"
+  },
+  {
+    "identifier": "8d447ab347b1edc0d53051fa1150e53d1198da09ebf30afea97b8349c24c83be",
+    "vin": "PKX2EW4SDSF4H6DWM",
+    "match_id": "ISO-000146",
+    "claim_date": "2024-09-10",
+    "loss_type": "auto_collision",
+    "amount": 1278.76,
+    "claimant_name": "Barry Welch"
+  },
+  {
+    "identifier": "8c39ce5dfb0f896c13b2e8efa47d284a502e6853a3ab1f570548f0cc09827c72",
+    "vin": "JAL8ZTL0JUHBY4UET",
+    "match_id": "ISO-000147",
+    "claim_date": "2023-07-20",
+    "loss_type": "bodily_injury",
+    "amount": 41458.36,
+    "claimant_name": "Paige Padilla"
+  },
+  {
+    "identifier": "3bd7cf51d95e55336bc115413861b1da78c30ed4ddb11c4cb32e4c8e9e7c24c0",
+    "vin": "E8690D8L0LTGHR9AC",
+    "match_id": "ISO-000148",
+    "claim_date": "2024-08-31",
+    "loss_type": "auto_collision",
+    "amount": 10960.02,
+    "claimant_name": "Amber Flynn"
+  },
+  {
+    "identifier": "07aa183ddf343c9dc3114d78ed97a35e0f01cc72d4219ba0d0b96a99ddbd8ea8",
+    "vin": "701KMC3RXS3XUE0H9",
+    "match_id": "ISO-000149",
+    "claim_date": "2022-06-28",
+    "loss_type": "bodily_injury",
+    "amount": 38406.04,
+    "claimant_name": "Joseph Knight"
+  },
+  {
+    "identifier": "8abac6d0c90c86f9ef591e82387250935a39dd7901952b03d5591bed5eb30a7d",
+    "vin": "MRC2E6VWXF6A0NVWS",
+    "match_id": "ISO-000150",
+    "claim_date": "2022-03-21",
+    "loss_type": "property_water",
+    "amount": 16125.42,
+    "claimant_name": "Seth Harvey"
+  },
+  {
+    "identifier": "778f3a3346037bb2faeee1ba7975cf0f3d617441c876c31f8a15711c08947663",
+    "vin": "8NSKA3BRZAYA1WGPS",
+    "match_id": "ISO-000151",
+    "claim_date": "2023-06-13",
+    "loss_type": "property_water",
+    "amount": 21292.21,
+    "claimant_name": "Mark Stevens"
+  },
+  {
+    "identifier": "5e7b9c49a3d07bc9dbfa15cfcdfa8d80182e4466a5e9663cd8acd0c7e73ea5e4",
+    "vin": "DKUFCR306FG9J2ED4",
+    "match_id": "ISO-000152",
+    "claim_date": "2026-06-09",
+    "loss_type": "bodily_injury",
+    "amount": 41006.11,
+    "claimant_name": "Brooke Alexander"
+  },
+  {
+    "identifier": "08b4b4019f92d56ca7e5330958e9f96fa163db9bd181f9f2b2426dfba68290c8",
+    "vin": "SVTX2XX5URENJGKGL",
+    "match_id": "ISO-000153",
+    "claim_date": "2025-02-10",
+    "loss_type": "property_water",
+    "amount": 20207.8,
+    "claimant_name": "Melissa Bryant"
+  },
+  {
+    "identifier": "a1629972fc2ecc53b288ff7ad180890fc3e6f692ca47987343d8cd6483a39df7",
+    "vin": "3HZP5W6THFLWCPXKF",
+    "match_id": "ISO-000154",
+    "claim_date": "2021-03-10",
+    "loss_type": "bodily_injury",
+    "amount": 11113.13,
+    "claimant_name": "James Howard"
+  },
+  {
+    "identifier": "aa03b4b2a872f85812eaea988b0c60448b0735b315be6118c7086be8ebee8b8e",
+    "vin": "Z29DWTMB25SG6GJHA",
+    "match_id": "ISO-000155",
+    "claim_date": "2026-02-28",
+    "loss_type": "auto_collision",
+    "amount": 35418.04,
+    "claimant_name": "Mary Hill"
+  },
+  {
+    "identifier": "edcbe43ed9228b4993f186a418ade9ef9efad5cea0d72d4356432d0220ace0fb",
+    "vin": "RJN20FTEBEN5JFYHC",
+    "match_id": "ISO-000156",
+    "claim_date": "2023-12-31",
+    "loss_type": "property_water",
+    "amount": 2864.12,
+    "claimant_name": "Sandra Leach"
+  },
+  {
+    "identifier": "aea66455e92133d78f59eeda44badee49c1ab606fc95a225175a2f1e8eb60da4",
+    "vin": "428B14MZPMUU5KCSV",
+    "match_id": "ISO-000157",
+    "claim_date": "2026-05-06",
+    "loss_type": "property_water",
+    "amount": 17950.67,
+    "claimant_name": "Connor King"
+  },
+  {
+    "identifier": "0dafe67e7235c4deb051fb38112cb7abf07d3edeec8643d47337a6fa1499e68b",
+    "vin": "7DFU1J3NSB1Z78Z9X",
+    "match_id": "ISO-000158",
+    "claim_date": "2025-12-06",
+    "loss_type": "property_water",
+    "amount": 12040.69,
+    "claimant_name": "Mark Williams"
+  },
+  {
+    "identifier": "af25423da41b85c6342d7baa3cc4f860a8442db113081f010507df9887fb3709",
+    "vin": "BXRBUD7ZRLGSSUDR1",
+    "match_id": "ISO-000159",
+    "claim_date": "2022-06-30",
+    "loss_type": "hail_damage",
+    "amount": 39794.85,
+    "claimant_name": "Carlos Browning"
+  },
+  {
+    "identifier": "f1a3901fa16f5ce9e62c78f656f173191d7b95967cafecaad7c6338edbff4019",
+    "vin": "MMSXZBZKN8WM8CFDR",
+    "match_id": "ISO-000160",
+    "claim_date": "2023-04-27",
+    "loss_type": "property_fire",
+    "amount": 9885.27,
+    "claimant_name": "Richard Walter"
+  },
+  {
+    "identifier": "c8bc01a0d2b361db44572f068b6f774dad6116dde5a719897b0db33c747bc803",
+    "vin": "7AYNJYMXDBKKH0E02",
+    "match_id": "ISO-000161",
+    "claim_date": "2021-12-24",
+    "loss_type": "property_fire",
+    "amount": 4968.09,
+    "claimant_name": "Dawn Summers"
+  },
+  {
+    "identifier": "7b990a67461d0ebde3863ee0cfd06ff8b2039602b16a1d288211a539a53edd18",
+    "vin": "WXJL48XMZRM1WVJMA",
+    "match_id": "ISO-000162",
+    "claim_date": "2025-09-28",
+    "loss_type": "bodily_injury",
+    "amount": 40358.15,
+    "claimant_name": "Bernard Webster"
+  },
+  {
+    "identifier": "a89ffa1895998f2eb1d1ab2d4871ae1ad3e249f5f16b21a82d73a3b947626163",
+    "vin": "2CMXRG8KYESZXLFY5",
+    "match_id": "ISO-000163",
+    "claim_date": "2024-02-20",
+    "loss_type": "auto_collision",
+    "amount": 11822.62,
+    "claimant_name": "Richard Smith"
+  },
+  {
+    "identifier": "4b159cfa4dc2a4092d1dec59dbdac4755de011b772f72b40aac8c1df8df41f51",
+    "vin": "SEZTGAD153L381Z1G",
+    "match_id": "ISO-000164",
+    "claim_date": "2021-12-03",
+    "loss_type": "property_water",
+    "amount": 33679.48,
+    "claimant_name": "Megan Richards"
+  },
+  {
+    "identifier": "c3901ebbb2cbaa4444f0e7521aa252416a2189e4a2c6fea7e9fb9de553757ab2",
+    "vin": "RL5ECVBXTGEYL1LEF",
+    "match_id": "ISO-000165",
+    "claim_date": "2022-11-19",
+    "loss_type": "hail_damage",
+    "amount": 25550.78,
+    "claimant_name": "Kaitlyn Harvey"
+  },
+  {
+    "identifier": "79327c0c1c9551d6bc1fe9e9606ea688464d9a04efedecf0e87931b9bbbf018f",
+    "vin": "7B4L4LDGYPN3TVWSG",
+    "match_id": "ISO-000166",
+    "claim_date": "2021-12-29",
+    "loss_type": "auto_collision",
+    "amount": 17153.67,
+    "claimant_name": "Madison Marshall"
+  },
+  {
+    "identifier": "ff9bca60fc5d4808f630540d0d2bfc7b32d2f25f518f218c9661e8b08be3fb6a",
+    "vin": "8KD0A4FV7NGBPLVF7",
+    "match_id": "ISO-000167",
+    "claim_date": "2022-12-31",
+    "loss_type": "auto_collision",
+    "amount": 13623.75,
+    "claimant_name": "Tracy Torres"
+  },
+  {
+    "identifier": "63daea73f6d928609b18750c60dad39b423ee80858caccedaa187df1d6509f28",
+    "vin": "278TF1M010M5CT56T",
+    "match_id": "ISO-000168",
+    "claim_date": "2024-07-26",
+    "loss_type": "auto_theft",
+    "amount": 35698.04,
+    "claimant_name": "Brandy Chavez"
+  },
+  {
+    "identifier": "a3285f8fb8ce6c0610a1b48b695253b1e48e862dfcf2379b97b2c1e274bda130",
+    "vin": "DKGFZ3RD137S7WF2C",
+    "match_id": "ISO-000169",
+    "claim_date": "2026-03-28",
+    "loss_type": "property_fire",
+    "amount": 24598.43,
+    "claimant_name": "Molly Mcclure"
+  },
+  {
+    "identifier": "5a55ff90af15eeed45574aa33c52ec6e9d3e03c0308381c3d6a806f2a410ca66",
+    "vin": "KH5MLPNJC4F4NKTXE",
+    "match_id": "ISO-000170",
+    "claim_date": "2024-10-13",
+    "loss_type": "auto_collision",
+    "amount": 16953.14,
+    "claimant_name": "Trevor Johnson"
+  },
+  {
+    "identifier": "13714d545867bebdf4337806d7fb02449214af942fd25ea8d8192106622c15e6",
+    "vin": "2XU6A3H3KKGGGVZ3T",
+    "match_id": "ISO-000171",
+    "claim_date": "2024-01-20",
+    "loss_type": "property_water",
+    "amount": 28087.39,
+    "claimant_name": "Savannah Garcia"
+  },
+  {
+    "identifier": "f1f7aae986f99c9683644806ffa9de2ce3de6f61b284294bdf1d54a2f7d5fed1",
+    "vin": "7CMU2K2C2YSD7U0BY",
+    "match_id": "ISO-000172",
+    "claim_date": "2022-10-21",
+    "loss_type": "hail_damage",
+    "amount": 13732.13,
+    "claimant_name": "Donald Donaldson"
+  },
+  {
+    "identifier": "b6c83f028f243eab711443c74f44aa60218d1f32029063409f4051387c5234ac",
+    "vin": "8GRJW5XU3FN5P380D",
+    "match_id": "ISO-000173",
+    "claim_date": "2022-01-27",
+    "loss_type": "property_fire",
+    "amount": 33794.72,
+    "claimant_name": "Linda Smith"
+  },
+  {
+    "identifier": "b5648b83a2db62cdaac37d1138f5528d0be436dd25c693c930a88d70fbd7ad70",
+    "vin": "EW92JBMNNDSC6D0NU",
+    "match_id": "ISO-000174",
+    "claim_date": "2022-11-02",
+    "loss_type": "hail_damage",
+    "amount": 35131.39,
+    "claimant_name": "Christine Gallegos"
+  },
+  {
+    "identifier": "4c35e8cd77afb8edbbc969a48ad0a41163d8bd75c0ce1b77fd68c057da29acc0",
+    "vin": "92HBS085M7ZZLTFVB",
+    "match_id": "ISO-000175",
+    "claim_date": "2023-05-12",
+    "loss_type": "property_water",
+    "amount": 2822.93,
+    "claimant_name": "Crystal Schroeder"
+  },
+  {
+    "identifier": "c225caa4e86e0f5e10e876cab584512e36d6f084f1c55b94340e2789eef9e90d",
+    "vin": "PRRPU39BA7JMARTWU",
+    "match_id": "ISO-000176",
+    "claim_date": "2021-03-22",
+    "loss_type": "property_water",
+    "amount": 38136.41,
+    "claimant_name": "Brianna Anderson"
+  },
+  {
+    "identifier": "c6948d9eb2a294de593f3b75a75cfb320ad86c6cb45da5aec0e6ddeb981b5434",
+    "vin": "Z6TP6W2GA90VWG7EY",
+    "match_id": "ISO-000177",
+    "claim_date": "2022-06-26",
+    "loss_type": "hail_damage",
+    "amount": 27494.83,
+    "claimant_name": "Hunter Kramer"
+  },
+  {
+    "identifier": "55cabf81006b9bffa3ceb722fc58afe812d50433b7ffac6b7e099b29177b4aa6",
+    "vin": "UTWNKSD2XJB8VT321",
+    "match_id": "ISO-000178",
+    "claim_date": "2025-01-19",
+    "loss_type": "bodily_injury",
+    "amount": 2224.57,
+    "claimant_name": "Cameron Fisher"
+  },
+  {
+    "identifier": "311f196baa60d5fcf4ff167ca42da2321e9e2c145b42bd83f875c2650f5132c2",
+    "vin": "NYR7Z9WLMVG7JTMYF",
+    "match_id": "ISO-000179",
+    "claim_date": "2026-03-27",
+    "loss_type": "auto_theft",
+    "amount": 15583.08,
+    "claimant_name": "Ivan Wheeler"
+  },
+  {
+    "identifier": "9f923b22f07eb423f266eaacfb763738257de3dcdd4e4b9061f42eb90953d66f",
+    "vin": "W3Y0TV6H7DE7N9H1W",
+    "match_id": "ISO-000180",
+    "claim_date": "2021-04-07",
+    "loss_type": "property_water",
+    "amount": 3007.09,
+    "claimant_name": "Richard Camacho"
+  },
+  {
+    "identifier": "fc683198047529e6d8a7b0f9af60a5a3ce755999e881fb399174a0c1b0752ba1",
+    "vin": "KJNY36KXMF8YMXDA5",
+    "match_id": "ISO-000181",
+    "claim_date": "2024-10-10",
+    "loss_type": "hail_damage",
+    "amount": 9491.71,
+    "claimant_name": "John Morales"
+  },
+  {
+    "identifier": "4fb6f679ac167c9db90b290659160c14012720b0c149e83469f38b2149a0744c",
+    "vin": "LL8FJ442471ACN0AX",
+    "match_id": "ISO-000182",
+    "claim_date": "2026-04-24",
+    "loss_type": "property_fire",
+    "amount": 8706.58,
+    "claimant_name": "Bobby Franklin"
+  },
+  {
+    "identifier": "681069eeffab1993f408e554e431a214d693dfa47403665e1538a006876f9a09",
+    "vin": "ASRZWJG19WLECWV6Y",
+    "match_id": "ISO-000183",
+    "claim_date": "2024-11-10",
+    "loss_type": "property_water",
+    "amount": 37822.92,
+    "claimant_name": "Kimberly Nguyen"
+  },
+  {
+    "identifier": "79f218fbab0bae56beae463abbc861f31ef147a0a915646cfc09e744c3ae0cce",
+    "vin": "JY8ZNL2BRRJPB9LH0",
+    "match_id": "ISO-000184",
+    "claim_date": "2022-10-31",
+    "loss_type": "bodily_injury",
+    "amount": 27910.06,
+    "claimant_name": "Jessica Mcguire"
+  },
+  {
+    "identifier": "98d57591dd1a81ae3e2bbe8959495be85f7721bdc5067eb38b1eac796ae23cfb",
+    "vin": "C1TDDGBDH351HT7KP",
+    "match_id": "ISO-000185",
+    "claim_date": "2024-07-16",
+    "loss_type": "bodily_injury",
+    "amount": 29379.65,
+    "claimant_name": "Stephen Gutierrez"
+  },
+  {
+    "identifier": "77adc87924c5abf2ae660d93be08a2b9b17456d4229993d98a0f4c620f7c555d",
+    "vin": "AW3GUJ3G9HVHG8NNT",
+    "match_id": "ISO-000186",
+    "claim_date": "2025-01-13",
+    "loss_type": "property_fire",
+    "amount": 41377.75,
+    "claimant_name": "Emily Edwards"
+  },
+  {
+    "identifier": "da81de7658a3e0802fdf2ddc91916bf19a4f23763490fc3a1349c30652a11e43",
+    "vin": "Z3VLC8P7YSAAFH8KF",
+    "match_id": "ISO-000187",
+    "claim_date": "2022-02-09",
+    "loss_type": "property_fire",
+    "amount": 3883.26,
+    "claimant_name": "Ronald Davis"
+  },
+  {
+    "identifier": "88a3eea73cb6f3cef38ab8c0c7f81dbf9aa136e994a0bad407ad5766950fa49e",
+    "vin": "GTR6VT6DGMCV0X4HG",
+    "match_id": "ISO-000188",
+    "claim_date": "2024-06-30",
+    "loss_type": "auto_collision",
+    "amount": 1153.82,
+    "claimant_name": "Laurie Hoffman"
+  },
+  {
+    "identifier": "e0f159f48da729e2f02316063819de2bd06393caf6c1704641ce47a00347c2f8",
+    "vin": "JLYZ5UF0YMH226U17",
+    "match_id": "ISO-000189",
+    "claim_date": "2023-06-13",
+    "loss_type": "property_water",
+    "amount": 27839.34,
+    "claimant_name": "Maurice Christensen"
+  },
+  {
+    "identifier": "b55bc1f6cdc61f1bc1c57a71fdf209143096e46692a49ecd4ec2cf1ed5fb294f",
+    "vin": "LHJDLG375M1ZBJ78H",
+    "match_id": "ISO-000190",
+    "claim_date": "2022-11-28",
+    "loss_type": "property_water",
+    "amount": 19148.72,
+    "claimant_name": "Heather Lane"
+  },
+  {
+    "identifier": "3e4a93b353296c4c96eb2d0e673371869c45cbb4a28ca92d3814ba9639076e18",
+    "vin": "ETXARYG4S7Z1KDAL9",
+    "match_id": "ISO-000191",
+    "claim_date": "2025-11-19",
+    "loss_type": "property_water",
+    "amount": 36315.62,
+    "claimant_name": "Hayley Hawkins"
+  },
+  {
+    "identifier": "89d93eb351e4f80e6bbb5275e350777e95d62976d4a9d6c894ab159b4852ed6d",
+    "vin": "LE8XSYUD9R12SF655",
+    "match_id": "ISO-000192",
+    "claim_date": "2021-03-23",
+    "loss_type": "auto_collision",
+    "amount": 36512.6,
+    "claimant_name": "Jeffrey Hoffman"
+  },
+  {
+    "identifier": "271bc7b50e9b11cff2976596f2bb855f6ab869f78629390b32d7c1741d15af49",
+    "vin": "5XH8BG23CAFW9P6Y0",
+    "match_id": "ISO-000193",
+    "claim_date": "2023-08-18",
+    "loss_type": "auto_collision",
+    "amount": 34842.58,
+    "claimant_name": "Mary Steele"
+  },
+  {
+    "identifier": "78b98192c9321349ff7d35ae2c3af06ccba031bc5fccec9c7c8a6bf851da0eda",
+    "vin": "6Y705HGRAYZV0GCL8",
+    "match_id": "ISO-000194",
+    "claim_date": "2021-08-05",
+    "loss_type": "auto_theft",
+    "amount": 35061.76,
+    "claimant_name": "Heather White"
+  },
+  {
+    "identifier": "ef4f7896883df750e9e5e6da4c2afde4d16a78fbb3b7a4ff3facacbba428af10",
+    "vin": "3GTNNH2P6NYG3CH56",
+    "match_id": "ISO-000195",
+    "claim_date": "2024-03-14",
+    "loss_type": "bodily_injury",
+    "amount": 25353.95,
+    "claimant_name": "Mark Johnson"
+  },
+  {
+    "identifier": "f4eb99e9dfa182b00a4ed5e0f6e5749c005e982f56d471c935cd8420ce6e7cfe",
+    "vin": "9J8AD479MMJG1X913",
+    "match_id": "ISO-000196",
+    "claim_date": "2026-01-27",
+    "loss_type": "property_fire",
+    "amount": 38989.25,
+    "claimant_name": "Glen Wood"
+  },
+  {
+    "identifier": "221772e9583180c6c7cc123f9b268311b8af5d1c3ff940e19d4684c8977a9363",
+    "vin": "SU2YV5JJ39WXPNPVZ",
+    "match_id": "ISO-000197",
+    "claim_date": "2023-04-26",
+    "loss_type": "bodily_injury",
+    "amount": 6289.04,
+    "claimant_name": "Anthony Moore"
+  },
+  {
+    "identifier": "6492fc62683c455307f891d66041c7d8e3efa991bdac3b3c71a444e608a12e00",
+    "vin": "M9XHZ73V4AGB1KDDN",
+    "match_id": "ISO-000198",
+    "claim_date": "2025-05-11",
+    "loss_type": "hail_damage",
+    "amount": 32070.22,
+    "claimant_name": "Jeff Lawson"
+  },
+  {
+    "identifier": "098a10c46be1d272936c2df50d97caf9f8cb47bcd874a7c9a6aa645a503b02d2",
+    "vin": "LVTKDVPCZ5GR1S9VD",
+    "match_id": "ISO-000199",
+    "claim_date": "2025-06-26",
+    "loss_type": "property_water",
+    "amount": 16930.41,
+    "claimant_name": "Jeffrey Campbell"
+  },
+  {
+    "identifier": "eff0edee69d062d59339325321eeba90795d47fd86b4c549453c904e3f2c7d86",
+    "vin": "XDATN5R0NNV5MEMM9",
+    "match_id": "ISO-000200",
+    "claim_date": "2022-09-28",
+    "loss_type": "auto_collision",
+    "amount": 16498.03,
+    "claimant_name": "Amber Foster"
+  },
+  {
+    "identifier": "0de94ebe6d3d53818ddf42db5fc7d4c916125210338cfd3498c280dfb7bff732",
+    "vin": "4UTJLTAY6KCKXDW8Z",
+    "match_id": "ISO-000201",
+    "claim_date": "2022-01-08",
+    "loss_type": "auto_collision",
+    "amount": 33483.31,
+    "claimant_name": "Daniel Taylor"
+  },
+  {
+    "identifier": "5328d7251db6c888f0fa39df06cc5c5cbaf30fcff1bb113da1ec38cd63a3561d",
+    "vin": "XRME9L32FZRPYY0VP",
+    "match_id": "ISO-000202",
+    "claim_date": "2025-04-04",
+    "loss_type": "property_fire",
+    "amount": 22898.33,
+    "claimant_name": "Paul Thompson"
+  },
+  {
+    "identifier": "d1b245abbfa644cd23ba017f5eab66adfb1a2f83a4f868a03c608b70701be0bf",
+    "vin": "AHZ5SSCX1H1TVB099",
+    "match_id": "ISO-000203",
+    "claim_date": "2024-09-17",
+    "loss_type": "property_water",
+    "amount": 21074.1,
+    "claimant_name": "Mary Gomez"
+  },
+  {
+    "identifier": "8551b19862cf62a6b38bdf5d69f80e734a4b4e4866c3b747cd9c872422fcb28a",
+    "vin": "VNX9FGLAEPP4GP4EK",
+    "match_id": "ISO-000204",
+    "claim_date": "2024-06-10",
+    "loss_type": "auto_collision",
+    "amount": 19922.65,
+    "claimant_name": "Thomas Atkins"
+  },
+  {
+    "identifier": "d322ba2f1ab672b4f658835b7c4d633024970bdb9415e5feda3e1e65ef8de782",
+    "vin": "YCFEDMTERT31524XB",
+    "match_id": "ISO-000205",
+    "claim_date": "2026-04-05",
+    "loss_type": "property_water",
+    "amount": 28860.22,
+    "claimant_name": "Jennifer Wilson"
+  },
+  {
+    "identifier": "4620a125c29659e5968337f1d7f07624d786ed91c51ea52c3b0d41e1a7a7e0e7",
+    "vin": "AECEZ9GVWFV512B7L",
+    "match_id": "ISO-000206",
+    "claim_date": "2024-09-15",
+    "loss_type": "property_fire",
+    "amount": 9929.39,
+    "claimant_name": "Michael Cox"
+  },
+  {
+    "identifier": "bb0854e778cc9da50fdf08f9654d8348b685eaeced89468b49668aeb18401b23",
+    "vin": "2VKW0AKHCA2FWPZP3",
+    "match_id": "ISO-000207",
+    "claim_date": "2022-11-20",
+    "loss_type": "bodily_injury",
+    "amount": 36298.41,
+    "claimant_name": "Kelly Foster"
+  },
+  {
+    "identifier": "aab4484ed1b4eb7367d84622e582c6c3dd4d48ce57595ae12ebd2c10bff925ac",
+    "vin": "KLMRTNHMD6EVETGN8",
+    "match_id": "ISO-000208",
+    "claim_date": "2022-08-26",
+    "loss_type": "hail_damage",
+    "amount": 15660.53,
+    "claimant_name": "Christopher Dixon"
+  },
+  {
+    "identifier": "02607623866e087388709c6542e6779cf2d3e5575d40805153a4d9df0f2e5d0c",
+    "vin": "SGVENX85YWK0X4LAX",
+    "match_id": "ISO-000209",
+    "claim_date": "2023-01-05",
+    "loss_type": "auto_theft",
+    "amount": 33551.31,
+    "claimant_name": "Hannah Luna"
+  },
+  {
+    "identifier": "ebe2ad4c0543301870b5b20e0442edeb787e4bf76258c0ac7c1269038dd6fddb",
+    "vin": "4U0JY765ZW8GMFUJN",
+    "match_id": "ISO-000210",
+    "claim_date": "2022-07-05",
+    "loss_type": "hail_damage",
+    "amount": 31375.49,
+    "claimant_name": "David Thompson"
+  },
+  {
+    "identifier": "511b739da2d8639ae1242e3ddc8495b8b065a28f8809569032362b5e43c9a27d",
+    "vin": "EEB9B2PCT7K02RVJ6",
+    "match_id": "ISO-000211",
+    "claim_date": "2024-10-26",
+    "loss_type": "property_fire",
+    "amount": 22059.7,
+    "claimant_name": "Lori Marshall"
+  },
+  {
+    "identifier": "c3136339bbbb0437f9ea33f43a36d1e3c75ae565b276c94c53363e9f750145ed",
+    "vin": "209ASL9J5LMK7ZCR8",
+    "match_id": "ISO-000212",
+    "claim_date": "2022-04-15",
+    "loss_type": "auto_theft",
+    "amount": 3374.45,
+    "claimant_name": "Sonia Day"
+  },
+  {
+    "identifier": "429e3f61db70190d3fc205130243ccad911f49ef2fe545f81d6e8251eb828f29",
+    "vin": "0RCP0176CCXGUTM11",
+    "match_id": "ISO-000213",
+    "claim_date": "2021-06-24",
+    "loss_type": "hail_damage",
+    "amount": 25285.59,
+    "claimant_name": "John Welch"
+  },
+  {
+    "identifier": "1a6cb3814fa0d5c4723e815f3186d3deeaad442f691648e1fddaf0404403702c",
+    "vin": "ET1R2ZZ87A9J5LRE9",
+    "match_id": "ISO-000214",
+    "claim_date": "2023-06-11",
+    "loss_type": "bodily_injury",
+    "amount": 12473.8,
+    "claimant_name": "Benjamin Murray"
+  },
+  {
+    "identifier": "bd0b975eb9f0e0a7229e7f48a9a2c7c266cad043d4c500ab7ed4b7c92d96e8d2",
+    "vin": "KML0HR3YH777PL3BS",
+    "match_id": "ISO-000215",
+    "claim_date": "2024-04-09",
+    "loss_type": "auto_collision",
+    "amount": 6089.2,
+    "claimant_name": "Sean Wyatt"
+  },
+  {
+    "identifier": "777cc2d800d6f0da82375fbf95598c7924d29d67da165540493d6753c3395aec",
+    "vin": "LJ9CKDLTM2BVFP577",
+    "match_id": "ISO-000216",
+    "claim_date": "2022-08-08",
+    "loss_type": "auto_theft",
+    "amount": 9908.44,
+    "claimant_name": "Julian Conner"
+  },
+  {
+    "identifier": "da1d7cc97969c2c0c6ba78950ae3322bac26096eb0ec5cbecaf2f72f5e96c6b5",
+    "vin": "3KM9TLY6ER11JGBN9",
+    "match_id": "ISO-000217",
+    "claim_date": "2023-12-04",
+    "loss_type": "bodily_injury",
+    "amount": 18276.44,
+    "claimant_name": "John Hernandez"
+  },
+  {
+    "identifier": "a5b2766f6a554cde81c814aeb2c348f2e610d75dd3cf351827de0f738d83c25a",
+    "vin": "KGM7C9HF7JA430C4R",
+    "match_id": "ISO-000218",
+    "claim_date": "2025-06-17",
+    "loss_type": "property_water",
+    "amount": 33713.95,
+    "claimant_name": "Mrs. Maria Williams"
+  },
+  {
+    "identifier": "427f95e5cb4b8f4bd89ecad7e82673c897f83fffd0199ba11933445d1be06331",
+    "vin": "1ZG4JT7RFV3TNAAHA",
+    "match_id": "ISO-000219",
+    "claim_date": "2023-11-18",
+    "loss_type": "property_water",
+    "amount": 28077.3,
+    "claimant_name": "Caitlin Watson"
+  },
+  {
+    "identifier": "fc6ff81792e230c5a9077a523b2a73f6f2e2326961739ebb7af86b38d5bac4bc",
+    "vin": "X30GK4TT40U2P37M0",
+    "match_id": "ISO-000220",
+    "claim_date": "2021-10-21",
+    "loss_type": "property_fire",
+    "amount": 23917.55,
+    "claimant_name": "Amy Mccoy"
+  },
+  {
+    "identifier": "446bad18aa53fc6290a3b2079080541ec5cfa8a3d11c4b5419b4ab6be483c402",
+    "vin": "TWZ2JHR5LGP92YDL1",
+    "match_id": "ISO-000221",
+    "claim_date": "2022-04-13",
+    "loss_type": "bodily_injury",
+    "amount": 970.88,
+    "claimant_name": "Jasmine King"
+  },
+  {
+    "identifier": "a64ff09c9a7803790ddb7072821087a7207f543690571af8bf232e293d3f6b8e",
+    "vin": "FK74FETR0FC12VDM8",
+    "match_id": "ISO-000222",
+    "claim_date": "2022-02-05",
+    "loss_type": "property_water",
+    "amount": 1197.16,
+    "claimant_name": "Kevin Thomas"
+  },
+  {
+    "identifier": "c9e8544824eea567ef30cf64ff00108fdd209268bffe05fb45dcfec6389eacd6",
+    "vin": "VNC9RLC0SALFU2Z22",
+    "match_id": "ISO-000223",
+    "claim_date": "2022-02-02",
+    "loss_type": "property_fire",
+    "amount": 9112.96,
+    "claimant_name": "Teresa Collins"
+  },
+  {
+    "identifier": "3e7d1feb526556e44df9618a0d093a015ee415ad0d2497b6ab979d3e77b51f7d",
+    "vin": "AEFVZZURN62ATM39G",
+    "match_id": "ISO-000224",
+    "claim_date": "2024-08-08",
+    "loss_type": "property_fire",
+    "amount": 3772.11,
+    "claimant_name": "Sandra Rodgers"
+  },
+  {
+    "identifier": "0fdbb6243e0569b7dbddabbdc4f549fa703ff1ac756214e7828a2ae4f456b1b7",
+    "vin": "VYH9TT517SY66B7HT",
+    "match_id": "ISO-000225",
+    "claim_date": "2022-08-20",
+    "loss_type": "auto_collision",
+    "amount": 16726.61,
+    "claimant_name": "Alicia Parker"
+  },
+  {
+    "identifier": "a0fd4f3bf1a1a84307bf7ad78f8309a89204462d875c4abffeb992c2ca092723",
+    "vin": "RRX3ZATSVF2YEM7XZ",
+    "match_id": "ISO-000226",
+    "claim_date": "2025-08-05",
+    "loss_type": "auto_theft",
+    "amount": 38087.7,
+    "claimant_name": "Chad Jones"
+  },
+  {
+    "identifier": "db88300b500e9e4f0130dcec265daa9ef2cc9c4f3e9437853c41c73a59db00a9",
+    "vin": "UMN8NSSTPRNSZKGHF",
+    "match_id": "ISO-000227",
+    "claim_date": "2026-01-30",
+    "loss_type": "bodily_injury",
+    "amount": 40653.8,
+    "claimant_name": "Sophia Johnson"
+  },
+  {
+    "identifier": "60c0009ff1e614ac1bcb92e7bae3b1a203d9c68dfe40c08ece205f149aef5a3c",
+    "vin": "8AC70X8U8M9U2RJD4",
+    "match_id": "ISO-000228",
+    "claim_date": "2024-09-21",
+    "loss_type": "property_water",
+    "amount": 39980.57,
+    "claimant_name": "Christopher Guerra"
+  },
+  {
+    "identifier": "a17efab60e3691835321796116362055f9d72a7a59cf30c98b3feefd18663af9",
+    "vin": "C9Z2M6H6XAAP1GX0T",
+    "match_id": "ISO-000229",
+    "claim_date": "2024-10-26",
+    "loss_type": "auto_theft",
+    "amount": 23652.52,
+    "claimant_name": "Jackson Ball"
+  },
+  {
+    "identifier": "210e8363044c536623f03ffd78438af6e89286a5c44653f88bb0b26b6c04f030",
+    "vin": "SU7Y0M84P3002U5MJ",
+    "match_id": "ISO-000230",
+    "claim_date": "2024-02-17",
+    "loss_type": "property_fire",
+    "amount": 29391.0,
+    "claimant_name": "David Sheppard"
+  },
+  {
+    "identifier": "5facf1059e62a1a22ecd61379f9038e8980469fae5b8d7bdc9a75a1a398a1dbe",
+    "vin": "GUS41NKK7AM38JX8W",
+    "match_id": "ISO-000231",
+    "claim_date": "2025-04-12",
+    "loss_type": "hail_damage",
+    "amount": 24219.28,
+    "claimant_name": "Laura Alexander"
+  },
+  {
+    "identifier": "8e447f5e23b9e7b36855614e7e4291a0119c0cac71bd8c59ee52ccf2901643c6",
+    "vin": "D2GLDPT7G5YT00TZB",
+    "match_id": "ISO-000232",
+    "claim_date": "2023-02-16",
+    "loss_type": "property_water",
+    "amount": 5811.67,
+    "claimant_name": "Tracy Montoya"
+  },
+  {
+    "identifier": "bdc213670e927ef3927eee5e0fe8264d18c0fcb0e27a3380c33f04a888f7635b",
+    "vin": "NMVZX985F1V6KLY32",
+    "match_id": "ISO-000233",
+    "claim_date": "2022-01-23",
+    "loss_type": "auto_collision",
+    "amount": 4052.92,
+    "claimant_name": "John Watson"
+  },
+  {
+    "identifier": "096cc514fd1d88702397cfa4fb5d1902df658592131c806234e24dbe27687c4a",
+    "vin": "YRXXVU2U5053LMBJS",
+    "match_id": "ISO-000234",
+    "claim_date": "2021-10-12",
+    "loss_type": "bodily_injury",
+    "amount": 11256.26,
+    "claimant_name": "Phillip Nelson"
+  },
+  {
+    "identifier": "41b54406194626cd437fbfc28cae069615be0b6d71eaba0bc17c302d34be85d6",
+    "vin": "FPL2GGE7DB2FGTKF1",
+    "match_id": "ISO-000235",
+    "claim_date": "2021-06-15",
+    "loss_type": "hail_damage",
+    "amount": 10325.61,
+    "claimant_name": "Courtney Hayes"
+  },
+  {
+    "identifier": "bdcf90e8164de3427e5cb3daa2b1a731cf2d459ee06e8da95b238b53fe65fb9b",
+    "vin": "V5JJLBCZX76U5JM64",
+    "match_id": "ISO-000236",
+    "claim_date": "2021-03-29",
+    "loss_type": "property_fire",
+    "amount": 27461.09,
+    "claimant_name": "James Hughes"
+  },
+  {
+    "identifier": "a8a927e431cc9a6fa46d696c25a2facf99d2e1fcedcaa10de08b802b705a1353",
+    "vin": "WZ7RF5W03TKWAAJZV",
+    "match_id": "ISO-000237",
+    "claim_date": "2021-04-30",
+    "loss_type": "property_water",
+    "amount": 23090.38,
+    "claimant_name": "Brett Espinoza"
+  },
+  {
+    "identifier": "b3faffe5eeae10e9efad83f9e4639e0a4c5a31b24008147732189e40bbb7e065",
+    "vin": "87WA4VRA0N342SL11",
+    "match_id": "ISO-000238",
+    "claim_date": "2024-10-25",
+    "loss_type": "auto_theft",
+    "amount": 11729.43,
+    "claimant_name": "Ronald Horton"
+  },
+  {
+    "identifier": "44c7a2285b892b81a0300d89f8e7d98913bef1dec0ce59661c04d53b22256fc2",
+    "vin": "4SUVU3NEMJVH65U8N",
+    "match_id": "ISO-000239",
+    "claim_date": "2026-03-07",
+    "loss_type": "hail_damage",
+    "amount": 1559.76,
+    "claimant_name": "Susan Smith"
+  },
+  {
+    "identifier": "d912677e055f4b63e3bf025b3cb1a3194f728ea0dc243e1d45d531900516d7a3",
+    "vin": "DBMGVUJ5ARFKA8PY3",
+    "match_id": "ISO-000240",
+    "claim_date": "2023-01-11",
+    "loss_type": "hail_damage",
+    "amount": 33554.03,
+    "claimant_name": "Ashley Roberts"
+  },
+  {
+    "identifier": "5bf1e746f178917762627be2fc283b46374af7c6d55cd3abc280b39d4463f025",
+    "vin": "806CYFKDU2E7MNT1A",
+    "match_id": "ISO-000241",
+    "claim_date": "2025-07-24",
+    "loss_type": "auto_collision",
+    "amount": 41439.49,
+    "claimant_name": "Riley Bryant"
+  },
+  {
+    "identifier": "95d526054d90073e1db70fa747c942530fb4f45540b76c7638dc131093683984",
+    "vin": "S15SCN6GP71WXLCHT",
+    "match_id": "ISO-000242",
+    "claim_date": "2021-01-05",
+    "loss_type": "property_water",
+    "amount": 27408.21,
+    "claimant_name": "Jose Allen"
+  },
+  {
+    "identifier": "e72cbd99b171285f59697cec713f87e0e623d382a039b3384c340c63b803458a",
+    "vin": "N0DPHS4XALUH2SAC7",
+    "match_id": "ISO-000243",
+    "claim_date": "2025-06-15",
+    "loss_type": "bodily_injury",
+    "amount": 25641.86,
+    "claimant_name": "Cynthia Butler"
+  },
+  {
+    "identifier": "9c04821110a4892c058638ae1a85dc8d04f4619f6daab76a0c23601928ad3e72",
+    "vin": "0FSL8FYDDZKGJ8RXZ",
+    "match_id": "ISO-000244",
+    "claim_date": "2021-03-05",
+    "loss_type": "property_water",
+    "amount": 31360.63,
+    "claimant_name": "Andrea Fox"
+  },
+  {
+    "identifier": "070dec2911d4b4ea88dd8b0c2497c0f54284536b9f4abb719ad1209bc28f3254",
+    "vin": "B1ZJTC85V8NMZX6UL",
+    "match_id": "ISO-000245",
+    "claim_date": "2024-01-15",
+    "loss_type": "auto_collision",
+    "amount": 22924.99,
+    "claimant_name": "John Reid"
+  },
+  {
+    "identifier": "97701e1e5b903e51497add4d731fe81021d9c1180449023049c08dfb953da312",
+    "vin": "5VT06A91MB0SXE1N8",
+    "match_id": "ISO-000246",
+    "claim_date": "2023-10-31",
+    "loss_type": "property_fire",
+    "amount": 7184.99,
+    "claimant_name": "Haley Quinn"
+  },
+  {
+    "identifier": "35a247d42623445987439e4623a15b6df547f1f0e209218b21af4a9c900215fa",
+    "vin": "VX3XHGECJMCNG8NGC",
+    "match_id": "ISO-000247",
+    "claim_date": "2025-01-26",
+    "loss_type": "property_fire",
+    "amount": 27543.13,
+    "claimant_name": "Harold Morgan"
+  },
+  {
+    "identifier": "f56e0ea048dbca562ed3d9f14778aff150b3e27b44bbf14a1fcc7a35e76433b9",
+    "vin": "18TD0REAP8F6D030D",
+    "match_id": "ISO-000248",
+    "claim_date": "2023-07-01",
+    "loss_type": "property_fire",
+    "amount": 11847.8,
+    "claimant_name": "Robin Brown"
+  },
+  {
+    "identifier": "ad7a5504017d0303eae2eb9286bb071e387f273616d6039d53bee7e7776461e3",
+    "vin": "CEWEPGGR1NNSM3GZ6",
+    "match_id": "ISO-000249",
+    "claim_date": "2024-05-22",
+    "loss_type": "bodily_injury",
+    "amount": 28523.87,
+    "claimant_name": "Rick Blackwell"
+  },
+  {
+    "identifier": "80af9dd06dfd31b2d238bf2389edaee576c9df6eed6d3fc2a2908d628ba64378",
+    "vin": "GLM29YL5ZXX034XSP",
+    "match_id": "ISO-000250",
+    "claim_date": "2021-05-29",
+    "loss_type": "property_water",
+    "amount": 32718.32,
+    "claimant_name": "Kimberly King PhD"
+  }
+]
