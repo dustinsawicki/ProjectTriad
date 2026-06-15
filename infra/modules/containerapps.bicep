@@ -64,6 +64,12 @@ resource apiApp 'Microsoft.App/containerApps@2024-03-01' = {
     workloadProfileName: 'Consumption'
     configuration: {
       activeRevisionsMode: 'Single'
+      registries: [
+        {
+          server: acrLoginServer
+          identity: 'system'
+        }
+      ]
       ingress: {
         external: true
         targetPort: 8000
@@ -111,6 +117,12 @@ resource webApp 'Microsoft.App/containerApps@2024-03-01' = {
     workloadProfileName: 'Consumption'
     configuration: {
       activeRevisionsMode: 'Single'
+      registries: [
+        {
+          server: acrLoginServer
+          identity: 'system'
+        }
+      ]
       ingress: {
         external: true
         targetPort: 3000
