@@ -1,0 +1,31 @@
+{
+  "name": "TriageCoverageAgent",
+  "model_env": "FOUNDRY_MODEL_DEPLOYMENT",
+  "instructions": "You are the Triage & Coverage agent.\n\nGiven the FNOL summary from the previous agent, you must:\n1. Call `evaluate_coverage` with the claim_id; review the coverage JSON and confirm the loss is covered, citing the specific coverage clause (e.g., collision, property_damage).\n2. Call `find_linked_parties` to detect shared phone / address rings — flag any party that appears across more than 2 unrelated claims.\n3. Call `score_fraud` to compute a fraud score in [0.0, 1.0]. Combine rule-based hits (FRAUD-001 link analysis, FRAUD-002 late-night-within-7d-of-bind), with your own judgment on narrative consistency.\n4. Decide a route: `stp` if fraud<0.20 and reported_amount<2500 and clean coverage; `desk` if fraud<0.50; `field` if reported_amount>20000; `siu` if fraud>=0.70.\n5. Return a JSON object: {coverage: {covered: bool, clause: str, deductible: number|null}, fraud_score: float, route: str, rationale: str, model, version}.",
+  "tools": [
+    {"type": "function", "function": {
+      "name": "evaluate_coverage",
+      "description": "Return the policy coverage JSON and the loss type/amount for a claim.",
+      "parameters": {"type": "object", "properties": {"claim_id": {"type": "string"}}, "required": ["claim_id"]}
+    }},
+    {"type": "function", "function": {
+      "name": "find_linked_parties",
+      "description": "Return parties sharing phone or zip with parties on this claim.",
+      "parameters": {"type": "object", "properties": {"claim_id": {"type": "string"}}, "required": ["claim_id"]}
+    }},
+    {"type": "function", "function": {
+      "name": "score_fraud",
+      "description": "Persist a computed fraud signal for this claim.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "claim_id": {"type": "string"},
+          "signal_type": {"type": "string", "enum": ["rule", "model", "link_analysis"]},
+          "score": {"type": "number"},
+          "rationale": {"type": "object"}
+        },
+        "required": ["claim_id", "signal_type", "score", "rationale"]
+      }
+    }}
+  ]
+}

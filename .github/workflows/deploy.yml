@@ -1,0 +1,55 @@
+name: Deploy Claims PoC
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: API — install + lint + test
+        working-directory: src/api
+        run: |
+          pip install -r requirements.txt
+          ruff check app
+          pytest -q
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - name: Web — install + lint + build
+        working-directory: src/web
+        run: |
+          npm ci || npm install
+          npm run lint --if-present
+          npm run build
+
+  deploy:
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - name: Install azd
+        uses: Azure/setup-azd@v1.0.0
+      - name: azd up
+        env:
+          AZURE_ENV_NAME: ${{ vars.AZURE_ENV_NAME }}
+          AZURE_LOCATION: ${{ vars.AZURE_LOCATION }}
+          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          ADJUSTER_USER_OBJECT_IDS: ${{ vars.ADJUSTER_USER_OBJECT_IDS }}
+        run: |
+          azd auth login --client-id "$AZURE_CLIENT_ID" --federated-credential-provider github --tenant-id "$AZURE_TENANT_ID"
+          azd up --no-prompt
