@@ -32,7 +32,7 @@ param searchId string
 var envName = 'cae-${resourceToken}'
 var apiName = 'ca-api-${resourceToken}'
 var webName = 'ca-web-${resourceToken}'
-var extApiName = 'ca-ext-${resourceToken}'
+var extApiName = 'ca-extapis-${resourceToken}'
 var placeholderImage = 'mcr.microsoft.com/k8se/quickstart:latest'
 
 resource law 'Microsoft.OperationalInsights/workspaces@2023-09-01' existing = {
