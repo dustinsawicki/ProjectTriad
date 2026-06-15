@@ -15,6 +15,7 @@ from typing import Any
 import numpy as np
 import pyodbc
 from azure.cosmos import CosmosClient, PartitionKey
+from azure.core.exceptions import ResourceExistsError
 from azure.identity import DefaultAzureCredential
 from azure.storage.blob import BlobServiceClient
 from faker import Faker
@@ -58,7 +59,7 @@ def _blob_service(account_name: str) -> BlobServiceClient:
 
 def _cosmos_container(args: argparse.Namespace):
     client = CosmosClient(args.cosmos_endpoint, credential=_credential())
-    database = client.create_database_if_not_exists(args.cosmos_database)
+    database = client.create_database_if_not_exists(id=args.cosmos_database)
     return database.create_container_if_not_exists(id="telematics", partition_key=PartitionKey(path="/policyNumber"))
 
 
@@ -160,7 +161,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     auto_policies = [policy for policy in manifest["policies"] if policy["product_line"] == "auto"][:800]
     claim_windows = _claim_windows(manifest)
     blob_container = _blob_service(args.blob_account_name).get_container_client("telematics-raw")
-    blob_container.create_container(exist_ok=True)
+    try:
+        blob_container.create_container()
+    except ResourceExistsError:
+        pass
     cosmos_container = _cosmos_container(args)
     deleted_blobs = _clear_blob_prefixes(blob_container, [policy["policy_number"] for policy in auto_policies])
     deleted_docs = _clear_cosmos(cosmos_container)
@@ -178,8 +182,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 if event["claimNumber"]:
                     claim_event_counts[event["claimNumber"]] += 1
             blob_name = f"{policy_number}/{day:%Y-%m-%d}.jsonl"
-            payload = "
-".join(json.dumps(event, sort_keys=True) for event in events)
+            payload = "\n".join(json.dumps(event, sort_keys=True) for event in events)
             _upload_blob(blob_container, blob_name, payload)
             files_written += 1
             all_docs.extend(events)

@@ -39,7 +39,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
 
 def _cosmos_container(args: argparse.Namespace):
     client = CosmosClient(args.cosmos_endpoint, credential=DefaultAzureCredential(exclude_interactive_browser_credential=False))
-    database = client.create_database_if_not_exists(args.cosmos_database)
+    database = client.create_database_if_not_exists(id=args.cosmos_database)
     return database.create_container_if_not_exists(id="link_graph", partition_key=PartitionKey(path="/state"))
 
 

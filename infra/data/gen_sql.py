@@ -6,13 +6,12 @@ import json
 import os
 import random
 import struct
-import sys
 import uuid
 from collections import Counter, defaultdict
-from dataclasses import dataclass
-from datetime import UTC, date, datetime, time, timedelta
+from collections.abc import Iterable, Sequence
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
-from typing import Any, Iterable, Sequence
+from typing import Any
 
 import numpy as np
 import pyodbc
@@ -33,19 +32,14 @@ MANIFEST_PATH = STATE_DIR / "gen_sql_output.json"
 SCHEMA_SQL = (SCRIPT_DIR.parent / "sql" / "schema.sql").read_text(encoding="utf-8")
 UUID_NAMESPACE = uuid.UUID("c6e43b1b-f0de-48ce-a6b8-f49beef8d142")
 US_STATES = ["TX", "CA", "FL", "NY", "IL", "PA", "OH", "MN", "WA", "AZ"]
+PDF_DOC_TYPES = {"police_report", "estimate", "medical"}
 ADJUSTERS = [
     "alex.morgan@contoso.example",
     "priya.patel@contoso.example",
     "sam.lee@contoso.example",
     "jordan.rivera@contoso.example",
 ]
-LOSS_TYPES_BY_PRODUCT: dict[str, list[str]] = {
-    "auto": ["auto_collision", "auto_comp", "liability"],
-    "home": ["home_property", "liability"],
-    "umbrella": ["liability"],
-}
-PDF_DOC_TYPES = {"police_report", "estimate", "medical"}
-DOC_PATTERNS = {
+DOC_PATTERNS: dict[str, tuple[list[str], list[str]]] = {
     "auto_collision": (["police_report", "estimate", "photo_caption"], ["estimate", "photo_caption"]),
     "auto_comp": (["estimate", "photo_caption", "email"], ["estimate", "photo_caption"]),
     "home_property": (["estimate", "photo_caption", "email"], ["estimate", "email"]),
@@ -78,71 +72,56 @@ RULES: list[tuple[str, str, str, dict[str, Any], str]] = [
     ("MED-001", "coverage_limit", "Medical bill review required for charges > $2,500.", {"med_review_threshold": 2500}, "1.0"),
     ("AUDIT-001", "fair_claims", "Audit events are append-only; no modification permitted.", {"append_only": True}, "1.0"),
 ]
-DEMO_CLAIM_CONFIG: list[dict[str, Any]] = [
-    {"claim_number": "CLM-200001", "loss_type": "auto_collision", "demo_intent": "Happy path", "photos": 2, "doc_types": ["police_report", "estimate", "photo_caption", "photo_caption"], "api_flags": ["weather", "avm", "payment"], "telematics": {"hard_brake": -4}},
-    {"claim_number": "CLM-200002", "loss_type": "home_property", "demo_intent": "Citations", "photos": 3, "doc_types": ["estimate", "photo_caption", "photo_caption", "photo_caption"], "api_flags": ["weather", "avm", "payment"], "telematics": {}},
-    {"claim_number": "CLM-200003", "loss_type": "auto_collision", "demo_intent": "Telematics evidence", "photos": 3, "doc_types": ["police_report", "estimate", "photo_caption", "photo_caption", "photo_caption"], "api_flags": ["weather", "avm", "iso", "payment"], "telematics": {"crash_g": 0, "hard_brake": -3}},
-    {"claim_number": "CLM-200004", "loss_type": "auto_collision", "demo_intent": "Guardrail block", "photos": 2, "doc_types": ["estimate", "photo_caption", "photo_caption"], "api_flags": ["avm", "medbill"], "telematics": {"normal": True}},
-    {"claim_number": "CLM-200005", "loss_type": "auto_collision", "demo_intent": "Subrogation", "photos": 2, "doc_types": ["police_report", "estimate", "photo_caption", "photo_caption"], "api_flags": ["weather", "police", "avm"], "telematics": {"normal": True}},
-    {"claim_number": "CLM-200006", "loss_type": "liability", "demo_intent": "Medical bill review", "photos": 1, "doc_types": ["medical", "medical", "medical", "estimate", "photo_caption"], "api_flags": ["medbill"], "telematics": {}},
-    {"claim_number": "CLM-200007", "loss_type": "liability", "demo_intent": "Liability", "photos": 0, "doc_types": ["police_report", "medical"], "api_flags": ["iso", "medbill"], "telematics": {}},
-    {"claim_number": "CLM-200008", "loss_type": "auto_collision", "demo_intent": "Fraud ring", "photos": 2, "doc_types": ["estimate", "photo_caption", "photo_caption"], "api_flags": ["iso", "link-graph"], "telematics": {"hard_brake": -1, "impact": False}},
-    {"claim_number": "CLM-200009", "loss_type": "auto_collision", "demo_intent": "Same ring", "photos": 1, "doc_types": ["estimate", "photo_caption"], "api_flags": ["iso", "link-graph"], "telematics": {}},
-    {"claim_number": "CLM-200010", "loss_type": "auto_collision", "demo_intent": "Full 3-node graph", "photos": 1, "doc_types": ["estimate", "photo_caption"], "api_flags": ["iso", "link-graph"], "telematics": {}},
+DEMO_CLAIMS: list[dict[str, Any]] = [
+    {"claim_number": "CLM-200001", "loss_type": "auto_collision", "photos": 2, "doc_types": ["police_report", "estimate", "photo_caption", "photo_caption"], "api_flags": ["weather", "avm", "payment"], "telematics_hints": {"hard_brake": -4}, "demo_intent": "Happy path"},
+    {"claim_number": "CLM-200002", "loss_type": "home_property", "photos": 3, "doc_types": ["estimate", "photo_caption", "photo_caption", "photo_caption"], "api_flags": ["weather", "avm", "payment"], "telematics_hints": {}, "demo_intent": "Citations"},
+    {"claim_number": "CLM-200003", "loss_type": "auto_collision", "photos": 3, "doc_types": ["police_report", "estimate", "photo_caption", "photo_caption", "photo_caption"], "api_flags": ["weather", "avm", "iso", "payment"], "telematics_hints": {"crash_g": 0, "hard_brake": -3}, "demo_intent": "Telematics evidence"},
+    {"claim_number": "CLM-200004", "loss_type": "auto_collision", "photos": 2, "doc_types": ["estimate", "photo_caption", "photo_caption"], "api_flags": ["avm", "medbill"], "telematics_hints": {"normal": True}, "demo_intent": "Guardrail block"},
+    {"claim_number": "CLM-200005", "loss_type": "auto_collision", "photos": 2, "doc_types": ["police_report", "estimate", "photo_caption", "photo_caption"], "api_flags": ["weather", "police", "avm"], "telematics_hints": {"normal": True}, "demo_intent": "Subrogation"},
+    {"claim_number": "CLM-200006", "loss_type": "liability", "photos": 1, "doc_types": ["medical", "medical", "medical", "estimate", "photo_caption"], "api_flags": ["medbill"], "telematics_hints": {}, "demo_intent": "Medical bill review"},
+    {"claim_number": "CLM-200007", "loss_type": "liability", "photos": 0, "doc_types": ["police_report", "medical"], "api_flags": ["iso", "medbill"], "telematics_hints": {}, "demo_intent": "Liability"},
+    {"claim_number": "CLM-200008", "loss_type": "auto_collision", "photos": 2, "doc_types": ["estimate", "photo_caption", "photo_caption"], "api_flags": ["iso", "link-graph"], "telematics_hints": {"hard_brake": -1, "impact": False}, "demo_intent": "Fraud ring"},
+    {"claim_number": "CLM-200009", "loss_type": "auto_collision", "photos": 1, "doc_types": ["estimate", "photo_caption"], "api_flags": ["iso", "link-graph"], "telematics_hints": {}, "demo_intent": "Same ring"},
+    {"claim_number": "CLM-200010", "loss_type": "auto_collision", "photos": 1, "doc_types": ["estimate", "photo_caption"], "api_flags": ["iso", "link-graph"], "telematics_hints": {}, "demo_intent": "Full 3-node graph"},
 ]
 
 
-@dataclass(slots=True)
-class SqlArgs:
-    server_fqdn: str
-    database_name: str
-    reseed: bool
-    manifest_path: Path
-
-
-def parse_args(argv: Sequence[str] | None = None) -> SqlArgs:
+def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--server-fqdn", default=os.getenv("SQL_SERVER_FQDN"))
     parser.add_argument("--database-name", default=os.getenv("SQL_DATABASE_NAME"))
-    parser.add_argument("--reseed", action="store_true", help="Force a full reseed (schema reapplied regardless).")
     parser.add_argument("--manifest-path", type=Path, default=MANIFEST_PATH)
-    namespace = parser.parse_args(argv)
-    if not namespace.server_fqdn or not namespace.database_name:
+    parser.add_argument("--reseed", action="store_true")
+    args = parser.parse_args(argv)
+    if not args.server_fqdn or not args.database_name:
         parser.error("SQL_SERVER_FQDN and SQL_DATABASE_NAME are required via args or env vars.")
-    return SqlArgs(
-        server_fqdn=namespace.server_fqdn,
-        database_name=namespace.database_name,
-        reseed=bool(namespace.reseed),
-        manifest_path=namespace.manifest_path,
-    )
+    return args
 
 
 def stable_uuid(*parts: object) -> str:
     return str(uuid.uuid5(UUID_NAMESPACE, "::".join(str(part) for part in parts)))
 
 
-def iso_ts(days_ago: int, *, hour: int = 12, minute: int = 0) -> datetime:
-    target = datetime.now(UTC) - timedelta(days=days_ago)
-    return datetime.combine(target.date(), time(hour=hour, minute=minute, tzinfo=UTC)).replace(tzinfo=None)
-
-
 def blob_url(container: str, path: str) -> str:
-    account = os.getenv("BLOB_ACCOUNT_NAME", "placeholderclaimsblob")
-    return f"https://{account}.blob.core.windows.net/{container}/{path}"
+    account_name = os.getenv("BLOB_ACCOUNT_NAME", "placeholderclaimsblob")
+    return f"https://{account_name}.blob.core.windows.net/{container}/{path}"
+
+
+def _credential() -> DefaultAzureCredential:
+    return DefaultAzureCredential(exclude_interactive_browser_credential=False)
 
 
 def _access_token_struct() -> dict[int, bytes]:
-    credential = DefaultAzureCredential(exclude_interactive_browser_credential=False)
-    token = credential.get_token("https://database.windows.net/.default").token
-    encoded = b"".join(bytes([byte]) + b" " for byte in token.encode("utf-8"))
+    token = _credential().get_token("https://database.windows.net/.default").token
+    encoded = b"".join(bytes([byte]) + b"\0" for byte in token.encode("utf-8"))
     return {1256: struct.pack("=i", len(encoded)) + encoded}
 
 
-def connect(args: SqlArgs) -> pyodbc.Connection:
+def connect(server_fqdn: str, database_name: str) -> pyodbc.Connection:
     connection_string = (
         "DRIVER={ODBC Driver 18 for SQL Server};"
-        f"SERVER={args.server_fqdn},1433;"
-        f"DATABASE={args.database_name};"
+        f"SERVER={server_fqdn},1433;"
+        f"DATABASE={database_name};"
         "Encrypt=yes;TrustServerCertificate=no;Connection Timeout=60;"
     )
     print("[gen_sql] Connecting to Azure SQL ...")
@@ -150,11 +129,9 @@ def connect(args: SqlArgs) -> pyodbc.Connection:
 
 
 def apply_schema(conn: pyodbc.Connection) -> None:
-    print("[gen_sql] Applying base schema ...")
+    print("[gen_sql] Applying schema ...")
     cursor = conn.cursor()
-    for batch in SCHEMA_SQL.split("
-GO
-"):
+    for batch in SCHEMA_SQL.split("\nGO\n"):
         if batch.strip():
             cursor.execute(batch)
     cursor.execute(
@@ -166,16 +143,6 @@ GO
     conn.commit()
 
 
-def normalize_loss_type(product_line: str) -> str:
-    choices = LOSS_TYPES_BY_PRODUCT[product_line]
-    weights = {
-        "auto": [0.7, 0.15, 0.15],
-        "home": [0.0, 0.0, 1.0],
-        "umbrella": [0.0, 0.0, 1.0],
-    }[product_line]
-    return random.choices(choices, weights=weights, k=1)[0]
-
-
 def build_policies() -> list[dict[str, Any]]:
     policies: list[dict[str, Any]] = []
     for index in range(5000):
@@ -185,10 +152,12 @@ def build_policies() -> list[dict[str, Any]]:
             status = "active"
         else:
             product_line = random.choices(["auto", "home", "umbrella"], weights=[0.62, 0.33, 0.05], k=1)[0]
-            status = random.choices(["active", "lapsed", "cancelled"], weights=[0.9, 0.07, 0.03], k=1)[0]
+            status = random.choices(["active", "lapsed", "cancelled"], weights=[0.90, 0.07, 0.03], k=1)[0]
         effective = fake.date_between(start_date="-3y", end_date="-30d")
         expiration = effective + timedelta(days=365)
-        coverage = {
+        state = US_STATES[index % len(US_STATES)]
+        coverage: dict[str, Any] = {
+            "state": state,
             "bodily_injury_per_person": int(random.choice([25000, 50000, 100000, 250000])),
             "bodily_injury_per_accident": int(random.choice([50000, 100000, 300000, 500000])),
             "property_damage": int(random.choice([25000, 50000, 100000])),
@@ -198,7 +167,7 @@ def build_policies() -> list[dict[str, Any]]:
                 {
                     "collision_deductible": int(random.choice([250, 500, 1000])),
                     "comprehensive_deductible": int(random.choice([250, 500, 1000])),
-                    "vehicle_count": int(random.choice([1, 1, 1, 2, 2, 3])),
+                    "vehicle_count": int(random.choice([1, 1, 2, 2, 3])),
                 }
             )
         elif product_line == "home":
@@ -209,8 +178,7 @@ def build_policies() -> list[dict[str, Any]]:
                 }
             )
         else:
-            coverage.update({"umbrella_limit": int(random.choice([1000000, 2000000, 5000000]))})
-        state = US_STATES[index % len(US_STATES)]
+            coverage["umbrella_limit"] = int(random.choice([1000000, 2000000, 5000000]))
         policies.append(
             {
                 "PolicyId": stable_uuid("policy", policy_number),
@@ -219,7 +187,7 @@ def build_policies() -> list[dict[str, Any]]:
                 "EffectiveDate": effective,
                 "ExpirationDate": expiration,
                 "PremiumAnnual": round(random.uniform(425, 4850), 2),
-                "CoverageJson": json.dumps({**coverage, "state": state}),
+                "CoverageJson": json.dumps(coverage),
                 "Status": status,
                 "State": state,
             }
@@ -227,21 +195,21 @@ def build_policies() -> list[dict[str, Any]]:
     return policies
 
 
-def build_ring_definitions() -> list[dict[str, Any]]:
+def build_rings() -> list[dict[str, Any]]:
     rings: list[dict[str, Any]] = []
-    for ring_index in range(30):
-        state = US_STATES[ring_index % len(US_STATES)]
+    for index in range(30):
+        state = US_STATES[index % len(US_STATES)]
         rings.append(
             {
-                "ring_id": f"RING-{ring_index + 1:03d}",
-                "shared_phone": f"555-77{ring_index // 10}{ring_index % 10}-{1000 + ring_index:04d}",
+                "ring_id": f"RING-{index + 1:03d}",
+                "shared_phone": f"555-77{index // 10}{index % 10}-{1000 + index:04d}",
                 "shared_address": {
-                    "street": f"{500 + ring_index} Shadow Creek Ln",
+                    "street": f"{500 + index} Shadow Creek Ln",
                     "city": fake.city(),
                     "state": state,
-                    "zip": f"{75000 + ring_index}",
+                    "zip": f"{75000 + index}",
                 },
-                "shared_vin_prefix": f"1HGBH41JX{ring_index:02d}",
+                "shared_vin_prefix": f"1HGBH41JX{index:02d}",
                 "members": [],
             }
         )
@@ -250,23 +218,22 @@ def build_ring_definitions() -> list[dict[str, Any]]:
 
 def build_parties(rings: list[dict[str, Any]]) -> list[dict[str, Any]]:
     parties: list[dict[str, Any]] = []
-    for party_index in range(8000):
+    for index in range(8000):
         role = random.choices(["insured", "claimant", "witness", "provider"], weights=[0.56, 0.26, 0.10, 0.08], k=1)[0]
-        full_name = fake.name()
-        state = US_STATES[party_index % len(US_STATES)]
+        state = US_STATES[index % len(US_STATES)]
         address = {"street": fake.street_address(), "city": fake.city(), "state": state, "zip": fake.postcode()}
         phone = fake.numerify("###-###-####")
         ring_id: str | None = None
-        if party_index < 120:
-            ring = rings[party_index // 4]
+        if index < 120:
+            ring = rings[index // 4]
             ring_id = ring["ring_id"]
             address = dict(ring["shared_address"])
             phone = ring["shared_phone"]
-        party_id = stable_uuid("party", party_index + 1)
-        record = {
+        party_id = stable_uuid("party", index + 1)
+        party = {
             "PartyId": party_id,
             "Role": role,
-            "FullName": full_name,
+            "FullName": fake.name(),
             "Email": fake.email(),
             "Phone": phone,
             "AddressJson": json.dumps(address),
@@ -274,58 +241,59 @@ def build_parties(rings: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "RingId": ring_id,
             "State": address["state"],
         }
-        parties.append(record)
+        parties.append(party)
         if ring_id:
-            rings[party_index // 4]["members"].append({"party_id": party_id, "name": full_name})
+            rings[index // 4]["members"].append({"party_id": party_id, "name": party["FullName"]})
     return parties
 
 
-def build_demo_claim_records(policies: list[dict[str, Any]], parties: list[dict[str, Any]], rings: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def _auto_policy(policies: list[dict[str, Any]], offset: int) -> dict[str, Any]:
     auto_policies = [policy for policy in policies if policy["ProductLine"] == "auto" and policy["Status"] == "active"]
+    return auto_policies[offset]
+
+
+def _home_policy(policies: list[dict[str, Any]], offset: int) -> dict[str, Any]:
     home_policies = [policy for policy in policies if policy["ProductLine"] == "home" and policy["Status"] == "active"]
+    return home_policies[offset]
+
+
+def _liability_policy(policies: list[dict[str, Any]], offset: int) -> dict[str, Any]:
     liability_policies = [policy for policy in policies if policy["ProductLine"] in {"auto", "home", "umbrella"} and policy["Status"] == "active"]
-    ring_claim_to_member = {
+    return liability_policies[offset]
+
+
+def build_demo_claims(policies: list[dict[str, Any]], parties: list[dict[str, Any]], rings: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    demo_claims: list[dict[str, Any]] = []
+    ring_map = {
         "CLM-200008": (rings[0], 0),
         "CLM-200009": (rings[0], 1),
         "CLM-200010": (rings[0], 2),
     }
-    demo_claims: list[dict[str, Any]] = []
-    for index, config in enumerate(DEMO_CLAIM_CONFIG, start=1):
+    for index, config in enumerate(DEMO_CLAIMS, start=1):
         if config["loss_type"] == "home_property":
-            policy = home_policies[index * 3]
-        elif config["claim_number"] in ring_claim_to_member:
-            ring, member_index = ring_claim_to_member[config["claim_number"]]
-            policy = auto_policies[member_index]
+            policy = _home_policy(policies, index * 3)
         elif config["loss_type"] == "liability":
-            policy = liability_policies[100 + index]
+            policy = _liability_policy(policies, 100 + index)
         else:
-            policy = auto_policies[10 + index]
-        if config["claim_number"] == "CLM-200004":
-            reported_amount = 18850.00
-            reserve_amount = 19125.00
-        elif config["claim_number"] == "CLM-200006":
-            reported_amount = 9500.00
-            reserve_amount = 10450.00
-        else:
-            reported_amount = round(random.uniform(2200, 14500), 2)
-            reserve_amount = round(reported_amount * random.uniform(0.92, 1.18), 2)
-        settled_amount = round(reserve_amount * random.uniform(0.75, 0.96), 2) if index <= 3 else None
-        loss_dt = datetime.now(UTC) - timedelta(days=10 + index, hours=index)
-        assigned_adjuster = ADJUSTERS[index % len(ADJUSTERS)]
+            policy = _auto_policy(policies, 10 + index)
         state = json.loads(policy["CoverageJson"])["state"]
         zip_code = f"{73300 + index}"
         address = {"street": fake.street_address(), "city": fake.city(), "state": state, "zip": zip_code}
-        ring_id: str | None = None
         phone = fake.numerify("###-###-####")
         vin = f"1FTFW1E5X{index:08d}"[:17]
         party_ids = [parties[200 + index]["PartyId"], parties[400 + index]["PartyId"]]
-        if config["claim_number"] in ring_claim_to_member:
-            ring, member_index = ring_claim_to_member[config["claim_number"]]
+        ring_id: str | None = None
+        if config["claim_number"] in ring_map:
+            ring, member_index = ring_map[config["claim_number"]]
             ring_id = ring["ring_id"]
-            phone = ring["shared_phone"]
             address = dict(ring["shared_address"])
+            phone = ring["shared_phone"]
             vin = f"{ring['shared_vin_prefix']}{member_index + 1:05d}"[:17]
             party_ids = [member["party_id"] for member in ring["members"]]
+        loss_dt = datetime.now(UTC) - timedelta(days=10 + index, hours=index)
+        reported_amount = 18850.0 if config["claim_number"] == "CLM-200004" else round(random.uniform(2200, 14500), 2)
+        reserve_amount = 10450.0 if config["claim_number"] == "CLM-200006" else round(reported_amount * random.uniform(0.92, 1.18), 2)
+        settled_amount = round(reserve_amount * random.uniform(0.75, 0.96), 2) if index <= 3 else None
         demo_claims.append(
             {
                 "ClaimId": stable_uuid("claim", config["claim_number"]),
@@ -339,19 +307,19 @@ def build_demo_claim_records(policies: list[dict[str, Any]], parties: list[dict[
                 "ReserveAmount": reserve_amount,
                 "SettledAmount": settled_amount,
                 "TriageDecisionJson": json.dumps({"route": "desk", "reason": config["demo_intent"], "seed": SEED}),
-                "AssignedAdjuster": assigned_adjuster,
+                "AssignedAdjuster": ADJUSTERS[index % len(ADJUSTERS)],
                 "State": state,
                 "ZipCode": zip_code,
                 "Address": address,
                 "Phone": phone,
                 "Vin": vin,
                 "PartyIds": party_ids,
-                "DemoIntent": config["demo_intent"],
+                "RingId": ring_id,
                 "PhotoCount": config["photos"],
                 "DocTypes": list(config["doc_types"]),
                 "ApiFlags": list(config["api_flags"]),
-                "TelematicsHints": dict(config["telematics"]),
-                "RingId": ring_id,
+                "TelematicsHints": dict(config["telematics_hints"]),
+                "DemoIntent": config["demo_intent"],
             }
         )
     return demo_claims
@@ -359,23 +327,24 @@ def build_demo_claim_records(policies: list[dict[str, Any]], parties: list[dict[
 
 def build_regular_claims(policies: list[dict[str, Any]], parties: list[dict[str, Any]]) -> list[dict[str, Any]]:
     active_policies = [policy for policy in policies if policy["Status"] == "active"]
-    remaining_claims: list[dict[str, Any]] = []
+    claims: list[dict[str, Any]] = []
     for offset in range(1990):
         claim_number = f"CLM-{200011 + offset}"
         policy = active_policies[(offset * 13) % len(active_policies)]
-        product_line = policy["ProductLine"]
-        loss_type = normalize_loss_type(product_line)
+        product = policy["ProductLine"]
+        loss_type = random.choices(
+            ["auto_collision", "auto_comp", "liability"] if product == "auto" else ["home_property", "liability"] if product == "home" else ["liability"],
+            weights=[0.70, 0.15, 0.15] if product == "auto" else [0.88, 0.12] if product == "home" else [1.0],
+            k=1,
+        )[0]
         loss_dt = datetime.now(UTC) - timedelta(days=int(RNG.integers(15, 720)), hours=int(RNG.integers(0, 23)), minutes=int(RNG.integers(0, 59)))
-        reported_amount = round(float(RNG.normal(6200, 2400)), 2)
-        reported_amount = max(reported_amount, 650.0)
+        reported_amount = max(round(float(RNG.normal(6200, 2400)), 2), 650.0)
         status = random.choices(["open", "triaged", "assessed", "settled", "denied"], weights=[0.10, 0.18, 0.26, 0.40, 0.06], k=1)[0]
         reserve_amount = round(reported_amount * random.uniform(0.90, 1.20), 2) if status != "open" else None
         settled_amount = round(reserve_amount * random.uniform(0.72, 0.98), 2) if status == "settled" and reserve_amount else None
         state = json.loads(policy["CoverageJson"])["state"]
         zip_code = f"{70000 + (offset % 900):05d}"
-        assigned_adjuster = ADJUSTERS[offset % len(ADJUSTERS)]
-        party_ids = [parties[(offset * 2) % len(parties)]["PartyId"], parties[(offset * 2 + 1) % len(parties)]["PartyId"]]
-        remaining_claims.append(
+        claims.append(
             {
                 "ClaimId": stable_uuid("claim", claim_number),
                 "PolicyId": policy["PolicyId"],
@@ -388,112 +357,104 @@ def build_regular_claims(policies: list[dict[str, Any]], parties: list[dict[str,
                 "ReserveAmount": reserve_amount,
                 "SettledAmount": settled_amount,
                 "TriageDecisionJson": None,
-                "AssignedAdjuster": assigned_adjuster,
+                "AssignedAdjuster": ADJUSTERS[offset % len(ADJUSTERS)],
                 "State": state,
                 "ZipCode": zip_code,
                 "Address": {"street": fake.street_address(), "city": fake.city(), "state": state, "zip": zip_code},
                 "Phone": parties[(offset * 3) % len(parties)]["Phone"],
-                "Vin": f"2C3KA43R7{offset:08d}"[:17] if product_line == "auto" else None,
-                "PartyIds": party_ids,
-                "DemoIntent": None,
+                "Vin": f"2C3KA43R7{offset:08d}"[:17] if product == "auto" else None,
+                "PartyIds": [parties[(offset * 2) % len(parties)]["PartyId"], parties[(offset * 2 + 1) % len(parties)]["PartyId"]],
+                "RingId": None,
                 "PhotoCount": 3 if offset < 190 else random.choice([0, 1, 2]),
                 "DocTypes": [],
                 "ApiFlags": [],
                 "TelematicsHints": {},
-                "RingId": None,
+                "DemoIntent": None,
             }
         )
-    return remaining_claims
+    return claims
 
 
-def document_slug(doc_type: str, ordinal: int) -> str:
+def _document_slug(doc_type: str, ordinal: int) -> str:
     return doc_type if ordinal == 1 else f"{doc_type}-{ordinal}"
 
 
-def render_document_text(doc_type: str, claim: dict[str, Any], ordinal: int) -> str:
-    loss_dt = claim["LossDateTime"]
+def _render_document_text(doc_type: str, claim: dict[str, Any], ordinal: int) -> str:
+    when = claim["LossDateTime"]
     if doc_type == "police_report":
-        return (
-            f"Police Incident Report
-Claim: {claim['ClaimNumber']}
-Loss Type: {claim['LossType']}
-"
-            f"Date/Time: {loss_dt:%Y-%m-%d %H:%M}
-Officer: {fake.name()}
-"
-            f"Location: {claim['Address']['street']}, {claim['Address']['city']}, {claim['Address']['state']} {claim['Address']['zip']}
-"
-            f"Narrative: Responded to a reported {claim['LossType'].replace('_', ' ')}. Vehicle VIN {claim['Vin'] or 'N/A'} observed with visible damage."
+        return "\n".join(
+            [
+                "Police Incident Report",
+                f"Claim: {claim['ClaimNumber']}",
+                f"Loss Type: {claim['LossType']}",
+                f"Date/Time: {when:%Y-%m-%d %H:%M}",
+                f"Officer: {fake.name()}",
+                f"Location: {claim['Address']['street']}, {claim['Address']['city']}, {claim['Address']['state']} {claim['Address']['zip']}",
+                f"Narrative: Responded to a reported {claim['LossType'].replace('_', ' ')} involving VIN {claim['Vin'] or 'N/A'}.",
+            ]
         )
     if doc_type == "estimate":
         subtotal = round(claim["ReportedAmount"] * 0.88 + ordinal * 173.0, 2)
         tax = round(subtotal * 0.0825, 2)
-        total = round(subtotal + tax, 2)
-        return (
-            f"Repair Estimate
-Claim: {claim['ClaimNumber']}
-Shop: {fake.company()} Collision Center
-"
-            f"Item 1: Labor ${round(subtotal * 0.42, 2)}
-Item 2: Parts ${round(subtotal * 0.38, 2)}
-"
-            f"Item 3: Paint ${round(subtotal * 0.20, 2)}
-Subtotal: ${subtotal}
-Tax: ${tax}
-Total: ${total}"
+        return "\n".join(
+            [
+                "Repair Estimate",
+                f"Claim: {claim['ClaimNumber']}",
+                f"Shop: {fake.company()} Collision Center",
+                f"Labor: ${round(subtotal * 0.42, 2):,.2f}",
+                f"Parts: ${round(subtotal * 0.38, 2):,.2f}",
+                f"Paint: ${round(subtotal * 0.20, 2):,.2f}",
+                f"Tax: ${tax:,.2f}",
+                f"Total: ${round(subtotal + tax, 2):,.2f}",
+            ]
         )
     if doc_type == "medical":
         charge = round(325 + ordinal * 880 + random.uniform(0, 450), 2)
-        return (
-            f"Medical Bill
-Claim: {claim['ClaimNumber']}
-Patient: {fake.name()}
-Provider: {fake.company()} Orthopedics
-"
-            f"CPT: {random.choice(['99213', '97110', '72141', '97014'])}
-Charge: ${charge}
-"
-            f"Assessment: {random.choice(['cervical strain', 'lumbar sprain', 'contusion'])}"
+        return "\n".join(
+            [
+                "Medical Bill",
+                f"Claim: {claim['ClaimNumber']}",
+                f"Patient: {fake.name()}",
+                f"Provider: {fake.company()} Orthopedics",
+                f"CPT: {random.choice(['99213', '97110', '72141', '97014'])}",
+                f"Charge: ${charge:,.2f}",
+            ]
         )
     if doc_type == "photo_caption":
-        return (
-            f"Damage Photo Caption
-Claim: {claim['ClaimNumber']}
-Photo {ordinal} shows {random.choice(['driver-side dent', 'rear bumper scrape', 'ceiling water stain', 'broken glass'])}.
-"
-            f"Captured near {loss_dt:%Y-%m-%d %H:%M} and tagged with plate {claim['ClaimNumber'][-4:]}{ordinal}."
+        return "\n".join(
+            [
+                "Damage Photo Caption",
+                f"Claim: {claim['ClaimNumber']}",
+                f"Photo {ordinal} shows {random.choice(['driver-side dent', 'rear bumper scrape', 'ceiling water stain', 'broken glass'])}.",
+                f"Captured near {when:%Y-%m-%d %H:%M}.",
+            ]
         )
-    return (
-        f"Claim Correspondence
-Claim: {claim['ClaimNumber']}
-"
-        f"Insured requests status update on {claim['LossType'].replace('_', ' ')} claim."
+    return "\n".join(
+        [
+            "Claim Correspondence",
+            f"Claim: {claim['ClaimNumber']}",
+            f"Loss Type: {claim['LossType']}",
+            "Insured requested a status update and provided additional narrative context.",
+        ]
     )
 
 
 def build_documents(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
     documents: list[dict[str, Any]] = []
-    non_demo_claims = claims[10:]
-    three_doc_claims = {claim["ClaimNumber"] for claim in non_demo_claims[:1295]}
+    three_doc_claims = {claim["ClaimNumber"] for claim in claims[10 : 10 + 1295]}
     pdf_blob_budget = 800
-    for claim_index, claim in enumerate(claims):
-        if claim_index < 10:
-            doc_types = list(claim["DocTypes"])
-        else:
-            three_doc = claim["ClaimNumber"] in three_doc_claims
-            doc_types = list(DOC_PATTERNS[claim["LossType"]][0 if three_doc else 1])
-            claim["DocTypes"] = list(doc_types)
-        doc_counters: Counter[str] = Counter()
-        for doc_type in doc_types:
-            doc_counters[doc_type] += 1
-            ordinal = doc_counters[doc_type]
-            slug = document_slug(doc_type, ordinal)
-            path = None
+    for claim in claims:
+        if not claim["DocTypes"]:
+            claim["DocTypes"] = list(DOC_PATTERNS[claim["LossType"]][0 if claim["ClaimNumber"] in three_doc_claims else 1])
+        counters: Counter[str] = Counter()
+        for doc_type in claim["DocTypes"]:
+            counters[doc_type] += 1
+            ordinal = counters[doc_type]
+            blob = None
             if doc_type == "photo_caption" and claim["PhotoCount"] >= ordinal:
-                path = f"{claim['ClaimNumber']}/photo-{ordinal}.jpg"
-                path = blob_url("photos", path)
+                blob = blob_url("photos", f"{claim['ClaimNumber']}/photo-{ordinal}.jpg")
             elif doc_type in PDF_DOC_TYPES and pdf_blob_budget > 0:
-                path = blob_url("documents", f"{claim['ClaimNumber']}/{slug}.pdf")
+                blob = blob_url("documents", f"{claim['ClaimNumber']}/{_document_slug(doc_type, ordinal)}.pdf")
                 pdf_blob_budget -= 1
             documents.append(
                 {
@@ -501,10 +462,10 @@ def build_documents(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
                     "ClaimId": claim["ClaimId"],
                     "ClaimNumber": claim["ClaimNumber"],
                     "DocType": doc_type,
-                    "Title": slug.replace("_", " ").title(),
-                    "RawText": render_document_text(doc_type, claim, ordinal),
+                    "Title": _document_slug(doc_type, ordinal).replace("_", " ").title(),
+                    "RawText": _render_document_text(doc_type, claim, ordinal),
                     "ExtractedJson": json.dumps({"source": "seed_v2", "ordinal": ordinal}),
-                    "BlobUrl": path,
+                    "BlobUrl": blob,
                 }
             )
     assert len(documents) == 5309, f"Expected 5309 docs, got {len(documents)}"
@@ -531,8 +492,7 @@ def build_fraud_signals(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
                     "RationaleJson": json.dumps(rationale),
                 }
             )
-    low_score_claims = random.sample([claim for claim in claims if claim not in positive_claims], 700)
-    for claim in low_score_claims:
+    for claim in random.sample([claim for claim in claims if claim not in positive_claims], 700):
         signals.append(
             {
                 "SignalId": stable_uuid("fraud_signal_low", claim["ClaimNumber"]),
@@ -546,17 +506,18 @@ def build_fraud_signals(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return signals
 
 
-def build_agent_decisions(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def build_decisions(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
     decisions: list[dict[str, Any]] = []
     for claim in claims[:10]:
+        blocked = claim["ClaimNumber"] in {"CLM-200004", "CLM-200008"}
         decisions.append(
             {
                 "DecisionId": stable_uuid("decision", claim["ClaimNumber"], "triage"),
                 "ClaimId": claim["ClaimId"],
                 "AgentName": "TriageCoverageAgent",
                 "DecisionType": "coverage",
-                "PayloadJson": json.dumps({"route": "desk", "reason": claim.get("DemoIntent") or "Seeded coverage review", "model": "gpt-4o", "version": "2024-08-06"}),
-                "Status": "approved" if claim["ClaimNumber"] not in {"CLM-200004", "CLM-200008"} else "blocked",
+                "PayloadJson": json.dumps({"route": "desk", "reason": claim["DemoIntent"], "model": "gpt-4o", "version": "2024-08-06"}),
+                "Status": "blocked" if blocked else "approved",
             }
         )
         decisions.append(
@@ -566,7 +527,7 @@ def build_agent_decisions(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 "AgentName": "AssessmentSettlementAgent",
                 "DecisionType": "settlement",
                 "PayloadJson": json.dumps({"settlement_amount": claim["ReserveAmount"] or claim["ReportedAmount"], "citations": claim["DocTypes"][:2], "model": "gpt-4o", "version": "2024-08-06"}),
-                "Status": "approved" if claim["ClaimNumber"] not in {"CLM-200004", "CLM-200008"} else "proposed",
+                "Status": "proposed" if blocked else "approved",
             }
         )
     return decisions
@@ -574,16 +535,16 @@ def build_agent_decisions(claims: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 def build_audit_events(claims: list[dict[str, Any]], decisions: list[dict[str, Any]], rule_id_map: dict[str, str]) -> list[dict[str, Any]]:
     audit_events: list[dict[str, Any]] = []
-    decision_map = defaultdict(list)
+    decisions_by_claim: defaultdict[str, list[dict[str, Any]]] = defaultdict(list)
     for decision in decisions:
-        decision_map[decision["ClaimId"]].append(decision)
+        decisions_by_claim[decision["ClaimId"]].append(decision)
     event_index = 0
     for claim in claims[:10]:
-        for decision in decision_map[claim["ClaimId"]]:
+        for decision in decisions_by_claim[claim["ClaimId"]]:
             rule_code = "LIMIT-001" if decision["DecisionType"] == "settlement" else "AI-002"
             audit_events.append(
                 {
-                    "EventId": stable_uuid("audit", claim["ClaimNumber"], decision["DecisionType"]),
+                    "EventId": stable_uuid("audit-demo", claim["ClaimNumber"], decision["DecisionType"]),
                     "ClaimId": claim["ClaimId"],
                     "DecisionId": decision["DecisionId"],
                     "RuleId": rule_id_map[rule_code],
@@ -591,7 +552,7 @@ def build_audit_events(claims: list[dict[str, Any]], decisions: list[dict[str, A
                     "ActorName": decision["AgentName"],
                     "Action": f"{decision['DecisionType']}.evaluate",
                     "Outcome": "block" if decision["Status"] in {"blocked", "proposed"} else "pass",
-                    "RationaleJson": json.dumps({"rule": rule_code, "seed": SEED, "claim": claim["ClaimNumber"]}),
+                    "RationaleJson": json.dumps({"rule": rule_code, "claim": claim["ClaimNumber"], "seed": SEED}),
                     "CorrelationId": f"corr-{claim['ClaimNumber']}",
                 }
             )
@@ -599,7 +560,6 @@ def build_audit_events(claims: list[dict[str, Any]], decisions: list[dict[str, A
     while len(audit_events) < 4006:
         claim = claims[event_index % len(claims)]
         actor = "human" if event_index % 3 == 0 else "agent"
-        action = ["fnol.acknowledge", "triage.review", "assessment.review", "guardrail.check"][event_index % 4]
         rule_code = ["FAIR-001", "FAIR-002", "AI-002", "AUDIT-001"][event_index % 4]
         audit_events.append(
             {
@@ -609,20 +569,18 @@ def build_audit_events(claims: list[dict[str, Any]], decisions: list[dict[str, A
                 "RuleId": rule_id_map[rule_code],
                 "Actor": actor,
                 "ActorName": claim["AssignedAdjuster"] if actor == "human" else random.choice(["FnolDocumentAgent", "TriageCoverageAgent", "GuardrailsAgent"]),
-                "Action": action,
+                "Action": ["fnol.acknowledge", "triage.review", "assessment.review", "guardrail.check"][event_index % 4],
                 "Outcome": random.choice(["pass", "approve", "edit"]),
-                "RationaleJson": json.dumps({"rule": rule_code, "version": "1.0", "ordinal": event_index}),
+                "RationaleJson": json.dumps({"rule": rule_code, "ordinal": event_index, "version": "1.0"}),
                 "CorrelationId": f"corr-{claim['ClaimNumber']}-{event_index:04d}",
             }
         )
         event_index += 1
-    assert len(audit_events) == 4006, f"Expected 4006 audit events, got {len(audit_events)}"
     return audit_events
 
 
 def persist_manifest(path: Path, *, policies: list[dict[str, Any]], parties: list[dict[str, Any]], claims: list[dict[str, Any]], documents: list[dict[str, Any]], fraud_signals: list[dict[str, Any]], rings: list[dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    pdf_urls = [document["BlobUrl"] for document in documents if document["BlobUrl"] and document["DocType"] in PDF_DOC_TYPES]
     manifest = {
         "seed": SEED,
         "generated_utc": datetime.now(UTC).isoformat(),
@@ -633,16 +591,9 @@ def persist_manifest(path: Path, *, policies: list[dict[str, Any]], parties: lis
             "documents": len(documents),
             "fraud_signals": len(fraud_signals),
             "fraud_rings": len(rings),
-            "pdf_blob_urls": len(pdf_urls),
         },
-        "policies": [
-            {"policy_number": policy["PolicyNumber"], "policy_id": policy["PolicyId"], "product_line": policy["ProductLine"], "state": policy["State"], "status": policy["Status"]}
-            for policy in policies
-        ],
-        "ring_parties": [
-            {"party_id": party["PartyId"], "phone": party["Phone"], "state": party["State"], "ring_id": party["RingId"]}
-            for party in parties if party["RingId"]
-        ],
+        "policies": [{"policy_id": policy["PolicyId"], "policy_number": policy["PolicyNumber"], "product_line": policy["ProductLine"], "state": policy["State"], "status": policy["Status"]} for policy in policies],
+        "ring_parties": [{"party_id": party["PartyId"], "phone": party["Phone"], "state": party["State"], "ring_id": party["RingId"]} for party in parties if party["RingId"]],
         "claims": [
             {
                 "claim_id": claim["ClaimId"],
@@ -666,40 +617,33 @@ def persist_manifest(path: Path, *, policies: list[dict[str, Any]], parties: lis
             }
             for claim in claims
         ],
-        "documents": [
-            {"document_id": document["DocumentId"], "claim_number": document["ClaimNumber"], "doc_type": document["DocType"], "blob_url": document["BlobUrl"]}
-            for document in documents
-        ],
+        "documents": [{"document_id": document["DocumentId"], "claim_number": document["ClaimNumber"], "doc_type": document["DocType"], "blob_url": document["BlobUrl"]} for document in documents],
         "fraud_rings": rings,
     }
     path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
 
 
 def insert_many(cursor: pyodbc.Cursor, sql: str, rows: Iterable[tuple[Any, ...]]) -> None:
-    prepared = list(rows)
+    items = list(rows)
     cursor.fast_executemany = True
-    cursor.executemany(sql, prepared)
+    cursor.executemany(sql, items)
 
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = parse_args(argv)
     print(f"[gen_sql] Deterministic seed={SEED}")
     policies = build_policies()
-    rings = build_ring_definitions()
+    rings = build_rings()
     parties = build_parties(rings)
-    demo_claims = build_demo_claim_records(policies, parties, rings)
-    regular_claims = build_regular_claims(policies, parties)
-    claims = demo_claims + regular_claims
+    claims = build_demo_claims(policies, parties, rings) + build_regular_claims(policies, parties)
     documents = build_documents(claims)
     fraud_signals = build_fraud_signals(claims)
-    decisions = build_agent_decisions(claims)
-    rule_id_map = {rule_code: stable_uuid("rule", rule_code) for rule_code, *_ in RULES}
+    decisions = build_decisions(claims)
+    rule_id_map = {code: stable_uuid("rule", code) for code, *_ in RULES}
     audit_events = build_audit_events(claims, decisions, rule_id_map)
+    assert len({signal["ClaimId"] for signal in fraud_signals if signal["Score"] >= 0.68}) == 150
 
-    fraud_positive_claims = {signal["ClaimId"] for signal in fraud_signals if signal["Score"] >= 0.68}
-    assert len(fraud_positive_claims) == 150, f"Expected 150 fraud-positive claims, got {len(fraud_positive_claims)}"
-
-    conn = connect(args)
+    conn = connect(args.server_fqdn, args.database_name)
     try:
         apply_schema(conn)
         cursor = conn.cursor()
@@ -752,11 +696,11 @@ def main(argv: Sequence[str] | None = None) -> int:
             ((event["EventId"], event["ClaimId"], event["DecisionId"], event["RuleId"], event["Actor"], event["ActorName"], event["Action"], event["Outcome"], event["RationaleJson"], event["CorrelationId"]) for event in audit_events),
         )
         conn.commit()
-        persist_manifest(args.manifest_path, policies=policies, parties=parties, claims=claims, documents=documents, fraud_signals=fraud_signals, rings=rings)
-        print(f"[gen_sql] Wrote manifest to {args.manifest_path}")
     finally:
         conn.close()
 
+    persist_manifest(args.manifest_path, policies=policies, parties=parties, claims=claims, documents=documents, fraud_signals=fraud_signals, rings=rings)
+    print(f"[gen_sql] Wrote manifest to {args.manifest_path}")
     summary = {
         "generator": "gen_sql",
         "policies": len(policies),

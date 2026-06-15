@@ -57,13 +57,9 @@ def run_generator(order: str, script_name: str, python_executable: str, reseed: 
     print(f"[seed_all] ({order}/10) Running {script_name} ...")
     completed = subprocess.run(command, cwd=SCRIPT_DIR, capture_output=True, text=True, check=False)
     if completed.stdout:
-        print(completed.stdout, end="" if completed.stdout.endswith("
-") else "
-")
+        print(completed.stdout, end="" if completed.stdout.endswith("\n") else "\n")
     if completed.stderr:
-        print(completed.stderr, file=sys.stderr, end="" if completed.stderr.endswith("
-") else "
-")
+        print(completed.stderr, file=sys.stderr, end="" if completed.stderr.endswith("\n") else "\n")
     status = "ok" if completed.returncode == 0 else f"failed ({completed.returncode})"
     summary = _extract_summary(completed.stdout, script_name)
     summary.setdefault("exit_code", completed.returncode)
@@ -71,8 +67,7 @@ def run_generator(order: str, script_name: str, python_executable: str, reseed: 
 
 
 def print_summary_table(results: list[RunResult]) -> None:
-    print("
-[seed_all] Summary")
+    print("\n[seed_all] Summary")
     headers = ("Step", "Generator", "Status", "Key metrics")
     rows: list[tuple[str, str, str, str]] = []
     for result in results:
