@@ -242,7 +242,7 @@ resource extApiApp 'Microsoft.App/containerApps@2024-03-01' = {
       ]
       ingress: {
         external: false
-        targetPort: 8001
+        targetPort: 80
         transport: 'auto'
         allowInsecure: false
       }
