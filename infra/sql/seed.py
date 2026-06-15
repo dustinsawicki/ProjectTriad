@@ -476,14 +476,14 @@ def main() -> int:
         # 5,000 historical FNOL acknowledgements + 5,000 misc agent passes
         audit_rows: list[tuple] = list(precooked_audit)
         adjusters = ["alex.morgan@contoso.example", "priya.patel@contoso.example", "sam.lee@contoso.example"]
-        for c in random.sample(claims, 5000):
+        for c in random.sample(claims, min(5000, len(claims))):
             audit_rows.append((
                 str(uuid.uuid4()), c["ClaimId"], None, rule_id_map["FAIR-001"],
                 "human", random.choice(adjusters), "fnol.acknowledge", "pass",
                 json.dumps({"rule": "FAIR-001", "version": "1.0", "within_days": random.randint(1, 14)}),
                 f"corr-{c['ClaimNumber']}",
             ))
-        for c in random.sample(claims, 5000):
+        for c in random.sample(claims, min(5000, len(claims))):
             audit_rows.append((
                 str(uuid.uuid4()), c["ClaimId"], None, rule_id_map["AI-002"],
                 "agent", random.choice(["FnolDocumentAgent", "TriageCoverageAgent", "AssessmentSettlementAgent"]),

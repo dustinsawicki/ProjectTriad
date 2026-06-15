@@ -7,6 +7,8 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+ENV NEXT_PUBLIC_API_BASE_URL=""
+ENV NEXT_PUBLIC_AZURE_TENANT_ID="common"
 RUN npm run build
 
 FROM node:20-alpine AS runner

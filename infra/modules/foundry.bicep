@@ -10,7 +10,7 @@ param principalId string
 var aiAccountName = 'aif-${resourceToken}'
 var aiProjectName = 'aifproj-${resourceToken}'
 
-resource aiAccount 'Microsoft.CognitiveServices/accounts@2024-10-01' = {
+resource aiAccount 'Microsoft.CognitiveServices/accounts@2025-04-01-preview' = {
   name: aiAccountName
   location: location
   tags: tags
@@ -25,7 +25,7 @@ resource aiAccount 'Microsoft.CognitiveServices/accounts@2024-10-01' = {
   }
 }
 
-resource gpt4o 'Microsoft.CognitiveServices/accounts/deployments@2024-10-01' = {
+resource gpt4o 'Microsoft.CognitiveServices/accounts/deployments@2025-04-01-preview' = {
   parent: aiAccount
   name: openAiModel
   sku: {
@@ -36,12 +36,12 @@ resource gpt4o 'Microsoft.CognitiveServices/accounts/deployments@2024-10-01' = {
     model: {
       format: 'OpenAI'
       name: openAiModel
-      version: '2024-08-06'
+      version: '2024-11-20'
     }
   }
 }
 
-resource gpt4oMini 'Microsoft.CognitiveServices/accounts/deployments@2024-10-01' = {
+resource gpt4oMini 'Microsoft.CognitiveServices/accounts/deployments@2025-04-01-preview' = {
   parent: aiAccount
   name: openAiMiniModel
   dependsOn: [ gpt4o ]
@@ -58,7 +58,7 @@ resource gpt4oMini 'Microsoft.CognitiveServices/accounts/deployments@2024-10-01'
   }
 }
 
-resource aiProject 'Microsoft.CognitiveServices/accounts/projects@2024-10-01' = {
+resource aiProject 'Microsoft.CognitiveServices/accounts/projects@2025-04-01-preview' = {
   parent: aiAccount
   name: aiProjectName
   location: location

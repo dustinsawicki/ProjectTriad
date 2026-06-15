@@ -76,12 +76,6 @@ resource apiApp 'Microsoft.App/containerApps@2024-03-01' = {
           allowCredentials: true
         }
       }
-      registries: [
-        {
-          server: acrLoginServer
-          identity: 'system'
-        }
-      ]
     }
     template: {
       containers: [
@@ -123,12 +117,6 @@ resource webApp 'Microsoft.App/containerApps@2024-03-01' = {
         transport: 'auto'
         allowInsecure: false
       }
-      registries: [
-        {
-          server: acrLoginServer
-          identity: 'system'
-        }
-      ]
     }
     template: {
       containers: [
