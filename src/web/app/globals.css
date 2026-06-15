@@ -2,5 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: light; }
-body { @apply bg-slate-50 text-slate-900; }
+:root {
+  color-scheme: light;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased;
+  }
+
+  body {
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at top left, rgba(197, 161, 90, 0.16), transparent 28%),
+      radial-gradient(circle at top right, rgba(43, 90, 158, 0.12), transparent 24%),
+      linear-gradient(180deg, #f8fafd 0%, #f2f6fb 45%, #eef3f9 100%);
+    color: #1a2638;
+    font-family: "Segoe UI Variable Text", "Segoe UI", "SF Pro Text", system-ui, sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.35) 1px, transparent 1px);
+    background-size: 36px 36px;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.28), transparent 75%);
+    opacity: 0.22;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #10223e;
+    font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    letter-spacing: -0.03em;
+  }
+
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    transition:
+      color 180ms ease,
+      background-color 180ms ease,
+      border-color 180ms ease,
+      box-shadow 180ms ease,
+      transform 180ms ease;
+  }
+
+  * {
+    scrollbar-color: rgba(148, 163, 184, 0.75) transparent;
+  }
+
+  *:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(197, 161, 90, 0.22);
+  }
+
+  ::selection {
+    background: rgba(197, 161, 90, 0.28);
+    color: #09172c;
+  }
+}
