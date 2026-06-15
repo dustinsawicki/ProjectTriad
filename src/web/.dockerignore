@@ -1,0 +1,40 @@
+# Dependencies (rebuilt in container)
+node_modules/
+.pnp/
+.pnp.js
+
+# Next.js build output
+.next/
+out/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Docs
+*.md
+LICENSE
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Debug / coverage
+npm-debug.log*
+coverage/
+.nyc_output/
