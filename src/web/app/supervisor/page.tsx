@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
-import { fetchApi } from "@/lib/api";
+import { api } from "@/lib/api";
 
 interface ClaimEvent {
   event_id: string;
@@ -15,8 +15,7 @@ export default function SupervisorPage() {
   const [replaying, setReplaying] = useState(false);
 
   const loadEvents = useCallback(() => {
-    fetchApi("/api/events/recent?limit=50")
-      .then((res) => res.json())
+    api<ClaimEvent[]>("/api/events/recent?limit=50")
       .then(setEvents)
       .catch(console.error);
   }, []);
@@ -30,7 +29,7 @@ export default function SupervisorPage() {
   const handleReplay = async () => {
     setReplaying(true);
     try {
-      await fetchApi("/api/supervisor/replay-telematics", { method: "POST" });
+      await api("/api/supervisor/replay-telematics", { method: "POST" });
     } catch (e) {
       console.error("Replay failed:", e);
     } finally {

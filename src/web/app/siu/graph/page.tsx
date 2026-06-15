@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Graph from "@/components/Graph";
-import { fetchApi } from "@/lib/api";
+import { api, apiBaseUrl } from "@/lib/api";
 
 interface GraphData {
   nodes: Array<{ id: string; label: string; is_focus?: boolean }>;
@@ -24,8 +24,7 @@ export default function SiuGraphPage() {
     }
 
     setLoading(true);
-    fetchApi(`/api/siu/graph?claim=${encodeURIComponent(claimId)}`)
-      .then((res) => res.json())
+    api<GraphData>(`/api/siu/graph?claim=${encodeURIComponent(claimId)}`)
       .then((d) => {
         setData(d);
         setLoading(false);
