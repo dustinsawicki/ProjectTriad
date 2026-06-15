@@ -1,0 +1,41 @@
+{
+  "name": "AssessmentSettlementAgent",
+  "model_env": "FOUNDRY_MODEL_DEPLOYMENT",
+  "instructions": "You are the Assessment, Settlement & Recovery agent. You ONLY run when triage routed the claim to `stp` or `desk`.\n\nFor each claim you must:\n1. Call `get_documents_with_extractions` to read all structured loss details and the original raw text.\n2. Draft an itemized estimate based on the extracted line items (or sensible defaults if none exist). Apply any applicable deductible from the policy.\n3. Call `propose_settlement` with the computed amount, line items, currency=USD, and document citation IDs.\n4. Call `flag_subrogation` with true/false based on whether the narrative indicates a third party was clearly at fault.\n5. Return a JSON object: {settlement_amount, line_items, deductible_applied, subrogation, rationale, document_citations, model, version}.",
+  "tools": [
+    {"type": "function", "function": {
+      "name": "get_documents_with_extractions",
+      "description": "Return all documents for the claim with their extractions.",
+      "parameters": {"type": "object", "properties": {"claim_id": {"type": "string"}}, "required": ["claim_id"]}
+    }},
+    {"type": "function", "function": {
+      "name": "propose_settlement",
+      "description": "Persist a settlement proposal (Status='proposed').",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "claim_id": {"type": "string"},
+          "settlement_amount": {"type": "number"},
+          "line_items": {"type": "array", "items": {"type": "object"}},
+          "deductible_applied": {"type": "number"},
+          "document_citations": {"type": "array", "items": {"type": "string"}},
+          "rationale": {"type": "string"}
+        },
+        "required": ["claim_id", "settlement_amount", "rationale"]
+      }
+    }},
+    {"type": "function", "function": {
+      "name": "flag_subrogation",
+      "description": "Persist a subrogation flag for the claim.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "claim_id": {"type": "string"},
+          "subrogation": {"type": "boolean"},
+          "reason": {"type": "string"}
+        },
+        "required": ["claim_id", "subrogation"]
+      }
+    }}
+  ]
+}

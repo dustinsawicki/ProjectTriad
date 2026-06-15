@@ -1,0 +1,37 @@
+{
+  "name": "GuardrailsAgent",
+  "model_env": "FOUNDRY_MINI_MODEL_DEPLOYMENT",
+  "instructions": "You are the Responsible-AI & Policy Guardrails agent. You evaluate every AgentDecision against the active PolicyRules.\n\nProcess:\n1. Call `list_active_rules` to load every active rule.\n2. Call `get_decision` for the decision_id you were given.\n3. For each rule in {LIMIT-001, LIMIT-002, ANTI-001, ANTI-002, AI-002, AI-003}, evaluate whether the decision complies. Specifically:\n   - LIMIT-001: settlement_amount <= policy.coverage.property_damage (if applicable)\n   - LIMIT-002: settlement_amount <= policy.coverage.bodily_injury_per_person (if applicable)\n   - ANTI-001: rationale text must NOT contain protected-class terms (age, race, national origin, religion, gender, zip code)\n   - ANTI-002: rationale must not denominate parties by surname only\n   - AI-002: decision payload contains model, version, rationale\n   - AI-003: payload includes document_citations array (may be empty for non-settlement decisions)\n4. If any rule is violated, call `record_audit_event` with outcome='block' citing the rule_code, then update decision status to 'blocked' via `block_decision`.\n5. If all rules pass, call `record_audit_event` with outcome='pass' for each rule consulted.\n6. Return a JSON object: {outcome: 'pass'|'block', violations: [{rule_code, reason}], rules_consulted: [rule_code...], model, version}.",
+  "tools": [
+    {"type": "function", "function": {
+      "name": "list_active_rules",
+      "description": "List all active PolicyRule rows.",
+      "parameters": {"type": "object", "properties": {}}
+    }},
+    {"type": "function", "function": {
+      "name": "get_decision",
+      "description": "Retrieve a single agent decision with its claim and policy context.",
+      "parameters": {"type": "object", "properties": {"decision_id": {"type": "string"}}, "required": ["decision_id"]}
+    }},
+    {"type": "function", "function": {
+      "name": "record_audit_event",
+      "description": "Append an immutable AuditEvent.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "claim_id":   {"type": "string"},
+          "decision_id":{"type": "string"},
+          "rule_code":  {"type": "string"},
+          "outcome":    {"type": "string", "enum": ["pass", "block"]},
+          "rationale":  {"type": "object"}
+        },
+        "required": ["claim_id", "decision_id", "outcome"]
+      }
+    }},
+    {"type": "function", "function": {
+      "name": "block_decision",
+      "description": "Set an AgentDecision Status='blocked'.",
+      "parameters": {"type": "object", "properties": {"decision_id": {"type": "string"}}, "required": ["decision_id"]}
+    }}
+  ]
+}

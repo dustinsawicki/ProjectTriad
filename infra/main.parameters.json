@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": { "value": "${AZURE_ENV_NAME}" },
+    "location":        { "value": "${AZURE_LOCATION}" },
+    "tenantId":        { "value": "${AZURE_TENANT_ID}" },
+    "openAiModel":     { "value": "${AZURE_OPENAI_MODEL=gpt-4o}" },
+    "openAiMiniModel": { "value": "${AZURE_OPENAI_MINI_MODEL=gpt-4o-mini}" },
+    "adjusterUserObjectIds": { "value": "${ADJUSTER_USER_OBJECT_IDS}" },
+    "principalId":     { "value": "${AZURE_PRINCIPAL_ID}" }
+  }
+}

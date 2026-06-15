@@ -1,0 +1,43 @@
+# azd configuration for the Agentic Claims Processing PoC
+# Docs: https://aka.ms/azure-dev/schema
+name: claims-poc
+metadata:
+  template: claims-poc@1.0.0
+infra:
+  provider: bicep
+  path: infra
+  module: main
+services:
+  api:
+    project: ./src/api
+    language: python
+    host: containerapp
+    docker:
+      path: ./Dockerfile
+      context: .
+      remoteBuild: true
+  web:
+    project: ./src/web
+    language: ts
+    host: containerapp
+    docker:
+      path: ./Dockerfile
+      context: .
+      remoteBuild: true
+hooks:
+  postprovision:
+    windows:
+      shell: pwsh
+      run: ./infra/sql/run-seed.ps1
+      interactive: true
+    posix:
+      shell: sh
+      run: ./infra/sql/run-seed.sh
+      interactive: true
+  reseed:
+    windows:
+      shell: pwsh
+      run: ./infra/sql/run-seed.ps1 -Reseed
+    posix:
+      shell: sh
+      run: ./infra/sql/run-seed.sh --reseed
