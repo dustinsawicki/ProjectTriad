@@ -3,8 +3,6 @@ from __future__ import annotations
 
 import time
 from functools import lru_cache
-from typing import Iterable
-
 import httpx
 from fastapi import Depends, Header, HTTPException, status
 from jose import jwt

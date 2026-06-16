@@ -7,7 +7,7 @@ from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from ..auth import Principal, require_role
-from ..db import get_session, session_scope
+from ..db import get_session
 from ..repositories import claims as repo
 from ..schemas import (
     ApproveClaimIn,

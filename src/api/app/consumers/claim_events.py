@@ -1,6 +1,5 @@
 """Event Hub consumer that dispatches claim events to the appropriate agent."""
 
-import asyncio
 import json
 import logging
 from typing import Any

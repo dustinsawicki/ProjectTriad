@@ -5,9 +5,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: "#1E2761",
-        accent: "#F96167",
-        ice: "#CADCFC"
+        navy: "#0f172a",
+        accent: "#ef4444",
+        ice: "#e0f2fe",
+        brand: {
+          50: "#f0f9ff",
+          100: "#e0f2fe",
+          500: "#0ea5e9",
+          600: "#0284c7",
+          700: "#0369a1",
+        }
       }
     }
   },
