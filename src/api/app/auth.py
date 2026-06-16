@@ -76,8 +76,8 @@ def _validate(token: str) -> Principal:
 
 def get_principal(authorization: str | None = Header(default=None)) -> Principal:
     if not authorization or not authorization.lower().startswith("bearer "):
-        # PoC dev mode: allow unauthenticated calls only when no tenant is configured
-        if not _settings.azure_tenant_id or _settings.azure_tenant_id == "dev":
+        # PoC dev mode: bypass auth when POC_AUTH_BYPASS=1 or no tenant configured
+        if _settings.azure_tenant_id in ("", "dev") or _settings.poc_auth_bypass:
             return Principal({"preferred_username": "dev@local", "roles": ["ClaimsAdjuster", "ClaimsSupervisor", "SIU"]})
         raise HTTPException(status.HTTP_401_UNAUTHORIZED, "Missing bearer token")
     return _validate(authorization.split(" ", 1)[1])

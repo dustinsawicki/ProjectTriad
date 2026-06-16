@@ -1,18 +1,11 @@
-FROM python:3.12-slim
+FROM mcr.microsoft.com/azurelinux/base/python:3.12 AS base
 
 ENV PYTHONUNBUFFERED=1 \
     PIP_DISABLE_PIP_VERSION_CHECK=1 \
     PIP_NO_CACHE_DIR=1
 
-# Microsoft ODBC Driver 18 for SQL Server
-RUN apt-get update && apt-get install -y --no-install-recommends \
-      curl gnupg apt-transport-https ca-certificates unixodbc \
- && curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /usr/share/keyrings/microsoft-prod.gpg \
- && echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-prod.gpg] https://packages.microsoft.com/debian/12/prod bookworm main" \
-      > /etc/apt/sources.list.d/mssql-release.list \
- && apt-get update \
- && ACCEPT_EULA=Y apt-get install -y --no-install-recommends msodbcsql18 \
- && rm -rf /var/lib/apt/lists/*
+# Microsoft ODBC Driver 18 for SQL Server (Azure Linux 3)
+RUN ACCEPT_EULA=Y tdnf install -y unixODBC msodbcsql18 && tdnf clean all
 
 WORKDIR /app
 COPY requirements.txt ./

@@ -29,6 +29,7 @@ class Settings(BaseSettings):
     # App
     adjuster_user_object_ids: str = ""  # CSV
     log_level: str = "INFO"
+    poc_auth_bypass: bool = False  # Set to true to skip auth for demo
 
     # Telemetry
     applicationinsights_connection_string: str | None = None
