@@ -16,9 +16,9 @@ log = logging.getLogger("claims-api")
 settings = get_settings()
 
 app = FastAPI(
-    title="Agentic Claims Processing API",
+    title="TrustClaims API",
     version="2.0.0",
-    description="FSI PoC v2 — Event-driven multi-agent claims pipeline with RAG, vision, and link-graph fraud detection.",
+    description="Intelligent Claims Processing — Event-driven multi-agent pipeline with RAG, vision, and link-graph fraud detection.",
 )
 
 app.add_middleware(
