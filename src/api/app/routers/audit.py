@@ -28,7 +28,7 @@ def _rows(result) -> list[dict]:
     return out
 
 
-@router.get("", response_model=list[AuditEventOut])
+@router.get("", response_model=list[AuditEventOut], response_model_by_alias=False)
 def list_audit(
     claim_id: UUID | None = Query(default=None),
     limit: int = Query(default=100, le=500),
