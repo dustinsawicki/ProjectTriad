@@ -57,7 +57,7 @@ def create_claim(
     return CreateClaimOut(claim_id=cid, claim_number=claim_no, pipeline_correlation_id=corr)
 
 
-@router.get("/{claim_id}", response_model=ClaimBundleOut)
+@router.get("/{claim_id}", response_model=ClaimBundleOut, response_model_by_alias=False)
 def get_claim(
     claim_id: UUID,
     s: Session = Depends(get_session),

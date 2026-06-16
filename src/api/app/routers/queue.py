@@ -12,7 +12,7 @@ from ..schemas import ClaimSummaryOut
 router = APIRouter(prefix="/api/queue", tags=["queue"])
 
 
-@router.get("", response_model=list[ClaimSummaryOut])
+@router.get("", response_model=list[ClaimSummaryOut], response_model_by_alias=False)
 def list_queue(
     status: str | None = Query(default=None),
     route: str | None = Query(default=None),
