@@ -1,26 +1,27 @@
 """SIU (Special Investigations Unit) router — link-graph API for the visualization."""
 
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Depends, Query
+from sqlalchemy import text
+from sqlalchemy.orm import Session
 from typing import Any
 
 from app.clients.cosmos import get_link_graph_neighbors
-from app.db import get_connection
+from app.db import get_session
 
 router = APIRouter(prefix="/api/siu", tags=["siu"])
 
 
 @router.get("/graph")
-async def get_graph(claim: str = Query(..., description="Claim ID or claim number")) -> dict[str, Any]:
+async def get_graph(
+    claim: str = Query(..., description="Claim ID or claim number"),
+    s: Session = Depends(get_session),
+) -> dict[str, Any]:
     """Return nodes and edges for the link-graph neighborhood of a claim's parties."""
-    # Look up party IDs for this claim from SQL
-    conn = get_connection()
-    cursor = conn.cursor()
-    cursor.execute(
-        "SELECT CAST(Id AS NVARCHAR(36)) FROM Party WHERE ClaimId = ?",
-        claim,
+    result = s.execute(
+        text("SELECT CAST(Id AS NVARCHAR(36)) FROM Party WHERE ClaimId = :claim"),
+        {"claim": claim},
     )
-    party_ids = [row[0] for row in cursor.fetchall()]
-    conn.close()
+    party_ids = [row[0] for row in result.fetchall()]
 
     if not party_ids:
         return {"nodes": [], "edges": []}
