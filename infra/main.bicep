@@ -1,4 +1,4 @@
-// Subscription-scope entry point for the Agentic Claims Processing PoC.
+// Subscription-scope entry point for the Agentic Claims Processing PoC (v2).
 // Creates a single resource group and delegates to per-service modules.
 targetScope = 'subscription'
 
@@ -25,12 +25,15 @@ param openAiModel string = 'gpt-4o'
 @description('Azure OpenAI mini model deployment name for the Guardrails agent.')
 param openAiMiniModel string = 'gpt-4o-mini'
 
+@description('AI Search index name for historical claims RAG.')
+param searchIndexName string = 'historical-claims'
+
 var resourceToken = toLower(uniqueString(subscription().id, environmentName, location))
 var rgName        = 'rg-claims-poc-${environmentName}'
 
 var tags = {
   'azd-env-name': environmentName
-  workload: 'claims-poc'
+  workload: 'claims-poc-v2'
   industry: 'fsi-insurance'
 }
 
@@ -96,6 +99,58 @@ module foundry 'modules/foundry.bicep' = {
   }
 }
 
+// --- v2 modules ---
+
+module storage 'modules/storage.bicep' = {
+  name: 'storage'
+  scope: rg
+  params: {
+    location: location
+    tags: tags
+    resourceToken: resourceToken
+  }
+}
+
+module cosmos 'modules/cosmos.bicep' = {
+  name: 'cosmos'
+  scope: rg
+  params: {
+    location: location
+    tags: tags
+    resourceToken: resourceToken
+  }
+}
+
+module eventhubs 'modules/eventhubs.bicep' = {
+  name: 'eventhubs'
+  scope: rg
+  params: {
+    location: location
+    tags: tags
+    resourceToken: resourceToken
+  }
+}
+
+module docintel 'modules/docintel.bicep' = {
+  name: 'docintel'
+  scope: rg
+  params: {
+    location: location
+    tags: tags
+    resourceToken: resourceToken
+  }
+}
+
+module search 'modules/search.bicep' = {
+  name: 'search'
+  scope: rg
+  params: {
+    location: location
+    tags: tags
+    resourceToken: resourceToken
+  }
+}
+
 module aca 'modules/containerapps.bicep' = {
   name: 'aca'
   scope: rg
@@ -115,10 +170,25 @@ module aca 'modules/containerapps.bicep' = {
     foundryMiniModelDeployment: openAiMiniModel
     tenantId: tenantId
     adjusterUserObjectIds: adjusterUserObjectIds
+    // v2 params
+    cosmosEndpoint:       cosmos.outputs.endpoint
+    cosmosDatabase:       cosmos.outputs.databaseName
+    blobAccountName:      storage.outputs.name
+    blobEndpoint:         storage.outputs.blobEndpoint
+    eventHubNamespaceFqdn: eventhubs.outputs.namespaceFqdn
+    docIntelEndpoint:     docintel.outputs.endpoint
+    searchEndpoint:       search.outputs.endpoint
+    searchIndexName:      searchIndexName
+    cosmosAccountName:    cosmos.outputs.name
+    storageAccountId:     storage.outputs.id
+    cosmosAccountId:      cosmos.outputs.id
+    eventHubNamespaceId:  eventhubs.outputs.namespaceId
+    docIntelId:           docintel.outputs.id
+    searchId:             search.outputs.id
   }
 }
 
-// Outputs consumed by azd and by run-seed scripts
+// Outputs consumed by azd and by seed scripts
 output AZURE_LOCATION                  string = location
 output AZURE_TENANT_ID                 string = tenantId
 output AZURE_RESOURCE_GROUP            string = rg.name
@@ -132,4 +202,14 @@ output FOUNDRY_MODEL_DEPLOYMENT        string = openAiModel
 output FOUNDRY_MINI_MODEL_DEPLOYMENT   string = openAiMiniModel
 output API_BASE_URL                    string = aca.outputs.apiFqdn
 output WEB_BASE_URL                    string = aca.outputs.webFqdn
+// v2 outputs
+output COSMOS_ENDPOINT                 string = cosmos.outputs.endpoint
+output COSMOS_DATABASE                 string = cosmos.outputs.databaseName
+output BLOB_ACCOUNT_NAME               string = storage.outputs.name
+output BLOB_ENDPOINT                   string = storage.outputs.blobEndpoint
+output EVENT_HUB_NAMESPACE_FQDN        string = eventhubs.outputs.namespaceFqdn
+output DOCINTEL_ENDPOINT               string = docintel.outputs.endpoint
+output SEARCH_ENDPOINT                 string = search.outputs.endpoint
+output SEARCH_INDEX_NAME               string = searchIndexName
+output EXTERNAL_API_BASE_URL           string = aca.outputs.externalApiFqdn
 output APPLICATIONINSIGHTS_CONNECTION_STRING string = monitoring.outputs.appInsightsConnectionString

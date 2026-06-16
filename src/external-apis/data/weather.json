@@ -1,0 +1,7202 @@
+{
+  "75001|2026-06-15": {
+    "zip": "75001",
+    "date": "2026-06-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 86
+  },
+  "75002|2026-06-15": {
+    "zip": "75002",
+    "date": "2026-06-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 99
+  },
+  "75003|2026-06-15": {
+    "zip": "75003",
+    "date": "2026-06-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 80
+  },
+  "75004|2026-06-15": {
+    "zip": "75004",
+    "date": "2026-06-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 81
+  },
+  "75005|2026-06-15": {
+    "zip": "75005",
+    "date": "2026-06-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 78
+  },
+  "75006|2026-06-15": {
+    "zip": "75006",
+    "date": "2026-06-15",
+    "condition": "storm",
+    "precipitation_in": 1.82,
+    "visibility_mi": 2.7,
+    "temp_f": 88
+  },
+  "75007|2026-06-15": {
+    "zip": "75007",
+    "date": "2026-06-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 70
+  },
+  "75008|2026-06-15": {
+    "zip": "75008",
+    "date": "2026-06-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 76
+  },
+  "75009|2026-06-15": {
+    "zip": "75009",
+    "date": "2026-06-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 97
+  },
+  "75010|2026-06-15": {
+    "zip": "75010",
+    "date": "2026-06-15",
+    "condition": "rain",
+    "precipitation_in": 0.7,
+    "visibility_mi": 3.9,
+    "temp_f": 52
+  },
+  "75001|2026-06-14": {
+    "zip": "75001",
+    "date": "2026-06-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 97
+  },
+  "75002|2026-06-14": {
+    "zip": "75002",
+    "date": "2026-06-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 97
+  },
+  "75003|2026-06-14": {
+    "zip": "75003",
+    "date": "2026-06-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 82
+  },
+  "75004|2026-06-14": {
+    "zip": "75004",
+    "date": "2026-06-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 68
+  },
+  "75005|2026-06-14": {
+    "zip": "75005",
+    "date": "2026-06-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 61
+  },
+  "75006|2026-06-14": {
+    "zip": "75006",
+    "date": "2026-06-14",
+    "condition": "fog",
+    "precipitation_in": 0.08,
+    "visibility_mi": 1.1,
+    "temp_f": 44
+  },
+  "75007|2026-06-14": {
+    "zip": "75007",
+    "date": "2026-06-14",
+    "condition": "rain",
+    "precipitation_in": 0.1,
+    "visibility_mi": 5.2,
+    "temp_f": 57
+  },
+  "75008|2026-06-14": {
+    "zip": "75008",
+    "date": "2026-06-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 64
+  },
+  "75009|2026-06-14": {
+    "zip": "75009",
+    "date": "2026-06-14",
+    "condition": "fog",
+    "precipitation_in": 0.07,
+    "visibility_mi": 1.1,
+    "temp_f": 49
+  },
+  "75010|2026-06-14": {
+    "zip": "75010",
+    "date": "2026-06-14",
+    "condition": "storm",
+    "precipitation_in": 1.95,
+    "visibility_mi": 1.3,
+    "temp_f": 79
+  },
+  "75001|2026-06-13": {
+    "zip": "75001",
+    "date": "2026-06-13",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 82
+  },
+  "75002|2026-06-13": {
+    "zip": "75002",
+    "date": "2026-06-13",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 96
+  },
+  "75003|2026-06-13": {
+    "zip": "75003",
+    "date": "2026-06-13",
+    "condition": "rain",
+    "precipitation_in": 0.35,
+    "visibility_mi": 4.6,
+    "temp_f": 75
+  },
+  "75004|2026-06-13": {
+    "zip": "75004",
+    "date": "2026-06-13",
+    "condition": "snow",
+    "precipitation_in": 0.18,
+    "visibility_mi": 1.5,
+    "temp_f": 35
+  },
+  "75005|2026-06-13": {
+    "zip": "75005",
+    "date": "2026-06-13",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 73
+  },
+  "75006|2026-06-13": {
+    "zip": "75006",
+    "date": "2026-06-13",
+    "condition": "storm",
+    "precipitation_in": 2.03,
+    "visibility_mi": 3.2,
+    "temp_f": 67
+  },
+  "75007|2026-06-13": {
+    "zip": "75007",
+    "date": "2026-06-13",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 81
+  },
+  "75008|2026-06-13": {
+    "zip": "75008",
+    "date": "2026-06-13",
+    "condition": "snow",
+    "precipitation_in": 0.65,
+    "visibility_mi": 1.4,
+    "temp_f": 31
+  },
+  "75009|2026-06-13": {
+    "zip": "75009",
+    "date": "2026-06-13",
+    "condition": "rain",
+    "precipitation_in": 0.47,
+    "visibility_mi": 3.8,
+    "temp_f": 70
+  },
+  "75010|2026-06-13": {
+    "zip": "75010",
+    "date": "2026-06-13",
+    "condition": "storm",
+    "precipitation_in": 2.11,
+    "visibility_mi": 3.3,
+    "temp_f": 62
+  },
+  "75001|2026-06-12": {
+    "zip": "75001",
+    "date": "2026-06-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 89
+  },
+  "75002|2026-06-12": {
+    "zip": "75002",
+    "date": "2026-06-12",
+    "condition": "fog",
+    "precipitation_in": 0.01,
+    "visibility_mi": 0.3,
+    "temp_f": 61
+  },
+  "75003|2026-06-12": {
+    "zip": "75003",
+    "date": "2026-06-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 66
+  },
+  "75004|2026-06-12": {
+    "zip": "75004",
+    "date": "2026-06-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 100
+  },
+  "75005|2026-06-12": {
+    "zip": "75005",
+    "date": "2026-06-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 61
+  },
+  "75006|2026-06-12": {
+    "zip": "75006",
+    "date": "2026-06-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 89
+  },
+  "75007|2026-06-12": {
+    "zip": "75007",
+    "date": "2026-06-12",
+    "condition": "rain",
+    "precipitation_in": 0.08,
+    "visibility_mi": 3.8,
+    "temp_f": 82
+  },
+  "75008|2026-06-12": {
+    "zip": "75008",
+    "date": "2026-06-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 77
+  },
+  "75009|2026-06-12": {
+    "zip": "75009",
+    "date": "2026-06-12",
+    "condition": "storm",
+    "precipitation_in": 1.77,
+    "visibility_mi": 3.2,
+    "temp_f": 61
+  },
+  "75010|2026-06-12": {
+    "zip": "75010",
+    "date": "2026-06-12",
+    "condition": "snow",
+    "precipitation_in": 0.52,
+    "visibility_mi": 1.1,
+    "temp_f": 34
+  },
+  "75001|2026-06-11": {
+    "zip": "75001",
+    "date": "2026-06-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 73
+  },
+  "75002|2026-06-11": {
+    "zip": "75002",
+    "date": "2026-06-11",
+    "condition": "snow",
+    "precipitation_in": 0.47,
+    "visibility_mi": 1.2,
+    "temp_f": 18
+  },
+  "75003|2026-06-11": {
+    "zip": "75003",
+    "date": "2026-06-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 103
+  },
+  "75004|2026-06-11": {
+    "zip": "75004",
+    "date": "2026-06-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.5,
+    "temp_f": 102
+  },
+  "75005|2026-06-11": {
+    "zip": "75005",
+    "date": "2026-06-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 67
+  },
+  "75006|2026-06-11": {
+    "zip": "75006",
+    "date": "2026-06-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 66
+  },
+  "75007|2026-06-11": {
+    "zip": "75007",
+    "date": "2026-06-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 96
+  },
+  "75008|2026-06-11": {
+    "zip": "75008",
+    "date": "2026-06-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 80
+  },
+  "75009|2026-06-11": {
+    "zip": "75009",
+    "date": "2026-06-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 62
+  },
+  "75010|2026-06-11": {
+    "zip": "75010",
+    "date": "2026-06-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 80
+  },
+  "75001|2026-06-10": {
+    "zip": "75001",
+    "date": "2026-06-10",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 78
+  },
+  "75002|2026-06-10": {
+    "zip": "75002",
+    "date": "2026-06-10",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 62
+  },
+  "75003|2026-06-10": {
+    "zip": "75003",
+    "date": "2026-06-10",
+    "condition": "storm",
+    "precipitation_in": 2.7,
+    "visibility_mi": 1.7,
+    "temp_f": 73
+  },
+  "75004|2026-06-10": {
+    "zip": "75004",
+    "date": "2026-06-10",
+    "condition": "rain",
+    "precipitation_in": 0.81,
+    "visibility_mi": 3.4,
+    "temp_f": 72
+  },
+  "75005|2026-06-10": {
+    "zip": "75005",
+    "date": "2026-06-10",
+    "condition": "rain",
+    "precipitation_in": 1.15,
+    "visibility_mi": 5.4,
+    "temp_f": 62
+  },
+  "75006|2026-06-10": {
+    "zip": "75006",
+    "date": "2026-06-10",
+    "condition": "rain",
+    "precipitation_in": 0.33,
+    "visibility_mi": 3.6,
+    "temp_f": 67
+  },
+  "75007|2026-06-10": {
+    "zip": "75007",
+    "date": "2026-06-10",
+    "condition": "storm",
+    "precipitation_in": 1.46,
+    "visibility_mi": 2.6,
+    "temp_f": 65
+  },
+  "75008|2026-06-10": {
+    "zip": "75008",
+    "date": "2026-06-10",
+    "condition": "fog",
+    "precipitation_in": 0.01,
+    "visibility_mi": 1.4,
+    "temp_f": 60
+  },
+  "75009|2026-06-10": {
+    "zip": "75009",
+    "date": "2026-06-10",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 94
+  },
+  "75010|2026-06-10": {
+    "zip": "75010",
+    "date": "2026-06-10",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 70
+  },
+  "75001|2026-06-09": {
+    "zip": "75001",
+    "date": "2026-06-09",
+    "condition": "fog",
+    "precipitation_in": 0.09,
+    "visibility_mi": 2.3,
+    "temp_f": 45
+  },
+  "75002|2026-06-09": {
+    "zip": "75002",
+    "date": "2026-06-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 68
+  },
+  "75003|2026-06-09": {
+    "zip": "75003",
+    "date": "2026-06-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 62
+  },
+  "75004|2026-06-09": {
+    "zip": "75004",
+    "date": "2026-06-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 87
+  },
+  "75005|2026-06-09": {
+    "zip": "75005",
+    "date": "2026-06-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 101
+  },
+  "75006|2026-06-09": {
+    "zip": "75006",
+    "date": "2026-06-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 69
+  },
+  "75007|2026-06-09": {
+    "zip": "75007",
+    "date": "2026-06-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 100
+  },
+  "75008|2026-06-09": {
+    "zip": "75008",
+    "date": "2026-06-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 99
+  },
+  "75009|2026-06-09": {
+    "zip": "75009",
+    "date": "2026-06-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.5,
+    "temp_f": 66
+  },
+  "75010|2026-06-09": {
+    "zip": "75010",
+    "date": "2026-06-09",
+    "condition": "snow",
+    "precipitation_in": 0.57,
+    "visibility_mi": 1.5,
+    "temp_f": 33
+  },
+  "75001|2026-06-08": {
+    "zip": "75001",
+    "date": "2026-06-08",
+    "condition": "fog",
+    "precipitation_in": 0.04,
+    "visibility_mi": 2.2,
+    "temp_f": 50
+  },
+  "75002|2026-06-08": {
+    "zip": "75002",
+    "date": "2026-06-08",
+    "condition": "rain",
+    "precipitation_in": 0.21,
+    "visibility_mi": 3.8,
+    "temp_f": 50
+  },
+  "75003|2026-06-08": {
+    "zip": "75003",
+    "date": "2026-06-08",
+    "condition": "rain",
+    "precipitation_in": 0.93,
+    "visibility_mi": 3.1,
+    "temp_f": 65
+  },
+  "75004|2026-06-08": {
+    "zip": "75004",
+    "date": "2026-06-08",
+    "condition": "rain",
+    "precipitation_in": 0.31,
+    "visibility_mi": 5.7,
+    "temp_f": 60
+  },
+  "75005|2026-06-08": {
+    "zip": "75005",
+    "date": "2026-06-08",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 89
+  },
+  "75006|2026-06-08": {
+    "zip": "75006",
+    "date": "2026-06-08",
+    "condition": "storm",
+    "precipitation_in": 1.78,
+    "visibility_mi": 2.0,
+    "temp_f": 81
+  },
+  "75007|2026-06-08": {
+    "zip": "75007",
+    "date": "2026-06-08",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 99
+  },
+  "75008|2026-06-08": {
+    "zip": "75008",
+    "date": "2026-06-08",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 97
+  },
+  "75009|2026-06-08": {
+    "zip": "75009",
+    "date": "2026-06-08",
+    "condition": "storm",
+    "precipitation_in": 1.87,
+    "visibility_mi": 2.9,
+    "temp_f": 54
+  },
+  "75010|2026-06-08": {
+    "zip": "75010",
+    "date": "2026-06-08",
+    "condition": "rain",
+    "precipitation_in": 0.18,
+    "visibility_mi": 4.8,
+    "temp_f": 50
+  },
+  "75001|2026-06-07": {
+    "zip": "75001",
+    "date": "2026-06-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 63
+  },
+  "75002|2026-06-07": {
+    "zip": "75002",
+    "date": "2026-06-07",
+    "condition": "storm",
+    "precipitation_in": 1.57,
+    "visibility_mi": 3.3,
+    "temp_f": 55
+  },
+  "75003|2026-06-07": {
+    "zip": "75003",
+    "date": "2026-06-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 80
+  },
+  "75004|2026-06-07": {
+    "zip": "75004",
+    "date": "2026-06-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 100
+  },
+  "75005|2026-06-07": {
+    "zip": "75005",
+    "date": "2026-06-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 90
+  },
+  "75006|2026-06-07": {
+    "zip": "75006",
+    "date": "2026-06-07",
+    "condition": "fog",
+    "precipitation_in": 0.05,
+    "visibility_mi": 1.9,
+    "temp_f": 38
+  },
+  "75007|2026-06-07": {
+    "zip": "75007",
+    "date": "2026-06-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 95
+  },
+  "75008|2026-06-07": {
+    "zip": "75008",
+    "date": "2026-06-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 62
+  },
+  "75009|2026-06-07": {
+    "zip": "75009",
+    "date": "2026-06-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 73
+  },
+  "75010|2026-06-07": {
+    "zip": "75010",
+    "date": "2026-06-07",
+    "condition": "rain",
+    "precipitation_in": 0.15,
+    "visibility_mi": 4.3,
+    "temp_f": 58
+  },
+  "75001|2026-06-06": {
+    "zip": "75001",
+    "date": "2026-06-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 101
+  },
+  "75002|2026-06-06": {
+    "zip": "75002",
+    "date": "2026-06-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 93
+  },
+  "75003|2026-06-06": {
+    "zip": "75003",
+    "date": "2026-06-06",
+    "condition": "storm",
+    "precipitation_in": 2.7,
+    "visibility_mi": 2.1,
+    "temp_f": 76
+  },
+  "75004|2026-06-06": {
+    "zip": "75004",
+    "date": "2026-06-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 97
+  },
+  "75005|2026-06-06": {
+    "zip": "75005",
+    "date": "2026-06-06",
+    "condition": "fog",
+    "precipitation_in": 0.09,
+    "visibility_mi": 0.6,
+    "temp_f": 39
+  },
+  "75006|2026-06-06": {
+    "zip": "75006",
+    "date": "2026-06-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 80
+  },
+  "75007|2026-06-06": {
+    "zip": "75007",
+    "date": "2026-06-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 79
+  },
+  "75008|2026-06-06": {
+    "zip": "75008",
+    "date": "2026-06-06",
+    "condition": "fog",
+    "precipitation_in": 0.02,
+    "visibility_mi": 2.3,
+    "temp_f": 41
+  },
+  "75009|2026-06-06": {
+    "zip": "75009",
+    "date": "2026-06-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 90
+  },
+  "75010|2026-06-06": {
+    "zip": "75010",
+    "date": "2026-06-06",
+    "condition": "rain",
+    "precipitation_in": 1.03,
+    "visibility_mi": 5.2,
+    "temp_f": 48
+  },
+  "75001|2026-06-05": {
+    "zip": "75001",
+    "date": "2026-06-05",
+    "condition": "storm",
+    "precipitation_in": 2.57,
+    "visibility_mi": 1.7,
+    "temp_f": 89
+  },
+  "75002|2026-06-05": {
+    "zip": "75002",
+    "date": "2026-06-05",
+    "condition": "fog",
+    "precipitation_in": 0.05,
+    "visibility_mi": 1.1,
+    "temp_f": 37
+  },
+  "75003|2026-06-05": {
+    "zip": "75003",
+    "date": "2026-06-05",
+    "condition": "storm",
+    "precipitation_in": 2.0,
+    "visibility_mi": 1.7,
+    "temp_f": 87
+  },
+  "75004|2026-06-05": {
+    "zip": "75004",
+    "date": "2026-06-05",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 74
+  },
+  "75005|2026-06-05": {
+    "zip": "75005",
+    "date": "2026-06-05",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 83
+  },
+  "75006|2026-06-05": {
+    "zip": "75006",
+    "date": "2026-06-05",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.5,
+    "temp_f": 97
+  },
+  "75007|2026-06-05": {
+    "zip": "75007",
+    "date": "2026-06-05",
+    "condition": "storm",
+    "precipitation_in": 1.4,
+    "visibility_mi": 3.8,
+    "temp_f": 55
+  },
+  "75008|2026-06-05": {
+    "zip": "75008",
+    "date": "2026-06-05",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 79
+  },
+  "75009|2026-06-05": {
+    "zip": "75009",
+    "date": "2026-06-05",
+    "condition": "storm",
+    "precipitation_in": 2.12,
+    "visibility_mi": 3.1,
+    "temp_f": 88
+  },
+  "75010|2026-06-05": {
+    "zip": "75010",
+    "date": "2026-06-05",
+    "condition": "storm",
+    "precipitation_in": 1.15,
+    "visibility_mi": 2.4,
+    "temp_f": 89
+  },
+  "75001|2026-06-04": {
+    "zip": "75001",
+    "date": "2026-06-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 80
+  },
+  "75002|2026-06-04": {
+    "zip": "75002",
+    "date": "2026-06-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 65
+  },
+  "75003|2026-06-04": {
+    "zip": "75003",
+    "date": "2026-06-04",
+    "condition": "rain",
+    "precipitation_in": 1.02,
+    "visibility_mi": 3.3,
+    "temp_f": 78
+  },
+  "75004|2026-06-04": {
+    "zip": "75004",
+    "date": "2026-06-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 82
+  },
+  "75005|2026-06-04": {
+    "zip": "75005",
+    "date": "2026-06-04",
+    "condition": "rain",
+    "precipitation_in": 0.53,
+    "visibility_mi": 3.8,
+    "temp_f": 61
+  },
+  "75006|2026-06-04": {
+    "zip": "75006",
+    "date": "2026-06-04",
+    "condition": "storm",
+    "precipitation_in": 0.92,
+    "visibility_mi": 2.7,
+    "temp_f": 85
+  },
+  "75007|2026-06-04": {
+    "zip": "75007",
+    "date": "2026-06-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 79
+  },
+  "75008|2026-06-04": {
+    "zip": "75008",
+    "date": "2026-06-04",
+    "condition": "rain",
+    "precipitation_in": 0.75,
+    "visibility_mi": 4.3,
+    "temp_f": 81
+  },
+  "75009|2026-06-04": {
+    "zip": "75009",
+    "date": "2026-06-04",
+    "condition": "storm",
+    "precipitation_in": 2.79,
+    "visibility_mi": 2.1,
+    "temp_f": 60
+  },
+  "75010|2026-06-04": {
+    "zip": "75010",
+    "date": "2026-06-04",
+    "condition": "storm",
+    "precipitation_in": 1.93,
+    "visibility_mi": 2.6,
+    "temp_f": 83
+  },
+  "75001|2026-06-03": {
+    "zip": "75001",
+    "date": "2026-06-03",
+    "condition": "rain",
+    "precipitation_in": 0.98,
+    "visibility_mi": 6.5,
+    "temp_f": 62
+  },
+  "75002|2026-06-03": {
+    "zip": "75002",
+    "date": "2026-06-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.5,
+    "temp_f": 62
+  },
+  "75003|2026-06-03": {
+    "zip": "75003",
+    "date": "2026-06-03",
+    "condition": "rain",
+    "precipitation_in": 0.77,
+    "visibility_mi": 3.5,
+    "temp_f": 61
+  },
+  "75004|2026-06-03": {
+    "zip": "75004",
+    "date": "2026-06-03",
+    "condition": "storm",
+    "precipitation_in": 2.8,
+    "visibility_mi": 2.2,
+    "temp_f": 73
+  },
+  "75005|2026-06-03": {
+    "zip": "75005",
+    "date": "2026-06-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 61
+  },
+  "75006|2026-06-03": {
+    "zip": "75006",
+    "date": "2026-06-03",
+    "condition": "fog",
+    "precipitation_in": 0.02,
+    "visibility_mi": 0.8,
+    "temp_f": 60
+  },
+  "75007|2026-06-03": {
+    "zip": "75007",
+    "date": "2026-06-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 81
+  },
+  "75008|2026-06-03": {
+    "zip": "75008",
+    "date": "2026-06-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 86
+  },
+  "75009|2026-06-03": {
+    "zip": "75009",
+    "date": "2026-06-03",
+    "condition": "storm",
+    "precipitation_in": 2.03,
+    "visibility_mi": 1.1,
+    "temp_f": 63
+  },
+  "75010|2026-06-03": {
+    "zip": "75010",
+    "date": "2026-06-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 91
+  },
+  "75001|2026-06-02": {
+    "zip": "75001",
+    "date": "2026-06-02",
+    "condition": "rain",
+    "precipitation_in": 0.97,
+    "visibility_mi": 5.6,
+    "temp_f": 78
+  },
+  "75002|2026-06-02": {
+    "zip": "75002",
+    "date": "2026-06-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 95
+  },
+  "75003|2026-06-02": {
+    "zip": "75003",
+    "date": "2026-06-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 64
+  },
+  "75004|2026-06-02": {
+    "zip": "75004",
+    "date": "2026-06-02",
+    "condition": "rain",
+    "precipitation_in": 0.39,
+    "visibility_mi": 5.9,
+    "temp_f": 68
+  },
+  "75005|2026-06-02": {
+    "zip": "75005",
+    "date": "2026-06-02",
+    "condition": "storm",
+    "precipitation_in": 1.87,
+    "visibility_mi": 1.6,
+    "temp_f": 73
+  },
+  "75006|2026-06-02": {
+    "zip": "75006",
+    "date": "2026-06-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 62
+  },
+  "75007|2026-06-02": {
+    "zip": "75007",
+    "date": "2026-06-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 71
+  },
+  "75008|2026-06-02": {
+    "zip": "75008",
+    "date": "2026-06-02",
+    "condition": "storm",
+    "precipitation_in": 2.01,
+    "visibility_mi": 1.6,
+    "temp_f": 59
+  },
+  "75009|2026-06-02": {
+    "zip": "75009",
+    "date": "2026-06-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 63
+  },
+  "75010|2026-06-02": {
+    "zip": "75010",
+    "date": "2026-06-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 76
+  },
+  "75001|2026-06-01": {
+    "zip": "75001",
+    "date": "2026-06-01",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 74
+  },
+  "75002|2026-06-01": {
+    "zip": "75002",
+    "date": "2026-06-01",
+    "condition": "rain",
+    "precipitation_in": 0.4,
+    "visibility_mi": 3.4,
+    "temp_f": 50
+  },
+  "75003|2026-06-01": {
+    "zip": "75003",
+    "date": "2026-06-01",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 62
+  },
+  "75004|2026-06-01": {
+    "zip": "75004",
+    "date": "2026-06-01",
+    "condition": "rain",
+    "precipitation_in": 1.09,
+    "visibility_mi": 3.6,
+    "temp_f": 69
+  },
+  "75005|2026-06-01": {
+    "zip": "75005",
+    "date": "2026-06-01",
+    "condition": "rain",
+    "precipitation_in": 0.89,
+    "visibility_mi": 5.1,
+    "temp_f": 68
+  },
+  "75006|2026-06-01": {
+    "zip": "75006",
+    "date": "2026-06-01",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 94
+  },
+  "75007|2026-06-01": {
+    "zip": "75007",
+    "date": "2026-06-01",
+    "condition": "fog",
+    "precipitation_in": 0.1,
+    "visibility_mi": 0.7,
+    "temp_f": 36
+  },
+  "75008|2026-06-01": {
+    "zip": "75008",
+    "date": "2026-06-01",
+    "condition": "rain",
+    "precipitation_in": 0.5,
+    "visibility_mi": 6.5,
+    "temp_f": 55
+  },
+  "75009|2026-06-01": {
+    "zip": "75009",
+    "date": "2026-06-01",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 99
+  },
+  "75010|2026-06-01": {
+    "zip": "75010",
+    "date": "2026-06-01",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 67
+  },
+  "75001|2026-05-31": {
+    "zip": "75001",
+    "date": "2026-05-31",
+    "condition": "rain",
+    "precipitation_in": 0.93,
+    "visibility_mi": 6.0,
+    "temp_f": 49
+  },
+  "75002|2026-05-31": {
+    "zip": "75002",
+    "date": "2026-05-31",
+    "condition": "storm",
+    "precipitation_in": 2.32,
+    "visibility_mi": 2.9,
+    "temp_f": 65
+  },
+  "75003|2026-05-31": {
+    "zip": "75003",
+    "date": "2026-05-31",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 95
+  },
+  "75004|2026-05-31": {
+    "zip": "75004",
+    "date": "2026-05-31",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 78
+  },
+  "75005|2026-05-31": {
+    "zip": "75005",
+    "date": "2026-05-31",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 100
+  },
+  "75006|2026-05-31": {
+    "zip": "75006",
+    "date": "2026-05-31",
+    "condition": "storm",
+    "precipitation_in": 1.83,
+    "visibility_mi": 1.6,
+    "temp_f": 74
+  },
+  "75007|2026-05-31": {
+    "zip": "75007",
+    "date": "2026-05-31",
+    "condition": "storm",
+    "precipitation_in": 1.44,
+    "visibility_mi": 1.4,
+    "temp_f": 70
+  },
+  "75008|2026-05-31": {
+    "zip": "75008",
+    "date": "2026-05-31",
+    "condition": "storm",
+    "precipitation_in": 1.29,
+    "visibility_mi": 1.2,
+    "temp_f": 91
+  },
+  "75009|2026-05-31": {
+    "zip": "75009",
+    "date": "2026-05-31",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 62
+  },
+  "75010|2026-05-31": {
+    "zip": "75010",
+    "date": "2026-05-31",
+    "condition": "rain",
+    "precipitation_in": 1.09,
+    "visibility_mi": 3.2,
+    "temp_f": 72
+  },
+  "75001|2026-05-30": {
+    "zip": "75001",
+    "date": "2026-05-30",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 99
+  },
+  "75002|2026-05-30": {
+    "zip": "75002",
+    "date": "2026-05-30",
+    "condition": "storm",
+    "precipitation_in": 2.06,
+    "visibility_mi": 3.1,
+    "temp_f": 80
+  },
+  "75003|2026-05-30": {
+    "zip": "75003",
+    "date": "2026-05-30",
+    "condition": "storm",
+    "precipitation_in": 1.51,
+    "visibility_mi": 2.0,
+    "temp_f": 64
+  },
+  "75004|2026-05-30": {
+    "zip": "75004",
+    "date": "2026-05-30",
+    "condition": "fog",
+    "precipitation_in": 0.08,
+    "visibility_mi": 0.4,
+    "temp_f": 64
+  },
+  "75005|2026-05-30": {
+    "zip": "75005",
+    "date": "2026-05-30",
+    "condition": "rain",
+    "precipitation_in": 0.7,
+    "visibility_mi": 3.4,
+    "temp_f": 77
+  },
+  "75006|2026-05-30": {
+    "zip": "75006",
+    "date": "2026-05-30",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 90
+  },
+  "75007|2026-05-30": {
+    "zip": "75007",
+    "date": "2026-05-30",
+    "condition": "rain",
+    "precipitation_in": 0.32,
+    "visibility_mi": 3.9,
+    "temp_f": 64
+  },
+  "75008|2026-05-30": {
+    "zip": "75008",
+    "date": "2026-05-30",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 103
+  },
+  "75009|2026-05-30": {
+    "zip": "75009",
+    "date": "2026-05-30",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 90
+  },
+  "75010|2026-05-30": {
+    "zip": "75010",
+    "date": "2026-05-30",
+    "condition": "rain",
+    "precipitation_in": 0.08,
+    "visibility_mi": 4.9,
+    "temp_f": 70
+  },
+  "75001|2026-05-29": {
+    "zip": "75001",
+    "date": "2026-05-29",
+    "condition": "rain",
+    "precipitation_in": 0.58,
+    "visibility_mi": 3.7,
+    "temp_f": 70
+  },
+  "75002|2026-05-29": {
+    "zip": "75002",
+    "date": "2026-05-29",
+    "condition": "storm",
+    "precipitation_in": 1.95,
+    "visibility_mi": 2.5,
+    "temp_f": 77
+  },
+  "75003|2026-05-29": {
+    "zip": "75003",
+    "date": "2026-05-29",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 80
+  },
+  "75004|2026-05-29": {
+    "zip": "75004",
+    "date": "2026-05-29",
+    "condition": "rain",
+    "precipitation_in": 0.58,
+    "visibility_mi": 5.4,
+    "temp_f": 63
+  },
+  "75005|2026-05-29": {
+    "zip": "75005",
+    "date": "2026-05-29",
+    "condition": "fog",
+    "precipitation_in": 0.02,
+    "visibility_mi": 0.6,
+    "temp_f": 50
+  },
+  "75006|2026-05-29": {
+    "zip": "75006",
+    "date": "2026-05-29",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 98
+  },
+  "75007|2026-05-29": {
+    "zip": "75007",
+    "date": "2026-05-29",
+    "condition": "rain",
+    "precipitation_in": 0.95,
+    "visibility_mi": 4.7,
+    "temp_f": 69
+  },
+  "75008|2026-05-29": {
+    "zip": "75008",
+    "date": "2026-05-29",
+    "condition": "rain",
+    "precipitation_in": 0.85,
+    "visibility_mi": 3.7,
+    "temp_f": 52
+  },
+  "75009|2026-05-29": {
+    "zip": "75009",
+    "date": "2026-05-29",
+    "condition": "storm",
+    "precipitation_in": 2.47,
+    "visibility_mi": 1.3,
+    "temp_f": 90
+  },
+  "75010|2026-05-29": {
+    "zip": "75010",
+    "date": "2026-05-29",
+    "condition": "rain",
+    "precipitation_in": 0.42,
+    "visibility_mi": 3.4,
+    "temp_f": 76
+  },
+  "75001|2026-05-28": {
+    "zip": "75001",
+    "date": "2026-05-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 99
+  },
+  "75002|2026-05-28": {
+    "zip": "75002",
+    "date": "2026-05-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 85
+  },
+  "75003|2026-05-28": {
+    "zip": "75003",
+    "date": "2026-05-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 66
+  },
+  "75004|2026-05-28": {
+    "zip": "75004",
+    "date": "2026-05-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 101
+  },
+  "75005|2026-05-28": {
+    "zip": "75005",
+    "date": "2026-05-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 89
+  },
+  "75006|2026-05-28": {
+    "zip": "75006",
+    "date": "2026-05-28",
+    "condition": "rain",
+    "precipitation_in": 0.39,
+    "visibility_mi": 5.5,
+    "temp_f": 76
+  },
+  "75007|2026-05-28": {
+    "zip": "75007",
+    "date": "2026-05-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 80
+  },
+  "75008|2026-05-28": {
+    "zip": "75008",
+    "date": "2026-05-28",
+    "condition": "storm",
+    "precipitation_in": 2.39,
+    "visibility_mi": 3.0,
+    "temp_f": 79
+  },
+  "75009|2026-05-28": {
+    "zip": "75009",
+    "date": "2026-05-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 100
+  },
+  "75010|2026-05-28": {
+    "zip": "75010",
+    "date": "2026-05-28",
+    "condition": "rain",
+    "precipitation_in": 0.51,
+    "visibility_mi": 3.5,
+    "temp_f": 66
+  },
+  "75001|2026-05-27": {
+    "zip": "75001",
+    "date": "2026-05-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 64
+  },
+  "75002|2026-05-27": {
+    "zip": "75002",
+    "date": "2026-05-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 83
+  },
+  "75003|2026-05-27": {
+    "zip": "75003",
+    "date": "2026-05-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 76
+  },
+  "75004|2026-05-27": {
+    "zip": "75004",
+    "date": "2026-05-27",
+    "condition": "rain",
+    "precipitation_in": 0.86,
+    "visibility_mi": 4.6,
+    "temp_f": 68
+  },
+  "75005|2026-05-27": {
+    "zip": "75005",
+    "date": "2026-05-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 74
+  },
+  "75006|2026-05-27": {
+    "zip": "75006",
+    "date": "2026-05-27",
+    "condition": "fog",
+    "precipitation_in": 0.02,
+    "visibility_mi": 0.5,
+    "temp_f": 52
+  },
+  "75007|2026-05-27": {
+    "zip": "75007",
+    "date": "2026-05-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 87
+  },
+  "75008|2026-05-27": {
+    "zip": "75008",
+    "date": "2026-05-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 69
+  },
+  "75009|2026-05-27": {
+    "zip": "75009",
+    "date": "2026-05-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 70
+  },
+  "75010|2026-05-27": {
+    "zip": "75010",
+    "date": "2026-05-27",
+    "condition": "rain",
+    "precipitation_in": 0.81,
+    "visibility_mi": 6.9,
+    "temp_f": 56
+  },
+  "75001|2026-05-26": {
+    "zip": "75001",
+    "date": "2026-05-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 90
+  },
+  "75002|2026-05-26": {
+    "zip": "75002",
+    "date": "2026-05-26",
+    "condition": "snow",
+    "precipitation_in": 0.46,
+    "visibility_mi": 2.7,
+    "temp_f": 23
+  },
+  "75003|2026-05-26": {
+    "zip": "75003",
+    "date": "2026-05-26",
+    "condition": "rain",
+    "precipitation_in": 0.64,
+    "visibility_mi": 5.2,
+    "temp_f": 76
+  },
+  "75004|2026-05-26": {
+    "zip": "75004",
+    "date": "2026-05-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 99
+  },
+  "75005|2026-05-26": {
+    "zip": "75005",
+    "date": "2026-05-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 76
+  },
+  "75006|2026-05-26": {
+    "zip": "75006",
+    "date": "2026-05-26",
+    "condition": "rain",
+    "precipitation_in": 0.36,
+    "visibility_mi": 6.7,
+    "temp_f": 84
+  },
+  "75007|2026-05-26": {
+    "zip": "75007",
+    "date": "2026-05-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 91
+  },
+  "75008|2026-05-26": {
+    "zip": "75008",
+    "date": "2026-05-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 66
+  },
+  "75009|2026-05-26": {
+    "zip": "75009",
+    "date": "2026-05-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 78
+  },
+  "75010|2026-05-26": {
+    "zip": "75010",
+    "date": "2026-05-26",
+    "condition": "rain",
+    "precipitation_in": 0.64,
+    "visibility_mi": 5.1,
+    "temp_f": 53
+  },
+  "75001|2026-05-25": {
+    "zip": "75001",
+    "date": "2026-05-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 103
+  },
+  "75002|2026-05-25": {
+    "zip": "75002",
+    "date": "2026-05-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 98
+  },
+  "75003|2026-05-25": {
+    "zip": "75003",
+    "date": "2026-05-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 95
+  },
+  "75004|2026-05-25": {
+    "zip": "75004",
+    "date": "2026-05-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 91
+  },
+  "75005|2026-05-25": {
+    "zip": "75005",
+    "date": "2026-05-25",
+    "condition": "storm",
+    "precipitation_in": 2.27,
+    "visibility_mi": 2.3,
+    "temp_f": 70
+  },
+  "75006|2026-05-25": {
+    "zip": "75006",
+    "date": "2026-05-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 99
+  },
+  "75007|2026-05-25": {
+    "zip": "75007",
+    "date": "2026-05-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 64
+  },
+  "75008|2026-05-25": {
+    "zip": "75008",
+    "date": "2026-05-25",
+    "condition": "fog",
+    "precipitation_in": 0.05,
+    "visibility_mi": 0.6,
+    "temp_f": 36
+  },
+  "75009|2026-05-25": {
+    "zip": "75009",
+    "date": "2026-05-25",
+    "condition": "fog",
+    "precipitation_in": 0.1,
+    "visibility_mi": 2.1,
+    "temp_f": 54
+  },
+  "75010|2026-05-25": {
+    "zip": "75010",
+    "date": "2026-05-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 93
+  },
+  "75001|2026-05-24": {
+    "zip": "75001",
+    "date": "2026-05-24",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 69
+  },
+  "75002|2026-05-24": {
+    "zip": "75002",
+    "date": "2026-05-24",
+    "condition": "storm",
+    "precipitation_in": 1.36,
+    "visibility_mi": 3.6,
+    "temp_f": 52
+  },
+  "75003|2026-05-24": {
+    "zip": "75003",
+    "date": "2026-05-24",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 70
+  },
+  "75004|2026-05-24": {
+    "zip": "75004",
+    "date": "2026-05-24",
+    "condition": "fog",
+    "precipitation_in": 0.04,
+    "visibility_mi": 2.1,
+    "temp_f": 43
+  },
+  "75005|2026-05-24": {
+    "zip": "75005",
+    "date": "2026-05-24",
+    "condition": "snow",
+    "precipitation_in": 0.24,
+    "visibility_mi": 1.7,
+    "temp_f": 34
+  },
+  "75006|2026-05-24": {
+    "zip": "75006",
+    "date": "2026-05-24",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 70
+  },
+  "75007|2026-05-24": {
+    "zip": "75007",
+    "date": "2026-05-24",
+    "condition": "storm",
+    "precipitation_in": 2.67,
+    "visibility_mi": 1.5,
+    "temp_f": 83
+  },
+  "75008|2026-05-24": {
+    "zip": "75008",
+    "date": "2026-05-24",
+    "condition": "rain",
+    "precipitation_in": 0.94,
+    "visibility_mi": 4.0,
+    "temp_f": 76
+  },
+  "75009|2026-05-24": {
+    "zip": "75009",
+    "date": "2026-05-24",
+    "condition": "fog",
+    "precipitation_in": 0.02,
+    "visibility_mi": 1.5,
+    "temp_f": 61
+  },
+  "75010|2026-05-24": {
+    "zip": "75010",
+    "date": "2026-05-24",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 68
+  },
+  "75001|2026-05-23": {
+    "zip": "75001",
+    "date": "2026-05-23",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 80
+  },
+  "75002|2026-05-23": {
+    "zip": "75002",
+    "date": "2026-05-23",
+    "condition": "rain",
+    "precipitation_in": 0.91,
+    "visibility_mi": 6.0,
+    "temp_f": 82
+  },
+  "75003|2026-05-23": {
+    "zip": "75003",
+    "date": "2026-05-23",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 91
+  },
+  "75004|2026-05-23": {
+    "zip": "75004",
+    "date": "2026-05-23",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 61
+  },
+  "75005|2026-05-23": {
+    "zip": "75005",
+    "date": "2026-05-23",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 81
+  },
+  "75006|2026-05-23": {
+    "zip": "75006",
+    "date": "2026-05-23",
+    "condition": "rain",
+    "precipitation_in": 0.84,
+    "visibility_mi": 3.2,
+    "temp_f": 82
+  },
+  "75007|2026-05-23": {
+    "zip": "75007",
+    "date": "2026-05-23",
+    "condition": "fog",
+    "precipitation_in": 0.04,
+    "visibility_mi": 2.1,
+    "temp_f": 54
+  },
+  "75008|2026-05-23": {
+    "zip": "75008",
+    "date": "2026-05-23",
+    "condition": "fog",
+    "precipitation_in": 0.09,
+    "visibility_mi": 1.0,
+    "temp_f": 43
+  },
+  "75009|2026-05-23": {
+    "zip": "75009",
+    "date": "2026-05-23",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 90
+  },
+  "75010|2026-05-23": {
+    "zip": "75010",
+    "date": "2026-05-23",
+    "condition": "fog",
+    "precipitation_in": 0.07,
+    "visibility_mi": 1.9,
+    "temp_f": 53
+  },
+  "75001|2026-05-22": {
+    "zip": "75001",
+    "date": "2026-05-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 72
+  },
+  "75002|2026-05-22": {
+    "zip": "75002",
+    "date": "2026-05-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 65
+  },
+  "75003|2026-05-22": {
+    "zip": "75003",
+    "date": "2026-05-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 89
+  },
+  "75004|2026-05-22": {
+    "zip": "75004",
+    "date": "2026-05-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 73
+  },
+  "75005|2026-05-22": {
+    "zip": "75005",
+    "date": "2026-05-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 99
+  },
+  "75006|2026-05-22": {
+    "zip": "75006",
+    "date": "2026-05-22",
+    "condition": "fog",
+    "precipitation_in": 0.09,
+    "visibility_mi": 0.7,
+    "temp_f": 54
+  },
+  "75007|2026-05-22": {
+    "zip": "75007",
+    "date": "2026-05-22",
+    "condition": "fog",
+    "precipitation_in": 0.01,
+    "visibility_mi": 2.4,
+    "temp_f": 37
+  },
+  "75008|2026-05-22": {
+    "zip": "75008",
+    "date": "2026-05-22",
+    "condition": "storm",
+    "precipitation_in": 1.06,
+    "visibility_mi": 3.0,
+    "temp_f": 88
+  },
+  "75009|2026-05-22": {
+    "zip": "75009",
+    "date": "2026-05-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 77
+  },
+  "75010|2026-05-22": {
+    "zip": "75010",
+    "date": "2026-05-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 101
+  },
+  "75001|2026-05-21": {
+    "zip": "75001",
+    "date": "2026-05-21",
+    "condition": "rain",
+    "precipitation_in": 1.11,
+    "visibility_mi": 4.1,
+    "temp_f": 75
+  },
+  "75002|2026-05-21": {
+    "zip": "75002",
+    "date": "2026-05-21",
+    "condition": "snow",
+    "precipitation_in": 0.64,
+    "visibility_mi": 4.1,
+    "temp_f": 28
+  },
+  "75003|2026-05-21": {
+    "zip": "75003",
+    "date": "2026-05-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 64
+  },
+  "75004|2026-05-21": {
+    "zip": "75004",
+    "date": "2026-05-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 77
+  },
+  "75005|2026-05-21": {
+    "zip": "75005",
+    "date": "2026-05-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 73
+  },
+  "75006|2026-05-21": {
+    "zip": "75006",
+    "date": "2026-05-21",
+    "condition": "storm",
+    "precipitation_in": 1.59,
+    "visibility_mi": 2.9,
+    "temp_f": 58
+  },
+  "75007|2026-05-21": {
+    "zip": "75007",
+    "date": "2026-05-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 100
+  },
+  "75008|2026-05-21": {
+    "zip": "75008",
+    "date": "2026-05-21",
+    "condition": "fog",
+    "precipitation_in": 0.01,
+    "visibility_mi": 1.2,
+    "temp_f": 43
+  },
+  "75009|2026-05-21": {
+    "zip": "75009",
+    "date": "2026-05-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 77
+  },
+  "75010|2026-05-21": {
+    "zip": "75010",
+    "date": "2026-05-21",
+    "condition": "rain",
+    "precipitation_in": 0.07,
+    "visibility_mi": 5.0,
+    "temp_f": 48
+  },
+  "75001|2026-05-20": {
+    "zip": "75001",
+    "date": "2026-05-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 82
+  },
+  "75002|2026-05-20": {
+    "zip": "75002",
+    "date": "2026-05-20",
+    "condition": "rain",
+    "precipitation_in": 0.71,
+    "visibility_mi": 5.1,
+    "temp_f": 79
+  },
+  "75003|2026-05-20": {
+    "zip": "75003",
+    "date": "2026-05-20",
+    "condition": "rain",
+    "precipitation_in": 0.55,
+    "visibility_mi": 6.4,
+    "temp_f": 52
+  },
+  "75004|2026-05-20": {
+    "zip": "75004",
+    "date": "2026-05-20",
+    "condition": "rain",
+    "precipitation_in": 0.31,
+    "visibility_mi": 4.5,
+    "temp_f": 78
+  },
+  "75005|2026-05-20": {
+    "zip": "75005",
+    "date": "2026-05-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 83
+  },
+  "75006|2026-05-20": {
+    "zip": "75006",
+    "date": "2026-05-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 101
+  },
+  "75007|2026-05-20": {
+    "zip": "75007",
+    "date": "2026-05-20",
+    "condition": "fog",
+    "precipitation_in": 0.01,
+    "visibility_mi": 1.4,
+    "temp_f": 45
+  },
+  "75008|2026-05-20": {
+    "zip": "75008",
+    "date": "2026-05-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 79
+  },
+  "75009|2026-05-20": {
+    "zip": "75009",
+    "date": "2026-05-20",
+    "condition": "fog",
+    "precipitation_in": 0.02,
+    "visibility_mi": 1.5,
+    "temp_f": 47
+  },
+  "75010|2026-05-20": {
+    "zip": "75010",
+    "date": "2026-05-20",
+    "condition": "fog",
+    "precipitation_in": 0.02,
+    "visibility_mi": 1.8,
+    "temp_f": 63
+  },
+  "75001|2026-05-19": {
+    "zip": "75001",
+    "date": "2026-05-19",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 66
+  },
+  "75002|2026-05-19": {
+    "zip": "75002",
+    "date": "2026-05-19",
+    "condition": "fog",
+    "precipitation_in": 0.04,
+    "visibility_mi": 0.6,
+    "temp_f": 36
+  },
+  "75003|2026-05-19": {
+    "zip": "75003",
+    "date": "2026-05-19",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 76
+  },
+  "75004|2026-05-19": {
+    "zip": "75004",
+    "date": "2026-05-19",
+    "condition": "rain",
+    "precipitation_in": 0.5,
+    "visibility_mi": 6.2,
+    "temp_f": 67
+  },
+  "75005|2026-05-19": {
+    "zip": "75005",
+    "date": "2026-05-19",
+    "condition": "rain",
+    "precipitation_in": 0.66,
+    "visibility_mi": 6.3,
+    "temp_f": 76
+  },
+  "75006|2026-05-19": {
+    "zip": "75006",
+    "date": "2026-05-19",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 63
+  },
+  "75007|2026-05-19": {
+    "zip": "75007",
+    "date": "2026-05-19",
+    "condition": "rain",
+    "precipitation_in": 0.19,
+    "visibility_mi": 6.2,
+    "temp_f": 81
+  },
+  "75008|2026-05-19": {
+    "zip": "75008",
+    "date": "2026-05-19",
+    "condition": "rain",
+    "precipitation_in": 1.13,
+    "visibility_mi": 6.5,
+    "temp_f": 82
+  },
+  "75009|2026-05-19": {
+    "zip": "75009",
+    "date": "2026-05-19",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 65
+  },
+  "75010|2026-05-19": {
+    "zip": "75010",
+    "date": "2026-05-19",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 62
+  },
+  "75001|2026-05-18": {
+    "zip": "75001",
+    "date": "2026-05-18",
+    "condition": "rain",
+    "precipitation_in": 1.09,
+    "visibility_mi": 5.5,
+    "temp_f": 63
+  },
+  "75002|2026-05-18": {
+    "zip": "75002",
+    "date": "2026-05-18",
+    "condition": "snow",
+    "precipitation_in": 0.49,
+    "visibility_mi": 1.1,
+    "temp_f": 19
+  },
+  "75003|2026-05-18": {
+    "zip": "75003",
+    "date": "2026-05-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 100
+  },
+  "75004|2026-05-18": {
+    "zip": "75004",
+    "date": "2026-05-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 67
+  },
+  "75005|2026-05-18": {
+    "zip": "75005",
+    "date": "2026-05-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 75
+  },
+  "75006|2026-05-18": {
+    "zip": "75006",
+    "date": "2026-05-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 86
+  },
+  "75007|2026-05-18": {
+    "zip": "75007",
+    "date": "2026-05-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 95
+  },
+  "75008|2026-05-18": {
+    "zip": "75008",
+    "date": "2026-05-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 74
+  },
+  "75009|2026-05-18": {
+    "zip": "75009",
+    "date": "2026-05-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 68
+  },
+  "75010|2026-05-18": {
+    "zip": "75010",
+    "date": "2026-05-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 84
+  },
+  "75001|2026-05-17": {
+    "zip": "75001",
+    "date": "2026-05-17",
+    "condition": "storm",
+    "precipitation_in": 1.13,
+    "visibility_mi": 1.7,
+    "temp_f": 89
+  },
+  "75002|2026-05-17": {
+    "zip": "75002",
+    "date": "2026-05-17",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 101
+  },
+  "75003|2026-05-17": {
+    "zip": "75003",
+    "date": "2026-05-17",
+    "condition": "storm",
+    "precipitation_in": 1.55,
+    "visibility_mi": 1.5,
+    "temp_f": 83
+  },
+  "75004|2026-05-17": {
+    "zip": "75004",
+    "date": "2026-05-17",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 66
+  },
+  "75005|2026-05-17": {
+    "zip": "75005",
+    "date": "2026-05-17",
+    "condition": "fog",
+    "precipitation_in": 0.06,
+    "visibility_mi": 0.9,
+    "temp_f": 57
+  },
+  "75006|2026-05-17": {
+    "zip": "75006",
+    "date": "2026-05-17",
+    "condition": "rain",
+    "precipitation_in": 0.85,
+    "visibility_mi": 3.8,
+    "temp_f": 65
+  },
+  "75007|2026-05-17": {
+    "zip": "75007",
+    "date": "2026-05-17",
+    "condition": "rain",
+    "precipitation_in": 0.57,
+    "visibility_mi": 4.0,
+    "temp_f": 59
+  },
+  "75008|2026-05-17": {
+    "zip": "75008",
+    "date": "2026-05-17",
+    "condition": "storm",
+    "precipitation_in": 2.18,
+    "visibility_mi": 2.8,
+    "temp_f": 83
+  },
+  "75009|2026-05-17": {
+    "zip": "75009",
+    "date": "2026-05-17",
+    "condition": "storm",
+    "precipitation_in": 2.7,
+    "visibility_mi": 2.9,
+    "temp_f": 71
+  },
+  "75010|2026-05-17": {
+    "zip": "75010",
+    "date": "2026-05-17",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 73
+  },
+  "75001|2026-05-16": {
+    "zip": "75001",
+    "date": "2026-05-16",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 100
+  },
+  "75002|2026-05-16": {
+    "zip": "75002",
+    "date": "2026-05-16",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 93
+  },
+  "75003|2026-05-16": {
+    "zip": "75003",
+    "date": "2026-05-16",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 74
+  },
+  "75004|2026-05-16": {
+    "zip": "75004",
+    "date": "2026-05-16",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 70
+  },
+  "75005|2026-05-16": {
+    "zip": "75005",
+    "date": "2026-05-16",
+    "condition": "snow",
+    "precipitation_in": 0.61,
+    "visibility_mi": 4.6,
+    "temp_f": 33
+  },
+  "75006|2026-05-16": {
+    "zip": "75006",
+    "date": "2026-05-16",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 64
+  },
+  "75007|2026-05-16": {
+    "zip": "75007",
+    "date": "2026-05-16",
+    "condition": "fog",
+    "precipitation_in": 0.04,
+    "visibility_mi": 0.7,
+    "temp_f": 43
+  },
+  "75008|2026-05-16": {
+    "zip": "75008",
+    "date": "2026-05-16",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 90
+  },
+  "75009|2026-05-16": {
+    "zip": "75009",
+    "date": "2026-05-16",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 95
+  },
+  "75010|2026-05-16": {
+    "zip": "75010",
+    "date": "2026-05-16",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.5,
+    "temp_f": 93
+  },
+  "75001|2026-05-15": {
+    "zip": "75001",
+    "date": "2026-05-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 89
+  },
+  "75002|2026-05-15": {
+    "zip": "75002",
+    "date": "2026-05-15",
+    "condition": "storm",
+    "precipitation_in": 1.96,
+    "visibility_mi": 2.3,
+    "temp_f": 72
+  },
+  "75003|2026-05-15": {
+    "zip": "75003",
+    "date": "2026-05-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 67
+  },
+  "75004|2026-05-15": {
+    "zip": "75004",
+    "date": "2026-05-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 85
+  },
+  "75005|2026-05-15": {
+    "zip": "75005",
+    "date": "2026-05-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 64
+  },
+  "75006|2026-05-15": {
+    "zip": "75006",
+    "date": "2026-05-15",
+    "condition": "rain",
+    "precipitation_in": 0.22,
+    "visibility_mi": 6.7,
+    "temp_f": 77
+  },
+  "75007|2026-05-15": {
+    "zip": "75007",
+    "date": "2026-05-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 73
+  },
+  "75008|2026-05-15": {
+    "zip": "75008",
+    "date": "2026-05-15",
+    "condition": "fog",
+    "precipitation_in": 0.04,
+    "visibility_mi": 0.8,
+    "temp_f": 45
+  },
+  "75009|2026-05-15": {
+    "zip": "75009",
+    "date": "2026-05-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 78
+  },
+  "75010|2026-05-15": {
+    "zip": "75010",
+    "date": "2026-05-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 87
+  },
+  "75001|2026-05-14": {
+    "zip": "75001",
+    "date": "2026-05-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 79
+  },
+  "75002|2026-05-14": {
+    "zip": "75002",
+    "date": "2026-05-14",
+    "condition": "storm",
+    "precipitation_in": 1.11,
+    "visibility_mi": 3.4,
+    "temp_f": 91
+  },
+  "75003|2026-05-14": {
+    "zip": "75003",
+    "date": "2026-05-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 75
+  },
+  "75004|2026-05-14": {
+    "zip": "75004",
+    "date": "2026-05-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 74
+  },
+  "75005|2026-05-14": {
+    "zip": "75005",
+    "date": "2026-05-14",
+    "condition": "storm",
+    "precipitation_in": 1.75,
+    "visibility_mi": 2.4,
+    "temp_f": 52
+  },
+  "75006|2026-05-14": {
+    "zip": "75006",
+    "date": "2026-05-14",
+    "condition": "rain",
+    "precipitation_in": 0.9,
+    "visibility_mi": 4.0,
+    "temp_f": 68
+  },
+  "75007|2026-05-14": {
+    "zip": "75007",
+    "date": "2026-05-14",
+    "condition": "rain",
+    "precipitation_in": 0.72,
+    "visibility_mi": 6.6,
+    "temp_f": 57
+  },
+  "75008|2026-05-14": {
+    "zip": "75008",
+    "date": "2026-05-14",
+    "condition": "storm",
+    "precipitation_in": 2.6,
+    "visibility_mi": 2.3,
+    "temp_f": 54
+  },
+  "75009|2026-05-14": {
+    "zip": "75009",
+    "date": "2026-05-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 93
+  },
+  "75010|2026-05-14": {
+    "zip": "75010",
+    "date": "2026-05-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 67
+  },
+  "75001|2026-05-13": {
+    "zip": "75001",
+    "date": "2026-05-13",
+    "condition": "rain",
+    "precipitation_in": 0.62,
+    "visibility_mi": 3.3,
+    "temp_f": 48
+  },
+  "75002|2026-05-13": {
+    "zip": "75002",
+    "date": "2026-05-13",
+    "condition": "snow",
+    "precipitation_in": 0.54,
+    "visibility_mi": 4.8,
+    "temp_f": 22
+  },
+  "75003|2026-05-13": {
+    "zip": "75003",
+    "date": "2026-05-13",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 66
+  },
+  "75004|2026-05-13": {
+    "zip": "75004",
+    "date": "2026-05-13",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 90
+  },
+  "75005|2026-05-13": {
+    "zip": "75005",
+    "date": "2026-05-13",
+    "condition": "storm",
+    "precipitation_in": 2.29,
+    "visibility_mi": 1.1,
+    "temp_f": 81
+  },
+  "75006|2026-05-13": {
+    "zip": "75006",
+    "date": "2026-05-13",
+    "condition": "rain",
+    "precipitation_in": 0.94,
+    "visibility_mi": 6.5,
+    "temp_f": 73
+  },
+  "75007|2026-05-13": {
+    "zip": "75007",
+    "date": "2026-05-13",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 90
+  },
+  "75008|2026-05-13": {
+    "zip": "75008",
+    "date": "2026-05-13",
+    "condition": "fog",
+    "precipitation_in": 0.0,
+    "visibility_mi": 1.6,
+    "temp_f": 47
+  },
+  "75009|2026-05-13": {
+    "zip": "75009",
+    "date": "2026-05-13",
+    "condition": "snow",
+    "precipitation_in": 0.3,
+    "visibility_mi": 1.1,
+    "temp_f": 31
+  },
+  "75010|2026-05-13": {
+    "zip": "75010",
+    "date": "2026-05-13",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 97
+  },
+  "75001|2026-05-12": {
+    "zip": "75001",
+    "date": "2026-05-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 82
+  },
+  "75002|2026-05-12": {
+    "zip": "75002",
+    "date": "2026-05-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 84
+  },
+  "75003|2026-05-12": {
+    "zip": "75003",
+    "date": "2026-05-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 100
+  },
+  "75004|2026-05-12": {
+    "zip": "75004",
+    "date": "2026-05-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 96
+  },
+  "75005|2026-05-12": {
+    "zip": "75005",
+    "date": "2026-05-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 69
+  },
+  "75006|2026-05-12": {
+    "zip": "75006",
+    "date": "2026-05-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 91
+  },
+  "75007|2026-05-12": {
+    "zip": "75007",
+    "date": "2026-05-12",
+    "condition": "storm",
+    "precipitation_in": 2.54,
+    "visibility_mi": 3.1,
+    "temp_f": 66
+  },
+  "75008|2026-05-12": {
+    "zip": "75008",
+    "date": "2026-05-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 88
+  },
+  "75009|2026-05-12": {
+    "zip": "75009",
+    "date": "2026-05-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 89
+  },
+  "75010|2026-05-12": {
+    "zip": "75010",
+    "date": "2026-05-12",
+    "condition": "rain",
+    "precipitation_in": 0.63,
+    "visibility_mi": 6.3,
+    "temp_f": 78
+  },
+  "75001|2026-05-11": {
+    "zip": "75001",
+    "date": "2026-05-11",
+    "condition": "rain",
+    "precipitation_in": 0.83,
+    "visibility_mi": 5.1,
+    "temp_f": 66
+  },
+  "75002|2026-05-11": {
+    "zip": "75002",
+    "date": "2026-05-11",
+    "condition": "rain",
+    "precipitation_in": 0.76,
+    "visibility_mi": 6.2,
+    "temp_f": 52
+  },
+  "75003|2026-05-11": {
+    "zip": "75003",
+    "date": "2026-05-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 66
+  },
+  "75004|2026-05-11": {
+    "zip": "75004",
+    "date": "2026-05-11",
+    "condition": "rain",
+    "precipitation_in": 1.08,
+    "visibility_mi": 4.2,
+    "temp_f": 52
+  },
+  "75005|2026-05-11": {
+    "zip": "75005",
+    "date": "2026-05-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 70
+  },
+  "75006|2026-05-11": {
+    "zip": "75006",
+    "date": "2026-05-11",
+    "condition": "rain",
+    "precipitation_in": 0.22,
+    "visibility_mi": 3.8,
+    "temp_f": 49
+  },
+  "75007|2026-05-11": {
+    "zip": "75007",
+    "date": "2026-05-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 69
+  },
+  "75008|2026-05-11": {
+    "zip": "75008",
+    "date": "2026-05-11",
+    "condition": "rain",
+    "precipitation_in": 0.45,
+    "visibility_mi": 4.8,
+    "temp_f": 49
+  },
+  "75009|2026-05-11": {
+    "zip": "75009",
+    "date": "2026-05-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.5,
+    "temp_f": 75
+  },
+  "75010|2026-05-11": {
+    "zip": "75010",
+    "date": "2026-05-11",
+    "condition": "rain",
+    "precipitation_in": 0.79,
+    "visibility_mi": 4.6,
+    "temp_f": 69
+  },
+  "75001|2026-05-10": {
+    "zip": "75001",
+    "date": "2026-05-10",
+    "condition": "fog",
+    "precipitation_in": 0.06,
+    "visibility_mi": 1.0,
+    "temp_f": 53
+  },
+  "75002|2026-05-10": {
+    "zip": "75002",
+    "date": "2026-05-10",
+    "condition": "fog",
+    "precipitation_in": 0.07,
+    "visibility_mi": 2.1,
+    "temp_f": 49
+  },
+  "75003|2026-05-10": {
+    "zip": "75003",
+    "date": "2026-05-10",
+    "condition": "rain",
+    "precipitation_in": 0.4,
+    "visibility_mi": 3.5,
+    "temp_f": 67
+  },
+  "75004|2026-05-10": {
+    "zip": "75004",
+    "date": "2026-05-10",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 84
+  },
+  "75005|2026-05-10": {
+    "zip": "75005",
+    "date": "2026-05-10",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 83
+  },
+  "75006|2026-05-10": {
+    "zip": "75006",
+    "date": "2026-05-10",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 71
+  },
+  "75007|2026-05-10": {
+    "zip": "75007",
+    "date": "2026-05-10",
+    "condition": "rain",
+    "precipitation_in": 0.38,
+    "visibility_mi": 6.9,
+    "temp_f": 57
+  },
+  "75008|2026-05-10": {
+    "zip": "75008",
+    "date": "2026-05-10",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 81
+  },
+  "75009|2026-05-10": {
+    "zip": "75009",
+    "date": "2026-05-10",
+    "condition": "storm",
+    "precipitation_in": 1.05,
+    "visibility_mi": 1.8,
+    "temp_f": 63
+  },
+  "75010|2026-05-10": {
+    "zip": "75010",
+    "date": "2026-05-10",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 81
+  },
+  "75001|2026-05-09": {
+    "zip": "75001",
+    "date": "2026-05-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 71
+  },
+  "75002|2026-05-09": {
+    "zip": "75002",
+    "date": "2026-05-09",
+    "condition": "rain",
+    "precipitation_in": 0.4,
+    "visibility_mi": 6.7,
+    "temp_f": 73
+  },
+  "75003|2026-05-09": {
+    "zip": "75003",
+    "date": "2026-05-09",
+    "condition": "rain",
+    "precipitation_in": 0.93,
+    "visibility_mi": 6.8,
+    "temp_f": 68
+  },
+  "75004|2026-05-09": {
+    "zip": "75004",
+    "date": "2026-05-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 93
+  },
+  "75005|2026-05-09": {
+    "zip": "75005",
+    "date": "2026-05-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 79
+  },
+  "75006|2026-05-09": {
+    "zip": "75006",
+    "date": "2026-05-09",
+    "condition": "storm",
+    "precipitation_in": 2.13,
+    "visibility_mi": 3.4,
+    "temp_f": 80
+  },
+  "75007|2026-05-09": {
+    "zip": "75007",
+    "date": "2026-05-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 63
+  },
+  "75008|2026-05-09": {
+    "zip": "75008",
+    "date": "2026-05-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 62
+  },
+  "75009|2026-05-09": {
+    "zip": "75009",
+    "date": "2026-05-09",
+    "condition": "rain",
+    "precipitation_in": 0.76,
+    "visibility_mi": 3.9,
+    "temp_f": 70
+  },
+  "75010|2026-05-09": {
+    "zip": "75010",
+    "date": "2026-05-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 73
+  },
+  "75001|2026-05-08": {
+    "zip": "75001",
+    "date": "2026-05-08",
+    "condition": "storm",
+    "precipitation_in": 1.85,
+    "visibility_mi": 3.3,
+    "temp_f": 69
+  },
+  "75002|2026-05-08": {
+    "zip": "75002",
+    "date": "2026-05-08",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 89
+  },
+  "75003|2026-05-08": {
+    "zip": "75003",
+    "date": "2026-05-08",
+    "condition": "fog",
+    "precipitation_in": 0.07,
+    "visibility_mi": 0.4,
+    "temp_f": 51
+  },
+  "75004|2026-05-08": {
+    "zip": "75004",
+    "date": "2026-05-08",
+    "condition": "rain",
+    "precipitation_in": 0.27,
+    "visibility_mi": 4.3,
+    "temp_f": 80
+  },
+  "75005|2026-05-08": {
+    "zip": "75005",
+    "date": "2026-05-08",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 70
+  },
+  "75006|2026-05-08": {
+    "zip": "75006",
+    "date": "2026-05-08",
+    "condition": "rain",
+    "precipitation_in": 0.48,
+    "visibility_mi": 4.5,
+    "temp_f": 66
+  },
+  "75007|2026-05-08": {
+    "zip": "75007",
+    "date": "2026-05-08",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 96
+  },
+  "75008|2026-05-08": {
+    "zip": "75008",
+    "date": "2026-05-08",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 87
+  },
+  "75009|2026-05-08": {
+    "zip": "75009",
+    "date": "2026-05-08",
+    "condition": "rain",
+    "precipitation_in": 0.38,
+    "visibility_mi": 6.2,
+    "temp_f": 75
+  },
+  "75010|2026-05-08": {
+    "zip": "75010",
+    "date": "2026-05-08",
+    "condition": "rain",
+    "precipitation_in": 0.21,
+    "visibility_mi": 5.3,
+    "temp_f": 53
+  },
+  "75001|2026-05-07": {
+    "zip": "75001",
+    "date": "2026-05-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 94
+  },
+  "75002|2026-05-07": {
+    "zip": "75002",
+    "date": "2026-05-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 85
+  },
+  "75003|2026-05-07": {
+    "zip": "75003",
+    "date": "2026-05-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 78
+  },
+  "75004|2026-05-07": {
+    "zip": "75004",
+    "date": "2026-05-07",
+    "condition": "rain",
+    "precipitation_in": 0.25,
+    "visibility_mi": 4.8,
+    "temp_f": 84
+  },
+  "75005|2026-05-07": {
+    "zip": "75005",
+    "date": "2026-05-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 79
+  },
+  "75006|2026-05-07": {
+    "zip": "75006",
+    "date": "2026-05-07",
+    "condition": "storm",
+    "precipitation_in": 1.78,
+    "visibility_mi": 3.5,
+    "temp_f": 71
+  },
+  "75007|2026-05-07": {
+    "zip": "75007",
+    "date": "2026-05-07",
+    "condition": "storm",
+    "precipitation_in": 1.41,
+    "visibility_mi": 2.7,
+    "temp_f": 81
+  },
+  "75008|2026-05-07": {
+    "zip": "75008",
+    "date": "2026-05-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.5,
+    "temp_f": 77
+  },
+  "75009|2026-05-07": {
+    "zip": "75009",
+    "date": "2026-05-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 91
+  },
+  "75010|2026-05-07": {
+    "zip": "75010",
+    "date": "2026-05-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 87
+  },
+  "75001|2026-05-06": {
+    "zip": "75001",
+    "date": "2026-05-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 76
+  },
+  "75002|2026-05-06": {
+    "zip": "75002",
+    "date": "2026-05-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 65
+  },
+  "75003|2026-05-06": {
+    "zip": "75003",
+    "date": "2026-05-06",
+    "condition": "storm",
+    "precipitation_in": 2.29,
+    "visibility_mi": 2.7,
+    "temp_f": 88
+  },
+  "75004|2026-05-06": {
+    "zip": "75004",
+    "date": "2026-05-06",
+    "condition": "rain",
+    "precipitation_in": 1.05,
+    "visibility_mi": 5.5,
+    "temp_f": 78
+  },
+  "75005|2026-05-06": {
+    "zip": "75005",
+    "date": "2026-05-06",
+    "condition": "snow",
+    "precipitation_in": 0.59,
+    "visibility_mi": 2.5,
+    "temp_f": 18
+  },
+  "75006|2026-05-06": {
+    "zip": "75006",
+    "date": "2026-05-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 81
+  },
+  "75007|2026-05-06": {
+    "zip": "75007",
+    "date": "2026-05-06",
+    "condition": "rain",
+    "precipitation_in": 1.06,
+    "visibility_mi": 3.5,
+    "temp_f": 58
+  },
+  "75008|2026-05-06": {
+    "zip": "75008",
+    "date": "2026-05-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 83
+  },
+  "75009|2026-05-06": {
+    "zip": "75009",
+    "date": "2026-05-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 65
+  },
+  "75010|2026-05-06": {
+    "zip": "75010",
+    "date": "2026-05-06",
+    "condition": "rain",
+    "precipitation_in": 0.27,
+    "visibility_mi": 5.5,
+    "temp_f": 54
+  },
+  "75001|2026-05-05": {
+    "zip": "75001",
+    "date": "2026-05-05",
+    "condition": "storm",
+    "precipitation_in": 2.31,
+    "visibility_mi": 2.6,
+    "temp_f": 72
+  },
+  "75002|2026-05-05": {
+    "zip": "75002",
+    "date": "2026-05-05",
+    "condition": "snow",
+    "precipitation_in": 0.58,
+    "visibility_mi": 2.1,
+    "temp_f": 29
+  },
+  "75003|2026-05-05": {
+    "zip": "75003",
+    "date": "2026-05-05",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 70
+  },
+  "75004|2026-05-05": {
+    "zip": "75004",
+    "date": "2026-05-05",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 92
+  },
+  "75005|2026-05-05": {
+    "zip": "75005",
+    "date": "2026-05-05",
+    "condition": "rain",
+    "precipitation_in": 0.44,
+    "visibility_mi": 6.6,
+    "temp_f": 54
+  },
+  "75006|2026-05-05": {
+    "zip": "75006",
+    "date": "2026-05-05",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 73
+  },
+  "75007|2026-05-05": {
+    "zip": "75007",
+    "date": "2026-05-05",
+    "condition": "storm",
+    "precipitation_in": 2.03,
+    "visibility_mi": 3.5,
+    "temp_f": 85
+  },
+  "75008|2026-05-05": {
+    "zip": "75008",
+    "date": "2026-05-05",
+    "condition": "rain",
+    "precipitation_in": 0.87,
+    "visibility_mi": 5.8,
+    "temp_f": 55
+  },
+  "75009|2026-05-05": {
+    "zip": "75009",
+    "date": "2026-05-05",
+    "condition": "rain",
+    "precipitation_in": 0.58,
+    "visibility_mi": 3.3,
+    "temp_f": 56
+  },
+  "75010|2026-05-05": {
+    "zip": "75010",
+    "date": "2026-05-05",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 84
+  },
+  "75001|2026-05-04": {
+    "zip": "75001",
+    "date": "2026-05-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 99
+  },
+  "75002|2026-05-04": {
+    "zip": "75002",
+    "date": "2026-05-04",
+    "condition": "rain",
+    "precipitation_in": 0.93,
+    "visibility_mi": 4.4,
+    "temp_f": 67
+  },
+  "75003|2026-05-04": {
+    "zip": "75003",
+    "date": "2026-05-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 69
+  },
+  "75004|2026-05-04": {
+    "zip": "75004",
+    "date": "2026-05-04",
+    "condition": "snow",
+    "precipitation_in": 0.19,
+    "visibility_mi": 1.9,
+    "temp_f": 22
+  },
+  "75005|2026-05-04": {
+    "zip": "75005",
+    "date": "2026-05-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 68
+  },
+  "75006|2026-05-04": {
+    "zip": "75006",
+    "date": "2026-05-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 88
+  },
+  "75007|2026-05-04": {
+    "zip": "75007",
+    "date": "2026-05-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.5,
+    "temp_f": 103
+  },
+  "75008|2026-05-04": {
+    "zip": "75008",
+    "date": "2026-05-04",
+    "condition": "rain",
+    "precipitation_in": 0.73,
+    "visibility_mi": 4.9,
+    "temp_f": 64
+  },
+  "75009|2026-05-04": {
+    "zip": "75009",
+    "date": "2026-05-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 67
+  },
+  "75010|2026-05-04": {
+    "zip": "75010",
+    "date": "2026-05-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 73
+  },
+  "75001|2026-05-03": {
+    "zip": "75001",
+    "date": "2026-05-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.5,
+    "temp_f": 70
+  },
+  "75002|2026-05-03": {
+    "zip": "75002",
+    "date": "2026-05-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 71
+  },
+  "75003|2026-05-03": {
+    "zip": "75003",
+    "date": "2026-05-03",
+    "condition": "rain",
+    "precipitation_in": 0.95,
+    "visibility_mi": 5.5,
+    "temp_f": 80
+  },
+  "75004|2026-05-03": {
+    "zip": "75004",
+    "date": "2026-05-03",
+    "condition": "storm",
+    "precipitation_in": 0.94,
+    "visibility_mi": 3.5,
+    "temp_f": 52
+  },
+  "75005|2026-05-03": {
+    "zip": "75005",
+    "date": "2026-05-03",
+    "condition": "rain",
+    "precipitation_in": 0.3,
+    "visibility_mi": 3.8,
+    "temp_f": 66
+  },
+  "75006|2026-05-03": {
+    "zip": "75006",
+    "date": "2026-05-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 67
+  },
+  "75007|2026-05-03": {
+    "zip": "75007",
+    "date": "2026-05-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 91
+  },
+  "75008|2026-05-03": {
+    "zip": "75008",
+    "date": "2026-05-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 67
+  },
+  "75009|2026-05-03": {
+    "zip": "75009",
+    "date": "2026-05-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 88
+  },
+  "75010|2026-05-03": {
+    "zip": "75010",
+    "date": "2026-05-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 81
+  },
+  "75001|2026-05-02": {
+    "zip": "75001",
+    "date": "2026-05-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 92
+  },
+  "75002|2026-05-02": {
+    "zip": "75002",
+    "date": "2026-05-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 63
+  },
+  "75003|2026-05-02": {
+    "zip": "75003",
+    "date": "2026-05-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 79
+  },
+  "75004|2026-05-02": {
+    "zip": "75004",
+    "date": "2026-05-02",
+    "condition": "rain",
+    "precipitation_in": 0.74,
+    "visibility_mi": 4.2,
+    "temp_f": 76
+  },
+  "75005|2026-05-02": {
+    "zip": "75005",
+    "date": "2026-05-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 88
+  },
+  "75006|2026-05-02": {
+    "zip": "75006",
+    "date": "2026-05-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 91
+  },
+  "75007|2026-05-02": {
+    "zip": "75007",
+    "date": "2026-05-02",
+    "condition": "fog",
+    "precipitation_in": 0.04,
+    "visibility_mi": 0.2,
+    "temp_f": 56
+  },
+  "75008|2026-05-02": {
+    "zip": "75008",
+    "date": "2026-05-02",
+    "condition": "rain",
+    "precipitation_in": 0.82,
+    "visibility_mi": 4.6,
+    "temp_f": 81
+  },
+  "75009|2026-05-02": {
+    "zip": "75009",
+    "date": "2026-05-02",
+    "condition": "fog",
+    "precipitation_in": 0.07,
+    "visibility_mi": 0.5,
+    "temp_f": 47
+  },
+  "75010|2026-05-02": {
+    "zip": "75010",
+    "date": "2026-05-02",
+    "condition": "rain",
+    "precipitation_in": 0.85,
+    "visibility_mi": 6.9,
+    "temp_f": 58
+  },
+  "75001|2026-05-01": {
+    "zip": "75001",
+    "date": "2026-05-01",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 73
+  },
+  "75002|2026-05-01": {
+    "zip": "75002",
+    "date": "2026-05-01",
+    "condition": "storm",
+    "precipitation_in": 2.49,
+    "visibility_mi": 2.2,
+    "temp_f": 66
+  },
+  "75003|2026-05-01": {
+    "zip": "75003",
+    "date": "2026-05-01",
+    "condition": "rain",
+    "precipitation_in": 0.88,
+    "visibility_mi": 4.1,
+    "temp_f": 65
+  },
+  "75004|2026-05-01": {
+    "zip": "75004",
+    "date": "2026-05-01",
+    "condition": "fog",
+    "precipitation_in": 0.09,
+    "visibility_mi": 1.0,
+    "temp_f": 56
+  },
+  "75005|2026-05-01": {
+    "zip": "75005",
+    "date": "2026-05-01",
+    "condition": "storm",
+    "precipitation_in": 2.7,
+    "visibility_mi": 4.0,
+    "temp_f": 84
+  },
+  "75006|2026-05-01": {
+    "zip": "75006",
+    "date": "2026-05-01",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 68
+  },
+  "75007|2026-05-01": {
+    "zip": "75007",
+    "date": "2026-05-01",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 69
+  },
+  "75008|2026-05-01": {
+    "zip": "75008",
+    "date": "2026-05-01",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 65
+  },
+  "75009|2026-05-01": {
+    "zip": "75009",
+    "date": "2026-05-01",
+    "condition": "rain",
+    "precipitation_in": 0.83,
+    "visibility_mi": 6.9,
+    "temp_f": 72
+  },
+  "75010|2026-05-01": {
+    "zip": "75010",
+    "date": "2026-05-01",
+    "condition": "storm",
+    "precipitation_in": 2.16,
+    "visibility_mi": 1.5,
+    "temp_f": 91
+  },
+  "75001|2026-04-30": {
+    "zip": "75001",
+    "date": "2026-04-30",
+    "condition": "fog",
+    "precipitation_in": 0.01,
+    "visibility_mi": 0.4,
+    "temp_f": 59
+  },
+  "75002|2026-04-30": {
+    "zip": "75002",
+    "date": "2026-04-30",
+    "condition": "rain",
+    "precipitation_in": 0.93,
+    "visibility_mi": 6.2,
+    "temp_f": 60
+  },
+  "75003|2026-04-30": {
+    "zip": "75003",
+    "date": "2026-04-30",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 77
+  },
+  "75004|2026-04-30": {
+    "zip": "75004",
+    "date": "2026-04-30",
+    "condition": "rain",
+    "precipitation_in": 0.45,
+    "visibility_mi": 6.4,
+    "temp_f": 82
+  },
+  "75005|2026-04-30": {
+    "zip": "75005",
+    "date": "2026-04-30",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.5,
+    "temp_f": 88
+  },
+  "75006|2026-04-30": {
+    "zip": "75006",
+    "date": "2026-04-30",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 85
+  },
+  "75007|2026-04-30": {
+    "zip": "75007",
+    "date": "2026-04-30",
+    "condition": "rain",
+    "precipitation_in": 0.58,
+    "visibility_mi": 3.1,
+    "temp_f": 83
+  },
+  "75008|2026-04-30": {
+    "zip": "75008",
+    "date": "2026-04-30",
+    "condition": "fog",
+    "precipitation_in": 0.09,
+    "visibility_mi": 0.9,
+    "temp_f": 57
+  },
+  "75009|2026-04-30": {
+    "zip": "75009",
+    "date": "2026-04-30",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 85
+  },
+  "75010|2026-04-30": {
+    "zip": "75010",
+    "date": "2026-04-30",
+    "condition": "rain",
+    "precipitation_in": 0.93,
+    "visibility_mi": 5.3,
+    "temp_f": 79
+  },
+  "75001|2026-04-29": {
+    "zip": "75001",
+    "date": "2026-04-29",
+    "condition": "fog",
+    "precipitation_in": 0.06,
+    "visibility_mi": 1.4,
+    "temp_f": 50
+  },
+  "75002|2026-04-29": {
+    "zip": "75002",
+    "date": "2026-04-29",
+    "condition": "rain",
+    "precipitation_in": 0.7,
+    "visibility_mi": 3.6,
+    "temp_f": 51
+  },
+  "75003|2026-04-29": {
+    "zip": "75003",
+    "date": "2026-04-29",
+    "condition": "rain",
+    "precipitation_in": 0.35,
+    "visibility_mi": 5.4,
+    "temp_f": 72
+  },
+  "75004|2026-04-29": {
+    "zip": "75004",
+    "date": "2026-04-29",
+    "condition": "storm",
+    "precipitation_in": 2.15,
+    "visibility_mi": 3.3,
+    "temp_f": 70
+  },
+  "75005|2026-04-29": {
+    "zip": "75005",
+    "date": "2026-04-29",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 69
+  },
+  "75006|2026-04-29": {
+    "zip": "75006",
+    "date": "2026-04-29",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 62
+  },
+  "75007|2026-04-29": {
+    "zip": "75007",
+    "date": "2026-04-29",
+    "condition": "fog",
+    "precipitation_in": 0.03,
+    "visibility_mi": 0.4,
+    "temp_f": 46
+  },
+  "75008|2026-04-29": {
+    "zip": "75008",
+    "date": "2026-04-29",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 76
+  },
+  "75009|2026-04-29": {
+    "zip": "75009",
+    "date": "2026-04-29",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 66
+  },
+  "75010|2026-04-29": {
+    "zip": "75010",
+    "date": "2026-04-29",
+    "condition": "snow",
+    "precipitation_in": 0.14,
+    "visibility_mi": 2.2,
+    "temp_f": 28
+  },
+  "75001|2026-04-28": {
+    "zip": "75001",
+    "date": "2026-04-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 90
+  },
+  "75002|2026-04-28": {
+    "zip": "75002",
+    "date": "2026-04-28",
+    "condition": "fog",
+    "precipitation_in": 0.09,
+    "visibility_mi": 1.5,
+    "temp_f": 63
+  },
+  "75003|2026-04-28": {
+    "zip": "75003",
+    "date": "2026-04-28",
+    "condition": "rain",
+    "precipitation_in": 0.36,
+    "visibility_mi": 5.8,
+    "temp_f": 49
+  },
+  "75004|2026-04-28": {
+    "zip": "75004",
+    "date": "2026-04-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 97
+  },
+  "75005|2026-04-28": {
+    "zip": "75005",
+    "date": "2026-04-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 74
+  },
+  "75006|2026-04-28": {
+    "zip": "75006",
+    "date": "2026-04-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 103
+  },
+  "75007|2026-04-28": {
+    "zip": "75007",
+    "date": "2026-04-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 88
+  },
+  "75008|2026-04-28": {
+    "zip": "75008",
+    "date": "2026-04-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 65
+  },
+  "75009|2026-04-28": {
+    "zip": "75009",
+    "date": "2026-04-28",
+    "condition": "rain",
+    "precipitation_in": 0.3,
+    "visibility_mi": 4.1,
+    "temp_f": 67
+  },
+  "75010|2026-04-28": {
+    "zip": "75010",
+    "date": "2026-04-28",
+    "condition": "storm",
+    "precipitation_in": 1.6,
+    "visibility_mi": 1.7,
+    "temp_f": 57
+  },
+  "75001|2026-04-27": {
+    "zip": "75001",
+    "date": "2026-04-27",
+    "condition": "storm",
+    "precipitation_in": 0.99,
+    "visibility_mi": 2.0,
+    "temp_f": 56
+  },
+  "75002|2026-04-27": {
+    "zip": "75002",
+    "date": "2026-04-27",
+    "condition": "storm",
+    "precipitation_in": 2.4,
+    "visibility_mi": 2.4,
+    "temp_f": 65
+  },
+  "75003|2026-04-27": {
+    "zip": "75003",
+    "date": "2026-04-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 80
+  },
+  "75004|2026-04-27": {
+    "zip": "75004",
+    "date": "2026-04-27",
+    "condition": "rain",
+    "precipitation_in": 0.97,
+    "visibility_mi": 4.7,
+    "temp_f": 82
+  },
+  "75005|2026-04-27": {
+    "zip": "75005",
+    "date": "2026-04-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 100
+  },
+  "75006|2026-04-27": {
+    "zip": "75006",
+    "date": "2026-04-27",
+    "condition": "rain",
+    "precipitation_in": 0.57,
+    "visibility_mi": 6.1,
+    "temp_f": 59
+  },
+  "75007|2026-04-27": {
+    "zip": "75007",
+    "date": "2026-04-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 72
+  },
+  "75008|2026-04-27": {
+    "zip": "75008",
+    "date": "2026-04-27",
+    "condition": "storm",
+    "precipitation_in": 1.8,
+    "visibility_mi": 3.0,
+    "temp_f": 81
+  },
+  "75009|2026-04-27": {
+    "zip": "75009",
+    "date": "2026-04-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 100
+  },
+  "75010|2026-04-27": {
+    "zip": "75010",
+    "date": "2026-04-27",
+    "condition": "rain",
+    "precipitation_in": 1.12,
+    "visibility_mi": 5.9,
+    "temp_f": 51
+  },
+  "75001|2026-04-26": {
+    "zip": "75001",
+    "date": "2026-04-26",
+    "condition": "rain",
+    "precipitation_in": 0.28,
+    "visibility_mi": 4.8,
+    "temp_f": 63
+  },
+  "75002|2026-04-26": {
+    "zip": "75002",
+    "date": "2026-04-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 88
+  },
+  "75003|2026-04-26": {
+    "zip": "75003",
+    "date": "2026-04-26",
+    "condition": "rain",
+    "precipitation_in": 0.42,
+    "visibility_mi": 6.3,
+    "temp_f": 52
+  },
+  "75004|2026-04-26": {
+    "zip": "75004",
+    "date": "2026-04-26",
+    "condition": "fog",
+    "precipitation_in": 0.02,
+    "visibility_mi": 1.1,
+    "temp_f": 61
+  },
+  "75005|2026-04-26": {
+    "zip": "75005",
+    "date": "2026-04-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 99
+  },
+  "75006|2026-04-26": {
+    "zip": "75006",
+    "date": "2026-04-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 73
+  },
+  "75007|2026-04-26": {
+    "zip": "75007",
+    "date": "2026-04-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 90
+  },
+  "75008|2026-04-26": {
+    "zip": "75008",
+    "date": "2026-04-26",
+    "condition": "rain",
+    "precipitation_in": 0.69,
+    "visibility_mi": 4.7,
+    "temp_f": 50
+  },
+  "75009|2026-04-26": {
+    "zip": "75009",
+    "date": "2026-04-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 77
+  },
+  "75010|2026-04-26": {
+    "zip": "75010",
+    "date": "2026-04-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 63
+  },
+  "75001|2026-04-25": {
+    "zip": "75001",
+    "date": "2026-04-25",
+    "condition": "rain",
+    "precipitation_in": 0.95,
+    "visibility_mi": 3.2,
+    "temp_f": 53
+  },
+  "75002|2026-04-25": {
+    "zip": "75002",
+    "date": "2026-04-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 87
+  },
+  "75003|2026-04-25": {
+    "zip": "75003",
+    "date": "2026-04-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 86
+  },
+  "75004|2026-04-25": {
+    "zip": "75004",
+    "date": "2026-04-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 93
+  },
+  "75005|2026-04-25": {
+    "zip": "75005",
+    "date": "2026-04-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 94
+  },
+  "75006|2026-04-25": {
+    "zip": "75006",
+    "date": "2026-04-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 99
+  },
+  "75007|2026-04-25": {
+    "zip": "75007",
+    "date": "2026-04-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 98
+  },
+  "75008|2026-04-25": {
+    "zip": "75008",
+    "date": "2026-04-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 88
+  },
+  "75009|2026-04-25": {
+    "zip": "75009",
+    "date": "2026-04-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 78
+  },
+  "75010|2026-04-25": {
+    "zip": "75010",
+    "date": "2026-04-25",
+    "condition": "rain",
+    "precipitation_in": 0.52,
+    "visibility_mi": 6.5,
+    "temp_f": 51
+  },
+  "75001|2026-04-24": {
+    "zip": "75001",
+    "date": "2026-04-24",
+    "condition": "rain",
+    "precipitation_in": 0.66,
+    "visibility_mi": 5.8,
+    "temp_f": 55
+  },
+  "75002|2026-04-24": {
+    "zip": "75002",
+    "date": "2026-04-24",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 76
+  },
+  "75003|2026-04-24": {
+    "zip": "75003",
+    "date": "2026-04-24",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 84
+  },
+  "75004|2026-04-24": {
+    "zip": "75004",
+    "date": "2026-04-24",
+    "condition": "rain",
+    "precipitation_in": 0.87,
+    "visibility_mi": 6.3,
+    "temp_f": 49
+  },
+  "75005|2026-04-24": {
+    "zip": "75005",
+    "date": "2026-04-24",
+    "condition": "fog",
+    "precipitation_in": 0.1,
+    "visibility_mi": 1.6,
+    "temp_f": 61
+  },
+  "75006|2026-04-24": {
+    "zip": "75006",
+    "date": "2026-04-24",
+    "condition": "fog",
+    "precipitation_in": 0.08,
+    "visibility_mi": 0.3,
+    "temp_f": 64
+  },
+  "75007|2026-04-24": {
+    "zip": "75007",
+    "date": "2026-04-24",
+    "condition": "fog",
+    "precipitation_in": 0.02,
+    "visibility_mi": 1.5,
+    "temp_f": 44
+  },
+  "75008|2026-04-24": {
+    "zip": "75008",
+    "date": "2026-04-24",
+    "condition": "fog",
+    "precipitation_in": 0.1,
+    "visibility_mi": 1.0,
+    "temp_f": 60
+  },
+  "75009|2026-04-24": {
+    "zip": "75009",
+    "date": "2026-04-24",
+    "condition": "snow",
+    "precipitation_in": 0.17,
+    "visibility_mi": 4.5,
+    "temp_f": 32
+  },
+  "75010|2026-04-24": {
+    "zip": "75010",
+    "date": "2026-04-24",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 77
+  },
+  "75001|2026-04-23": {
+    "zip": "75001",
+    "date": "2026-04-23",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 76
+  },
+  "75002|2026-04-23": {
+    "zip": "75002",
+    "date": "2026-04-23",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 89
+  },
+  "75003|2026-04-23": {
+    "zip": "75003",
+    "date": "2026-04-23",
+    "condition": "fog",
+    "precipitation_in": 0.03,
+    "visibility_mi": 2.1,
+    "temp_f": 55
+  },
+  "75004|2026-04-23": {
+    "zip": "75004",
+    "date": "2026-04-23",
+    "condition": "rain",
+    "precipitation_in": 0.96,
+    "visibility_mi": 4.1,
+    "temp_f": 53
+  },
+  "75005|2026-04-23": {
+    "zip": "75005",
+    "date": "2026-04-23",
+    "condition": "rain",
+    "precipitation_in": 0.59,
+    "visibility_mi": 4.7,
+    "temp_f": 69
+  },
+  "75006|2026-04-23": {
+    "zip": "75006",
+    "date": "2026-04-23",
+    "condition": "rain",
+    "precipitation_in": 1.06,
+    "visibility_mi": 6.3,
+    "temp_f": 58
+  },
+  "75007|2026-04-23": {
+    "zip": "75007",
+    "date": "2026-04-23",
+    "condition": "snow",
+    "precipitation_in": 0.26,
+    "visibility_mi": 1.3,
+    "temp_f": 31
+  },
+  "75008|2026-04-23": {
+    "zip": "75008",
+    "date": "2026-04-23",
+    "condition": "storm",
+    "precipitation_in": 2.26,
+    "visibility_mi": 2.6,
+    "temp_f": 72
+  },
+  "75009|2026-04-23": {
+    "zip": "75009",
+    "date": "2026-04-23",
+    "condition": "rain",
+    "precipitation_in": 0.85,
+    "visibility_mi": 6.0,
+    "temp_f": 59
+  },
+  "75010|2026-04-23": {
+    "zip": "75010",
+    "date": "2026-04-23",
+    "condition": "fog",
+    "precipitation_in": 0.04,
+    "visibility_mi": 1.7,
+    "temp_f": 35
+  },
+  "75001|2026-04-22": {
+    "zip": "75001",
+    "date": "2026-04-22",
+    "condition": "rain",
+    "precipitation_in": 0.28,
+    "visibility_mi": 4.2,
+    "temp_f": 84
+  },
+  "75002|2026-04-22": {
+    "zip": "75002",
+    "date": "2026-04-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 102
+  },
+  "75003|2026-04-22": {
+    "zip": "75003",
+    "date": "2026-04-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 81
+  },
+  "75004|2026-04-22": {
+    "zip": "75004",
+    "date": "2026-04-22",
+    "condition": "rain",
+    "precipitation_in": 0.6,
+    "visibility_mi": 5.9,
+    "temp_f": 64
+  },
+  "75005|2026-04-22": {
+    "zip": "75005",
+    "date": "2026-04-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 79
+  },
+  "75006|2026-04-22": {
+    "zip": "75006",
+    "date": "2026-04-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 86
+  },
+  "75007|2026-04-22": {
+    "zip": "75007",
+    "date": "2026-04-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 75
+  },
+  "75008|2026-04-22": {
+    "zip": "75008",
+    "date": "2026-04-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 102
+  },
+  "75009|2026-04-22": {
+    "zip": "75009",
+    "date": "2026-04-22",
+    "condition": "storm",
+    "precipitation_in": 2.05,
+    "visibility_mi": 3.7,
+    "temp_f": 81
+  },
+  "75010|2026-04-22": {
+    "zip": "75010",
+    "date": "2026-04-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 64
+  },
+  "75001|2026-04-21": {
+    "zip": "75001",
+    "date": "2026-04-21",
+    "condition": "rain",
+    "precipitation_in": 0.76,
+    "visibility_mi": 5.4,
+    "temp_f": 57
+  },
+  "75002|2026-04-21": {
+    "zip": "75002",
+    "date": "2026-04-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 97
+  },
+  "75003|2026-04-21": {
+    "zip": "75003",
+    "date": "2026-04-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 90
+  },
+  "75004|2026-04-21": {
+    "zip": "75004",
+    "date": "2026-04-21",
+    "condition": "fog",
+    "precipitation_in": 0.05,
+    "visibility_mi": 0.7,
+    "temp_f": 41
+  },
+  "75005|2026-04-21": {
+    "zip": "75005",
+    "date": "2026-04-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 78
+  },
+  "75006|2026-04-21": {
+    "zip": "75006",
+    "date": "2026-04-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 88
+  },
+  "75007|2026-04-21": {
+    "zip": "75007",
+    "date": "2026-04-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 79
+  },
+  "75008|2026-04-21": {
+    "zip": "75008",
+    "date": "2026-04-21",
+    "condition": "fog",
+    "precipitation_in": 0.02,
+    "visibility_mi": 0.6,
+    "temp_f": 60
+  },
+  "75009|2026-04-21": {
+    "zip": "75009",
+    "date": "2026-04-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 76
+  },
+  "75010|2026-04-21": {
+    "zip": "75010",
+    "date": "2026-04-21",
+    "condition": "fog",
+    "precipitation_in": 0.05,
+    "visibility_mi": 0.8,
+    "temp_f": 53
+  },
+  "75001|2026-04-20": {
+    "zip": "75001",
+    "date": "2026-04-20",
+    "condition": "snow",
+    "precipitation_in": 0.49,
+    "visibility_mi": 1.3,
+    "temp_f": 33
+  },
+  "75002|2026-04-20": {
+    "zip": "75002",
+    "date": "2026-04-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 86
+  },
+  "75003|2026-04-20": {
+    "zip": "75003",
+    "date": "2026-04-20",
+    "condition": "snow",
+    "precipitation_in": 0.23,
+    "visibility_mi": 2.5,
+    "temp_f": 31
+  },
+  "75004|2026-04-20": {
+    "zip": "75004",
+    "date": "2026-04-20",
+    "condition": "storm",
+    "precipitation_in": 1.31,
+    "visibility_mi": 1.3,
+    "temp_f": 55
+  },
+  "75005|2026-04-20": {
+    "zip": "75005",
+    "date": "2026-04-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 83
+  },
+  "75006|2026-04-20": {
+    "zip": "75006",
+    "date": "2026-04-20",
+    "condition": "storm",
+    "precipitation_in": 2.68,
+    "visibility_mi": 3.9,
+    "temp_f": 90
+  },
+  "75007|2026-04-20": {
+    "zip": "75007",
+    "date": "2026-04-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 85
+  },
+  "75008|2026-04-20": {
+    "zip": "75008",
+    "date": "2026-04-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 69
+  },
+  "75009|2026-04-20": {
+    "zip": "75009",
+    "date": "2026-04-20",
+    "condition": "storm",
+    "precipitation_in": 0.88,
+    "visibility_mi": 1.5,
+    "temp_f": 62
+  },
+  "75010|2026-04-20": {
+    "zip": "75010",
+    "date": "2026-04-20",
+    "condition": "rain",
+    "precipitation_in": 0.62,
+    "visibility_mi": 4.4,
+    "temp_f": 77
+  },
+  "75001|2026-04-19": {
+    "zip": "75001",
+    "date": "2026-04-19",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 88
+  },
+  "75002|2026-04-19": {
+    "zip": "75002",
+    "date": "2026-04-19",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 69
+  },
+  "75003|2026-04-19": {
+    "zip": "75003",
+    "date": "2026-04-19",
+    "condition": "rain",
+    "precipitation_in": 1.05,
+    "visibility_mi": 6.3,
+    "temp_f": 71
+  },
+  "75004|2026-04-19": {
+    "zip": "75004",
+    "date": "2026-04-19",
+    "condition": "rain",
+    "precipitation_in": 0.38,
+    "visibility_mi": 6.5,
+    "temp_f": 64
+  },
+  "75005|2026-04-19": {
+    "zip": "75005",
+    "date": "2026-04-19",
+    "condition": "rain",
+    "precipitation_in": 0.41,
+    "visibility_mi": 6.6,
+    "temp_f": 68
+  },
+  "75006|2026-04-19": {
+    "zip": "75006",
+    "date": "2026-04-19",
+    "condition": "rain",
+    "precipitation_in": 0.93,
+    "visibility_mi": 3.6,
+    "temp_f": 76
+  },
+  "75007|2026-04-19": {
+    "zip": "75007",
+    "date": "2026-04-19",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 72
+  },
+  "75008|2026-04-19": {
+    "zip": "75008",
+    "date": "2026-04-19",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 90
+  },
+  "75009|2026-04-19": {
+    "zip": "75009",
+    "date": "2026-04-19",
+    "condition": "rain",
+    "precipitation_in": 0.18,
+    "visibility_mi": 6.6,
+    "temp_f": 79
+  },
+  "75010|2026-04-19": {
+    "zip": "75010",
+    "date": "2026-04-19",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 96
+  },
+  "75001|2026-04-18": {
+    "zip": "75001",
+    "date": "2026-04-18",
+    "condition": "rain",
+    "precipitation_in": 0.58,
+    "visibility_mi": 3.4,
+    "temp_f": 57
+  },
+  "75002|2026-04-18": {
+    "zip": "75002",
+    "date": "2026-04-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 79
+  },
+  "75003|2026-04-18": {
+    "zip": "75003",
+    "date": "2026-04-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 78
+  },
+  "75004|2026-04-18": {
+    "zip": "75004",
+    "date": "2026-04-18",
+    "condition": "storm",
+    "precipitation_in": 2.58,
+    "visibility_mi": 2.8,
+    "temp_f": 89
+  },
+  "75005|2026-04-18": {
+    "zip": "75005",
+    "date": "2026-04-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 87
+  },
+  "75006|2026-04-18": {
+    "zip": "75006",
+    "date": "2026-04-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 67
+  },
+  "75007|2026-04-18": {
+    "zip": "75007",
+    "date": "2026-04-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 68
+  },
+  "75008|2026-04-18": {
+    "zip": "75008",
+    "date": "2026-04-18",
+    "condition": "rain",
+    "precipitation_in": 0.48,
+    "visibility_mi": 6.7,
+    "temp_f": 54
+  },
+  "75009|2026-04-18": {
+    "zip": "75009",
+    "date": "2026-04-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 103
+  },
+  "75010|2026-04-18": {
+    "zip": "75010",
+    "date": "2026-04-18",
+    "condition": "rain",
+    "precipitation_in": 0.57,
+    "visibility_mi": 6.8,
+    "temp_f": 48
+  },
+  "75001|2026-04-17": {
+    "zip": "75001",
+    "date": "2026-04-17",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 89
+  },
+  "75002|2026-04-17": {
+    "zip": "75002",
+    "date": "2026-04-17",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 97
+  },
+  "75003|2026-04-17": {
+    "zip": "75003",
+    "date": "2026-04-17",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 102
+  },
+  "75004|2026-04-17": {
+    "zip": "75004",
+    "date": "2026-04-17",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 65
+  },
+  "75005|2026-04-17": {
+    "zip": "75005",
+    "date": "2026-04-17",
+    "condition": "storm",
+    "precipitation_in": 2.7,
+    "visibility_mi": 2.1,
+    "temp_f": 77
+  },
+  "75006|2026-04-17": {
+    "zip": "75006",
+    "date": "2026-04-17",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 86
+  },
+  "75007|2026-04-17": {
+    "zip": "75007",
+    "date": "2026-04-17",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 85
+  },
+  "75008|2026-04-17": {
+    "zip": "75008",
+    "date": "2026-04-17",
+    "condition": "rain",
+    "precipitation_in": 0.38,
+    "visibility_mi": 6.0,
+    "temp_f": 57
+  },
+  "75009|2026-04-17": {
+    "zip": "75009",
+    "date": "2026-04-17",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 80
+  },
+  "75010|2026-04-17": {
+    "zip": "75010",
+    "date": "2026-04-17",
+    "condition": "snow",
+    "precipitation_in": 0.46,
+    "visibility_mi": 2.4,
+    "temp_f": 21
+  },
+  "75001|2026-04-16": {
+    "zip": "75001",
+    "date": "2026-04-16",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 85
+  },
+  "75002|2026-04-16": {
+    "zip": "75002",
+    "date": "2026-04-16",
+    "condition": "rain",
+    "precipitation_in": 0.36,
+    "visibility_mi": 5.4,
+    "temp_f": 53
+  },
+  "75003|2026-04-16": {
+    "zip": "75003",
+    "date": "2026-04-16",
+    "condition": "rain",
+    "precipitation_in": 0.98,
+    "visibility_mi": 5.5,
+    "temp_f": 75
+  },
+  "75004|2026-04-16": {
+    "zip": "75004",
+    "date": "2026-04-16",
+    "condition": "fog",
+    "precipitation_in": 0.04,
+    "visibility_mi": 0.3,
+    "temp_f": 45
+  },
+  "75005|2026-04-16": {
+    "zip": "75005",
+    "date": "2026-04-16",
+    "condition": "rain",
+    "precipitation_in": 0.83,
+    "visibility_mi": 5.6,
+    "temp_f": 57
+  },
+  "75006|2026-04-16": {
+    "zip": "75006",
+    "date": "2026-04-16",
+    "condition": "rain",
+    "precipitation_in": 0.66,
+    "visibility_mi": 5.6,
+    "temp_f": 53
+  },
+  "75007|2026-04-16": {
+    "zip": "75007",
+    "date": "2026-04-16",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 91
+  },
+  "75008|2026-04-16": {
+    "zip": "75008",
+    "date": "2026-04-16",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 80
+  },
+  "75009|2026-04-16": {
+    "zip": "75009",
+    "date": "2026-04-16",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 64
+  },
+  "75010|2026-04-16": {
+    "zip": "75010",
+    "date": "2026-04-16",
+    "condition": "storm",
+    "precipitation_in": 0.95,
+    "visibility_mi": 1.1,
+    "temp_f": 58
+  },
+  "75001|2026-04-15": {
+    "zip": "75001",
+    "date": "2026-04-15",
+    "condition": "rain",
+    "precipitation_in": 0.54,
+    "visibility_mi": 3.4,
+    "temp_f": 84
+  },
+  "75002|2026-04-15": {
+    "zip": "75002",
+    "date": "2026-04-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 93
+  },
+  "75003|2026-04-15": {
+    "zip": "75003",
+    "date": "2026-04-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 72
+  },
+  "75004|2026-04-15": {
+    "zip": "75004",
+    "date": "2026-04-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 87
+  },
+  "75005|2026-04-15": {
+    "zip": "75005",
+    "date": "2026-04-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 103
+  },
+  "75006|2026-04-15": {
+    "zip": "75006",
+    "date": "2026-04-15",
+    "condition": "rain",
+    "precipitation_in": 0.77,
+    "visibility_mi": 4.1,
+    "temp_f": 59
+  },
+  "75007|2026-04-15": {
+    "zip": "75007",
+    "date": "2026-04-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 99
+  },
+  "75008|2026-04-15": {
+    "zip": "75008",
+    "date": "2026-04-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 95
+  },
+  "75009|2026-04-15": {
+    "zip": "75009",
+    "date": "2026-04-15",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 71
+  },
+  "75010|2026-04-15": {
+    "zip": "75010",
+    "date": "2026-04-15",
+    "condition": "fog",
+    "precipitation_in": 0.05,
+    "visibility_mi": 1.8,
+    "temp_f": 62
+  },
+  "75001|2026-04-14": {
+    "zip": "75001",
+    "date": "2026-04-14",
+    "condition": "fog",
+    "precipitation_in": 0.1,
+    "visibility_mi": 1.6,
+    "temp_f": 50
+  },
+  "75002|2026-04-14": {
+    "zip": "75002",
+    "date": "2026-04-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 84
+  },
+  "75003|2026-04-14": {
+    "zip": "75003",
+    "date": "2026-04-14",
+    "condition": "snow",
+    "precipitation_in": 0.5,
+    "visibility_mi": 3.8,
+    "temp_f": 30
+  },
+  "75004|2026-04-14": {
+    "zip": "75004",
+    "date": "2026-04-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 73
+  },
+  "75005|2026-04-14": {
+    "zip": "75005",
+    "date": "2026-04-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 73
+  },
+  "75006|2026-04-14": {
+    "zip": "75006",
+    "date": "2026-04-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 102
+  },
+  "75007|2026-04-14": {
+    "zip": "75007",
+    "date": "2026-04-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 95
+  },
+  "75008|2026-04-14": {
+    "zip": "75008",
+    "date": "2026-04-14",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 70
+  },
+  "75009|2026-04-14": {
+    "zip": "75009",
+    "date": "2026-04-14",
+    "condition": "rain",
+    "precipitation_in": 0.54,
+    "visibility_mi": 3.5,
+    "temp_f": 57
+  },
+  "75010|2026-04-14": {
+    "zip": "75010",
+    "date": "2026-04-14",
+    "condition": "snow",
+    "precipitation_in": 0.37,
+    "visibility_mi": 2.9,
+    "temp_f": 18
+  },
+  "75001|2026-04-13": {
+    "zip": "75001",
+    "date": "2026-04-13",
+    "condition": "rain",
+    "precipitation_in": 0.72,
+    "visibility_mi": 3.8,
+    "temp_f": 84
+  },
+  "75002|2026-04-13": {
+    "zip": "75002",
+    "date": "2026-04-13",
+    "condition": "rain",
+    "precipitation_in": 0.11,
+    "visibility_mi": 3.0,
+    "temp_f": 75
+  },
+  "75003|2026-04-13": {
+    "zip": "75003",
+    "date": "2026-04-13",
+    "condition": "rain",
+    "precipitation_in": 1.03,
+    "visibility_mi": 5.9,
+    "temp_f": 83
+  },
+  "75004|2026-04-13": {
+    "zip": "75004",
+    "date": "2026-04-13",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 93
+  },
+  "75005|2026-04-13": {
+    "zip": "75005",
+    "date": "2026-04-13",
+    "condition": "storm",
+    "precipitation_in": 2.25,
+    "visibility_mi": 3.8,
+    "temp_f": 83
+  },
+  "75006|2026-04-13": {
+    "zip": "75006",
+    "date": "2026-04-13",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 88
+  },
+  "75007|2026-04-13": {
+    "zip": "75007",
+    "date": "2026-04-13",
+    "condition": "storm",
+    "precipitation_in": 1.43,
+    "visibility_mi": 1.2,
+    "temp_f": 78
+  },
+  "75008|2026-04-13": {
+    "zip": "75008",
+    "date": "2026-04-13",
+    "condition": "rain",
+    "precipitation_in": 0.18,
+    "visibility_mi": 5.5,
+    "temp_f": 70
+  },
+  "75009|2026-04-13": {
+    "zip": "75009",
+    "date": "2026-04-13",
+    "condition": "rain",
+    "precipitation_in": 0.85,
+    "visibility_mi": 3.1,
+    "temp_f": 66
+  },
+  "75010|2026-04-13": {
+    "zip": "75010",
+    "date": "2026-04-13",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 93
+  },
+  "75001|2026-04-12": {
+    "zip": "75001",
+    "date": "2026-04-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 99
+  },
+  "75002|2026-04-12": {
+    "zip": "75002",
+    "date": "2026-04-12",
+    "condition": "fog",
+    "precipitation_in": 0.05,
+    "visibility_mi": 2.2,
+    "temp_f": 58
+  },
+  "75003|2026-04-12": {
+    "zip": "75003",
+    "date": "2026-04-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 102
+  },
+  "75004|2026-04-12": {
+    "zip": "75004",
+    "date": "2026-04-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 71
+  },
+  "75005|2026-04-12": {
+    "zip": "75005",
+    "date": "2026-04-12",
+    "condition": "fog",
+    "precipitation_in": 0.02,
+    "visibility_mi": 1.8,
+    "temp_f": 37
+  },
+  "75006|2026-04-12": {
+    "zip": "75006",
+    "date": "2026-04-12",
+    "condition": "fog",
+    "precipitation_in": 0.05,
+    "visibility_mi": 0.6,
+    "temp_f": 40
+  },
+  "75007|2026-04-12": {
+    "zip": "75007",
+    "date": "2026-04-12",
+    "condition": "storm",
+    "precipitation_in": 1.78,
+    "visibility_mi": 3.4,
+    "temp_f": 83
+  },
+  "75008|2026-04-12": {
+    "zip": "75008",
+    "date": "2026-04-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 62
+  },
+  "75009|2026-04-12": {
+    "zip": "75009",
+    "date": "2026-04-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 71
+  },
+  "75010|2026-04-12": {
+    "zip": "75010",
+    "date": "2026-04-12",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 63
+  },
+  "75001|2026-04-11": {
+    "zip": "75001",
+    "date": "2026-04-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 75
+  },
+  "75002|2026-04-11": {
+    "zip": "75002",
+    "date": "2026-04-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 82
+  },
+  "75003|2026-04-11": {
+    "zip": "75003",
+    "date": "2026-04-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 96
+  },
+  "75004|2026-04-11": {
+    "zip": "75004",
+    "date": "2026-04-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 93
+  },
+  "75005|2026-04-11": {
+    "zip": "75005",
+    "date": "2026-04-11",
+    "condition": "storm",
+    "precipitation_in": 2.14,
+    "visibility_mi": 3.1,
+    "temp_f": 80
+  },
+  "75006|2026-04-11": {
+    "zip": "75006",
+    "date": "2026-04-11",
+    "condition": "rain",
+    "precipitation_in": 1.16,
+    "visibility_mi": 6.0,
+    "temp_f": 54
+  },
+  "75007|2026-04-11": {
+    "zip": "75007",
+    "date": "2026-04-11",
+    "condition": "storm",
+    "precipitation_in": 2.02,
+    "visibility_mi": 3.6,
+    "temp_f": 58
+  },
+  "75008|2026-04-11": {
+    "zip": "75008",
+    "date": "2026-04-11",
+    "condition": "storm",
+    "precipitation_in": 0.88,
+    "visibility_mi": 1.3,
+    "temp_f": 59
+  },
+  "75009|2026-04-11": {
+    "zip": "75009",
+    "date": "2026-04-11",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 79
+  },
+  "75010|2026-04-11": {
+    "zip": "75010",
+    "date": "2026-04-11",
+    "condition": "rain",
+    "precipitation_in": 0.93,
+    "visibility_mi": 5.0,
+    "temp_f": 54
+  },
+  "75001|2026-04-10": {
+    "zip": "75001",
+    "date": "2026-04-10",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 69
+  },
+  "75002|2026-04-10": {
+    "zip": "75002",
+    "date": "2026-04-10",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 87
+  },
+  "75003|2026-04-10": {
+    "zip": "75003",
+    "date": "2026-04-10",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 82
+  },
+  "75004|2026-04-10": {
+    "zip": "75004",
+    "date": "2026-04-10",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 84
+  },
+  "75005|2026-04-10": {
+    "zip": "75005",
+    "date": "2026-04-10",
+    "condition": "rain",
+    "precipitation_in": 0.46,
+    "visibility_mi": 5.7,
+    "temp_f": 57
+  },
+  "75006|2026-04-10": {
+    "zip": "75006",
+    "date": "2026-04-10",
+    "condition": "rain",
+    "precipitation_in": 0.53,
+    "visibility_mi": 3.9,
+    "temp_f": 75
+  },
+  "75007|2026-04-10": {
+    "zip": "75007",
+    "date": "2026-04-10",
+    "condition": "rain",
+    "precipitation_in": 1.11,
+    "visibility_mi": 6.6,
+    "temp_f": 81
+  },
+  "75008|2026-04-10": {
+    "zip": "75008",
+    "date": "2026-04-10",
+    "condition": "snow",
+    "precipitation_in": 0.32,
+    "visibility_mi": 1.1,
+    "temp_f": 22
+  },
+  "75009|2026-04-10": {
+    "zip": "75009",
+    "date": "2026-04-10",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 65
+  },
+  "75010|2026-04-10": {
+    "zip": "75010",
+    "date": "2026-04-10",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 71
+  },
+  "75001|2026-04-09": {
+    "zip": "75001",
+    "date": "2026-04-09",
+    "condition": "rain",
+    "precipitation_in": 0.12,
+    "visibility_mi": 6.0,
+    "temp_f": 57
+  },
+  "75002|2026-04-09": {
+    "zip": "75002",
+    "date": "2026-04-09",
+    "condition": "storm",
+    "precipitation_in": 0.92,
+    "visibility_mi": 2.9,
+    "temp_f": 85
+  },
+  "75003|2026-04-09": {
+    "zip": "75003",
+    "date": "2026-04-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 96
+  },
+  "75004|2026-04-09": {
+    "zip": "75004",
+    "date": "2026-04-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 83
+  },
+  "75005|2026-04-09": {
+    "zip": "75005",
+    "date": "2026-04-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 100
+  },
+  "75006|2026-04-09": {
+    "zip": "75006",
+    "date": "2026-04-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 74
+  },
+  "75007|2026-04-09": {
+    "zip": "75007",
+    "date": "2026-04-09",
+    "condition": "rain",
+    "precipitation_in": 0.77,
+    "visibility_mi": 5.5,
+    "temp_f": 76
+  },
+  "75008|2026-04-09": {
+    "zip": "75008",
+    "date": "2026-04-09",
+    "condition": "snow",
+    "precipitation_in": 0.31,
+    "visibility_mi": 4.2,
+    "temp_f": 30
+  },
+  "75009|2026-04-09": {
+    "zip": "75009",
+    "date": "2026-04-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 95
+  },
+  "75010|2026-04-09": {
+    "zip": "75010",
+    "date": "2026-04-09",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 69
+  },
+  "75001|2026-04-08": {
+    "zip": "75001",
+    "date": "2026-04-08",
+    "condition": "rain",
+    "precipitation_in": 1.19,
+    "visibility_mi": 4.1,
+    "temp_f": 53
+  },
+  "75002|2026-04-08": {
+    "zip": "75002",
+    "date": "2026-04-08",
+    "condition": "rain",
+    "precipitation_in": 0.68,
+    "visibility_mi": 5.1,
+    "temp_f": 58
+  },
+  "75003|2026-04-08": {
+    "zip": "75003",
+    "date": "2026-04-08",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 98
+  },
+  "75004|2026-04-08": {
+    "zip": "75004",
+    "date": "2026-04-08",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 88
+  },
+  "75005|2026-04-08": {
+    "zip": "75005",
+    "date": "2026-04-08",
+    "condition": "rain",
+    "precipitation_in": 0.18,
+    "visibility_mi": 3.2,
+    "temp_f": 71
+  },
+  "75006|2026-04-08": {
+    "zip": "75006",
+    "date": "2026-04-08",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 64
+  },
+  "75007|2026-04-08": {
+    "zip": "75007",
+    "date": "2026-04-08",
+    "condition": "fog",
+    "precipitation_in": 0.09,
+    "visibility_mi": 1.2,
+    "temp_f": 53
+  },
+  "75008|2026-04-08": {
+    "zip": "75008",
+    "date": "2026-04-08",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 98
+  },
+  "75009|2026-04-08": {
+    "zip": "75009",
+    "date": "2026-04-08",
+    "condition": "storm",
+    "precipitation_in": 2.23,
+    "visibility_mi": 3.8,
+    "temp_f": 86
+  },
+  "75010|2026-04-08": {
+    "zip": "75010",
+    "date": "2026-04-08",
+    "condition": "storm",
+    "precipitation_in": 1.27,
+    "visibility_mi": 1.9,
+    "temp_f": 88
+  },
+  "75001|2026-04-07": {
+    "zip": "75001",
+    "date": "2026-04-07",
+    "condition": "fog",
+    "precipitation_in": 0.01,
+    "visibility_mi": 1.1,
+    "temp_f": 58
+  },
+  "75002|2026-04-07": {
+    "zip": "75002",
+    "date": "2026-04-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 73
+  },
+  "75003|2026-04-07": {
+    "zip": "75003",
+    "date": "2026-04-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 88
+  },
+  "75004|2026-04-07": {
+    "zip": "75004",
+    "date": "2026-04-07",
+    "condition": "rain",
+    "precipitation_in": 0.14,
+    "visibility_mi": 3.2,
+    "temp_f": 56
+  },
+  "75005|2026-04-07": {
+    "zip": "75005",
+    "date": "2026-04-07",
+    "condition": "rain",
+    "precipitation_in": 0.3,
+    "visibility_mi": 3.3,
+    "temp_f": 81
+  },
+  "75006|2026-04-07": {
+    "zip": "75006",
+    "date": "2026-04-07",
+    "condition": "rain",
+    "precipitation_in": 0.73,
+    "visibility_mi": 5.1,
+    "temp_f": 73
+  },
+  "75007|2026-04-07": {
+    "zip": "75007",
+    "date": "2026-04-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 89
+  },
+  "75008|2026-04-07": {
+    "zip": "75008",
+    "date": "2026-04-07",
+    "condition": "snow",
+    "precipitation_in": 0.66,
+    "visibility_mi": 3.0,
+    "temp_f": 31
+  },
+  "75009|2026-04-07": {
+    "zip": "75009",
+    "date": "2026-04-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 90
+  },
+  "75010|2026-04-07": {
+    "zip": "75010",
+    "date": "2026-04-07",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 94
+  },
+  "75001|2026-04-06": {
+    "zip": "75001",
+    "date": "2026-04-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 63
+  },
+  "75002|2026-04-06": {
+    "zip": "75002",
+    "date": "2026-04-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 68
+  },
+  "75003|2026-04-06": {
+    "zip": "75003",
+    "date": "2026-04-06",
+    "condition": "storm",
+    "precipitation_in": 2.5,
+    "visibility_mi": 1.3,
+    "temp_f": 75
+  },
+  "75004|2026-04-06": {
+    "zip": "75004",
+    "date": "2026-04-06",
+    "condition": "storm",
+    "precipitation_in": 1.38,
+    "visibility_mi": 2.6,
+    "temp_f": 59
+  },
+  "75005|2026-04-06": {
+    "zip": "75005",
+    "date": "2026-04-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 79
+  },
+  "75006|2026-04-06": {
+    "zip": "75006",
+    "date": "2026-04-06",
+    "condition": "rain",
+    "precipitation_in": 0.08,
+    "visibility_mi": 3.6,
+    "temp_f": 74
+  },
+  "75007|2026-04-06": {
+    "zip": "75007",
+    "date": "2026-04-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 79
+  },
+  "75008|2026-04-06": {
+    "zip": "75008",
+    "date": "2026-04-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 61
+  },
+  "75009|2026-04-06": {
+    "zip": "75009",
+    "date": "2026-04-06",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 63
+  },
+  "75010|2026-04-06": {
+    "zip": "75010",
+    "date": "2026-04-06",
+    "condition": "rain",
+    "precipitation_in": 0.6,
+    "visibility_mi": 4.2,
+    "temp_f": 76
+  },
+  "75001|2026-04-05": {
+    "zip": "75001",
+    "date": "2026-04-05",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 99
+  },
+  "75002|2026-04-05": {
+    "zip": "75002",
+    "date": "2026-04-05",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 90
+  },
+  "75003|2026-04-05": {
+    "zip": "75003",
+    "date": "2026-04-05",
+    "condition": "rain",
+    "precipitation_in": 0.82,
+    "visibility_mi": 3.6,
+    "temp_f": 68
+  },
+  "75004|2026-04-05": {
+    "zip": "75004",
+    "date": "2026-04-05",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 87
+  },
+  "75005|2026-04-05": {
+    "zip": "75005",
+    "date": "2026-04-05",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 95
+  },
+  "75006|2026-04-05": {
+    "zip": "75006",
+    "date": "2026-04-05",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 78
+  },
+  "75007|2026-04-05": {
+    "zip": "75007",
+    "date": "2026-04-05",
+    "condition": "fog",
+    "precipitation_in": 0.01,
+    "visibility_mi": 0.6,
+    "temp_f": 35
+  },
+  "75008|2026-04-05": {
+    "zip": "75008",
+    "date": "2026-04-05",
+    "condition": "storm",
+    "precipitation_in": 2.06,
+    "visibility_mi": 3.3,
+    "temp_f": 71
+  },
+  "75009|2026-04-05": {
+    "zip": "75009",
+    "date": "2026-04-05",
+    "condition": "storm",
+    "precipitation_in": 2.09,
+    "visibility_mi": 2.9,
+    "temp_f": 57
+  },
+  "75010|2026-04-05": {
+    "zip": "75010",
+    "date": "2026-04-05",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 64
+  },
+  "75001|2026-04-04": {
+    "zip": "75001",
+    "date": "2026-04-04",
+    "condition": "storm",
+    "precipitation_in": 1.84,
+    "visibility_mi": 3.3,
+    "temp_f": 84
+  },
+  "75002|2026-04-04": {
+    "zip": "75002",
+    "date": "2026-04-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 72
+  },
+  "75003|2026-04-04": {
+    "zip": "75003",
+    "date": "2026-04-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 98
+  },
+  "75004|2026-04-04": {
+    "zip": "75004",
+    "date": "2026-04-04",
+    "condition": "rain",
+    "precipitation_in": 0.15,
+    "visibility_mi": 5.1,
+    "temp_f": 68
+  },
+  "75005|2026-04-04": {
+    "zip": "75005",
+    "date": "2026-04-04",
+    "condition": "rain",
+    "precipitation_in": 0.73,
+    "visibility_mi": 5.0,
+    "temp_f": 49
+  },
+  "75006|2026-04-04": {
+    "zip": "75006",
+    "date": "2026-04-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 94
+  },
+  "75007|2026-04-04": {
+    "zip": "75007",
+    "date": "2026-04-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 67
+  },
+  "75008|2026-04-04": {
+    "zip": "75008",
+    "date": "2026-04-04",
+    "condition": "rain",
+    "precipitation_in": 0.24,
+    "visibility_mi": 3.6,
+    "temp_f": 64
+  },
+  "75009|2026-04-04": {
+    "zip": "75009",
+    "date": "2026-04-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 71
+  },
+  "75010|2026-04-04": {
+    "zip": "75010",
+    "date": "2026-04-04",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 62
+  },
+  "75001|2026-04-03": {
+    "zip": "75001",
+    "date": "2026-04-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 70
+  },
+  "75002|2026-04-03": {
+    "zip": "75002",
+    "date": "2026-04-03",
+    "condition": "rain",
+    "precipitation_in": 1.08,
+    "visibility_mi": 4.0,
+    "temp_f": 55
+  },
+  "75003|2026-04-03": {
+    "zip": "75003",
+    "date": "2026-04-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 98
+  },
+  "75004|2026-04-03": {
+    "zip": "75004",
+    "date": "2026-04-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 85
+  },
+  "75005|2026-04-03": {
+    "zip": "75005",
+    "date": "2026-04-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 96
+  },
+  "75006|2026-04-03": {
+    "zip": "75006",
+    "date": "2026-04-03",
+    "condition": "rain",
+    "precipitation_in": 0.13,
+    "visibility_mi": 3.1,
+    "temp_f": 62
+  },
+  "75007|2026-04-03": {
+    "zip": "75007",
+    "date": "2026-04-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 67
+  },
+  "75008|2026-04-03": {
+    "zip": "75008",
+    "date": "2026-04-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 69
+  },
+  "75009|2026-04-03": {
+    "zip": "75009",
+    "date": "2026-04-03",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 101
+  },
+  "75010|2026-04-03": {
+    "zip": "75010",
+    "date": "2026-04-03",
+    "condition": "rain",
+    "precipitation_in": 0.28,
+    "visibility_mi": 6.9,
+    "temp_f": 71
+  },
+  "75001|2026-04-02": {
+    "zip": "75001",
+    "date": "2026-04-02",
+    "condition": "rain",
+    "precipitation_in": 1.18,
+    "visibility_mi": 6.1,
+    "temp_f": 82
+  },
+  "75002|2026-04-02": {
+    "zip": "75002",
+    "date": "2026-04-02",
+    "condition": "rain",
+    "precipitation_in": 1.16,
+    "visibility_mi": 5.2,
+    "temp_f": 50
+  },
+  "75003|2026-04-02": {
+    "zip": "75003",
+    "date": "2026-04-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 100
+  },
+  "75004|2026-04-02": {
+    "zip": "75004",
+    "date": "2026-04-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 64
+  },
+  "75005|2026-04-02": {
+    "zip": "75005",
+    "date": "2026-04-02",
+    "condition": "rain",
+    "precipitation_in": 0.36,
+    "visibility_mi": 4.0,
+    "temp_f": 72
+  },
+  "75006|2026-04-02": {
+    "zip": "75006",
+    "date": "2026-04-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 93
+  },
+  "75007|2026-04-02": {
+    "zip": "75007",
+    "date": "2026-04-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 97
+  },
+  "75008|2026-04-02": {
+    "zip": "75008",
+    "date": "2026-04-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 68
+  },
+  "75009|2026-04-02": {
+    "zip": "75009",
+    "date": "2026-04-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 88
+  },
+  "75010|2026-04-02": {
+    "zip": "75010",
+    "date": "2026-04-02",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 81
+  },
+  "75001|2026-04-01": {
+    "zip": "75001",
+    "date": "2026-04-01",
+    "condition": "snow",
+    "precipitation_in": 0.67,
+    "visibility_mi": 3.5,
+    "temp_f": 32
+  },
+  "75002|2026-04-01": {
+    "zip": "75002",
+    "date": "2026-04-01",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 82
+  },
+  "75003|2026-04-01": {
+    "zip": "75003",
+    "date": "2026-04-01",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 62
+  },
+  "75004|2026-04-01": {
+    "zip": "75004",
+    "date": "2026-04-01",
+    "condition": "snow",
+    "precipitation_in": 0.18,
+    "visibility_mi": 4.7,
+    "temp_f": 33
+  },
+  "75005|2026-04-01": {
+    "zip": "75005",
+    "date": "2026-04-01",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 87
+  },
+  "75006|2026-04-01": {
+    "zip": "75006",
+    "date": "2026-04-01",
+    "condition": "storm",
+    "precipitation_in": 2.59,
+    "visibility_mi": 3.1,
+    "temp_f": 77
+  },
+  "75007|2026-04-01": {
+    "zip": "75007",
+    "date": "2026-04-01",
+    "condition": "rain",
+    "precipitation_in": 0.14,
+    "visibility_mi": 6.5,
+    "temp_f": 52
+  },
+  "75008|2026-04-01": {
+    "zip": "75008",
+    "date": "2026-04-01",
+    "condition": "rain",
+    "precipitation_in": 0.09,
+    "visibility_mi": 6.3,
+    "temp_f": 76
+  },
+  "75009|2026-04-01": {
+    "zip": "75009",
+    "date": "2026-04-01",
+    "condition": "fog",
+    "precipitation_in": 0.01,
+    "visibility_mi": 2.4,
+    "temp_f": 47
+  },
+  "75010|2026-04-01": {
+    "zip": "75010",
+    "date": "2026-04-01",
+    "condition": "storm",
+    "precipitation_in": 1.52,
+    "visibility_mi": 1.5,
+    "temp_f": 52
+  },
+  "75001|2026-03-31": {
+    "zip": "75001",
+    "date": "2026-03-31",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 89
+  },
+  "75002|2026-03-31": {
+    "zip": "75002",
+    "date": "2026-03-31",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.5,
+    "temp_f": 78
+  },
+  "75003|2026-03-31": {
+    "zip": "75003",
+    "date": "2026-03-31",
+    "condition": "snow",
+    "precipitation_in": 0.65,
+    "visibility_mi": 2.4,
+    "temp_f": 20
+  },
+  "75004|2026-03-31": {
+    "zip": "75004",
+    "date": "2026-03-31",
+    "condition": "storm",
+    "precipitation_in": 2.05,
+    "visibility_mi": 3.4,
+    "temp_f": 66
+  },
+  "75005|2026-03-31": {
+    "zip": "75005",
+    "date": "2026-03-31",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 63
+  },
+  "75006|2026-03-31": {
+    "zip": "75006",
+    "date": "2026-03-31",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.6,
+    "temp_f": 99
+  },
+  "75007|2026-03-31": {
+    "zip": "75007",
+    "date": "2026-03-31",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 101
+  },
+  "75008|2026-03-31": {
+    "zip": "75008",
+    "date": "2026-03-31",
+    "condition": "rain",
+    "precipitation_in": 0.18,
+    "visibility_mi": 4.1,
+    "temp_f": 80
+  },
+  "75009|2026-03-31": {
+    "zip": "75009",
+    "date": "2026-03-31",
+    "condition": "rain",
+    "precipitation_in": 0.25,
+    "visibility_mi": 3.8,
+    "temp_f": 84
+  },
+  "75010|2026-03-31": {
+    "zip": "75010",
+    "date": "2026-03-31",
+    "condition": "fog",
+    "precipitation_in": 0.07,
+    "visibility_mi": 1.5,
+    "temp_f": 37
+  },
+  "75001|2026-03-30": {
+    "zip": "75001",
+    "date": "2026-03-30",
+    "condition": "storm",
+    "precipitation_in": 1.06,
+    "visibility_mi": 1.2,
+    "temp_f": 68
+  },
+  "75002|2026-03-30": {
+    "zip": "75002",
+    "date": "2026-03-30",
+    "condition": "storm",
+    "precipitation_in": 2.51,
+    "visibility_mi": 3.6,
+    "temp_f": 69
+  },
+  "75003|2026-03-30": {
+    "zip": "75003",
+    "date": "2026-03-30",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.5,
+    "temp_f": 95
+  },
+  "75004|2026-03-30": {
+    "zip": "75004",
+    "date": "2026-03-30",
+    "condition": "storm",
+    "precipitation_in": 1.31,
+    "visibility_mi": 2.7,
+    "temp_f": 81
+  },
+  "75005|2026-03-30": {
+    "zip": "75005",
+    "date": "2026-03-30",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 102
+  },
+  "75006|2026-03-30": {
+    "zip": "75006",
+    "date": "2026-03-30",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 87
+  },
+  "75007|2026-03-30": {
+    "zip": "75007",
+    "date": "2026-03-30",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 92
+  },
+  "75008|2026-03-30": {
+    "zip": "75008",
+    "date": "2026-03-30",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 75
+  },
+  "75009|2026-03-30": {
+    "zip": "75009",
+    "date": "2026-03-30",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 89
+  },
+  "75010|2026-03-30": {
+    "zip": "75010",
+    "date": "2026-03-30",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 66
+  },
+  "75001|2026-03-29": {
+    "zip": "75001",
+    "date": "2026-03-29",
+    "condition": "storm",
+    "precipitation_in": 2.42,
+    "visibility_mi": 4.0,
+    "temp_f": 66
+  },
+  "75002|2026-03-29": {
+    "zip": "75002",
+    "date": "2026-03-29",
+    "condition": "snow",
+    "precipitation_in": 0.35,
+    "visibility_mi": 1.3,
+    "temp_f": 25
+  },
+  "75003|2026-03-29": {
+    "zip": "75003",
+    "date": "2026-03-29",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 101
+  },
+  "75004|2026-03-29": {
+    "zip": "75004",
+    "date": "2026-03-29",
+    "condition": "fog",
+    "precipitation_in": 0.01,
+    "visibility_mi": 1.3,
+    "temp_f": 60
+  },
+  "75005|2026-03-29": {
+    "zip": "75005",
+    "date": "2026-03-29",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 82
+  },
+  "75006|2026-03-29": {
+    "zip": "75006",
+    "date": "2026-03-29",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 82
+  },
+  "75007|2026-03-29": {
+    "zip": "75007",
+    "date": "2026-03-29",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 76
+  },
+  "75008|2026-03-29": {
+    "zip": "75008",
+    "date": "2026-03-29",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 67
+  },
+  "75009|2026-03-29": {
+    "zip": "75009",
+    "date": "2026-03-29",
+    "condition": "fog",
+    "precipitation_in": 0.04,
+    "visibility_mi": 0.5,
+    "temp_f": 36
+  },
+  "75010|2026-03-29": {
+    "zip": "75010",
+    "date": "2026-03-29",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 65
+  },
+  "75001|2026-03-28": {
+    "zip": "75001",
+    "date": "2026-03-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 64
+  },
+  "75002|2026-03-28": {
+    "zip": "75002",
+    "date": "2026-03-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 67
+  },
+  "75003|2026-03-28": {
+    "zip": "75003",
+    "date": "2026-03-28",
+    "condition": "fog",
+    "precipitation_in": 0.01,
+    "visibility_mi": 0.3,
+    "temp_f": 62
+  },
+  "75004|2026-03-28": {
+    "zip": "75004",
+    "date": "2026-03-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 87
+  },
+  "75005|2026-03-28": {
+    "zip": "75005",
+    "date": "2026-03-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 100
+  },
+  "75006|2026-03-28": {
+    "zip": "75006",
+    "date": "2026-03-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 88
+  },
+  "75007|2026-03-28": {
+    "zip": "75007",
+    "date": "2026-03-28",
+    "condition": "fog",
+    "precipitation_in": 0.06,
+    "visibility_mi": 1.0,
+    "temp_f": 56
+  },
+  "75008|2026-03-28": {
+    "zip": "75008",
+    "date": "2026-03-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 73
+  },
+  "75009|2026-03-28": {
+    "zip": "75009",
+    "date": "2026-03-28",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 65
+  },
+  "75010|2026-03-28": {
+    "zip": "75010",
+    "date": "2026-03-28",
+    "condition": "storm",
+    "precipitation_in": 2.38,
+    "visibility_mi": 1.6,
+    "temp_f": 88
+  },
+  "75001|2026-03-27": {
+    "zip": "75001",
+    "date": "2026-03-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 87
+  },
+  "75002|2026-03-27": {
+    "zip": "75002",
+    "date": "2026-03-27",
+    "condition": "rain",
+    "precipitation_in": 0.88,
+    "visibility_mi": 4.8,
+    "temp_f": 63
+  },
+  "75003|2026-03-27": {
+    "zip": "75003",
+    "date": "2026-03-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 80
+  },
+  "75004|2026-03-27": {
+    "zip": "75004",
+    "date": "2026-03-27",
+    "condition": "storm",
+    "precipitation_in": 1.67,
+    "visibility_mi": 3.9,
+    "temp_f": 74
+  },
+  "75005|2026-03-27": {
+    "zip": "75005",
+    "date": "2026-03-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 70
+  },
+  "75006|2026-03-27": {
+    "zip": "75006",
+    "date": "2026-03-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 79
+  },
+  "75007|2026-03-27": {
+    "zip": "75007",
+    "date": "2026-03-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 103
+  },
+  "75008|2026-03-27": {
+    "zip": "75008",
+    "date": "2026-03-27",
+    "condition": "fog",
+    "precipitation_in": 0.01,
+    "visibility_mi": 0.7,
+    "temp_f": 61
+  },
+  "75009|2026-03-27": {
+    "zip": "75009",
+    "date": "2026-03-27",
+    "condition": "storm",
+    "precipitation_in": 2.52,
+    "visibility_mi": 2.3,
+    "temp_f": 64
+  },
+  "75010|2026-03-27": {
+    "zip": "75010",
+    "date": "2026-03-27",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 65
+  },
+  "75001|2026-03-26": {
+    "zip": "75001",
+    "date": "2026-03-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 90
+  },
+  "75002|2026-03-26": {
+    "zip": "75002",
+    "date": "2026-03-26",
+    "condition": "storm",
+    "precipitation_in": 2.18,
+    "visibility_mi": 3.6,
+    "temp_f": 88
+  },
+  "75003|2026-03-26": {
+    "zip": "75003",
+    "date": "2026-03-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 71
+  },
+  "75004|2026-03-26": {
+    "zip": "75004",
+    "date": "2026-03-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 63
+  },
+  "75005|2026-03-26": {
+    "zip": "75005",
+    "date": "2026-03-26",
+    "condition": "rain",
+    "precipitation_in": 0.3,
+    "visibility_mi": 3.0,
+    "temp_f": 62
+  },
+  "75006|2026-03-26": {
+    "zip": "75006",
+    "date": "2026-03-26",
+    "condition": "snow",
+    "precipitation_in": 0.24,
+    "visibility_mi": 3.5,
+    "temp_f": 25
+  },
+  "75007|2026-03-26": {
+    "zip": "75007",
+    "date": "2026-03-26",
+    "condition": "rain",
+    "precipitation_in": 0.89,
+    "visibility_mi": 6.8,
+    "temp_f": 69
+  },
+  "75008|2026-03-26": {
+    "zip": "75008",
+    "date": "2026-03-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 61
+  },
+  "75009|2026-03-26": {
+    "zip": "75009",
+    "date": "2026-03-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 96
+  },
+  "75010|2026-03-26": {
+    "zip": "75010",
+    "date": "2026-03-26",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.2,
+    "temp_f": 101
+  },
+  "75001|2026-03-25": {
+    "zip": "75001",
+    "date": "2026-03-25",
+    "condition": "storm",
+    "precipitation_in": 2.63,
+    "visibility_mi": 2.1,
+    "temp_f": 53
+  },
+  "75002|2026-03-25": {
+    "zip": "75002",
+    "date": "2026-03-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 77
+  },
+  "75003|2026-03-25": {
+    "zip": "75003",
+    "date": "2026-03-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 72
+  },
+  "75004|2026-03-25": {
+    "zip": "75004",
+    "date": "2026-03-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 67
+  },
+  "75005|2026-03-25": {
+    "zip": "75005",
+    "date": "2026-03-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 102
+  },
+  "75006|2026-03-25": {
+    "zip": "75006",
+    "date": "2026-03-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 90
+  },
+  "75007|2026-03-25": {
+    "zip": "75007",
+    "date": "2026-03-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 71
+  },
+  "75008|2026-03-25": {
+    "zip": "75008",
+    "date": "2026-03-25",
+    "condition": "rain",
+    "precipitation_in": 1.17,
+    "visibility_mi": 7.0,
+    "temp_f": 75
+  },
+  "75009|2026-03-25": {
+    "zip": "75009",
+    "date": "2026-03-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 69
+  },
+  "75010|2026-03-25": {
+    "zip": "75010",
+    "date": "2026-03-25",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 84
+  },
+  "75001|2026-03-24": {
+    "zip": "75001",
+    "date": "2026-03-24",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 76
+  },
+  "75002|2026-03-24": {
+    "zip": "75002",
+    "date": "2026-03-24",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 95
+  },
+  "75003|2026-03-24": {
+    "zip": "75003",
+    "date": "2026-03-24",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 64
+  },
+  "75004|2026-03-24": {
+    "zip": "75004",
+    "date": "2026-03-24",
+    "condition": "fog",
+    "precipitation_in": 0.08,
+    "visibility_mi": 2.2,
+    "temp_f": 62
+  },
+  "75005|2026-03-24": {
+    "zip": "75005",
+    "date": "2026-03-24",
+    "condition": "rain",
+    "precipitation_in": 1.16,
+    "visibility_mi": 6.5,
+    "temp_f": 61
+  },
+  "75006|2026-03-24": {
+    "zip": "75006",
+    "date": "2026-03-24",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 100
+  },
+  "75007|2026-03-24": {
+    "zip": "75007",
+    "date": "2026-03-24",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 102
+  },
+  "75008|2026-03-24": {
+    "zip": "75008",
+    "date": "2026-03-24",
+    "condition": "rain",
+    "precipitation_in": 0.48,
+    "visibility_mi": 5.1,
+    "temp_f": 59
+  },
+  "75009|2026-03-24": {
+    "zip": "75009",
+    "date": "2026-03-24",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 91
+  },
+  "75010|2026-03-24": {
+    "zip": "75010",
+    "date": "2026-03-24",
+    "condition": "rain",
+    "precipitation_in": 0.59,
+    "visibility_mi": 5.3,
+    "temp_f": 50
+  },
+  "75001|2026-03-23": {
+    "zip": "75001",
+    "date": "2026-03-23",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.8,
+    "temp_f": 76
+  },
+  "75002|2026-03-23": {
+    "zip": "75002",
+    "date": "2026-03-23",
+    "condition": "rain",
+    "precipitation_in": 0.3,
+    "visibility_mi": 4.7,
+    "temp_f": 72
+  },
+  "75003|2026-03-23": {
+    "zip": "75003",
+    "date": "2026-03-23",
+    "condition": "storm",
+    "precipitation_in": 1.11,
+    "visibility_mi": 3.5,
+    "temp_f": 68
+  },
+  "75004|2026-03-23": {
+    "zip": "75004",
+    "date": "2026-03-23",
+    "condition": "storm",
+    "precipitation_in": 0.97,
+    "visibility_mi": 3.3,
+    "temp_f": 70
+  },
+  "75005|2026-03-23": {
+    "zip": "75005",
+    "date": "2026-03-23",
+    "condition": "rain",
+    "precipitation_in": 0.65,
+    "visibility_mi": 3.9,
+    "temp_f": 50
+  },
+  "75006|2026-03-23": {
+    "zip": "75006",
+    "date": "2026-03-23",
+    "condition": "rain",
+    "precipitation_in": 0.64,
+    "visibility_mi": 4.3,
+    "temp_f": 76
+  },
+  "75007|2026-03-23": {
+    "zip": "75007",
+    "date": "2026-03-23",
+    "condition": "rain",
+    "precipitation_in": 0.55,
+    "visibility_mi": 4.5,
+    "temp_f": 79
+  },
+  "75008|2026-03-23": {
+    "zip": "75008",
+    "date": "2026-03-23",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.5,
+    "temp_f": 89
+  },
+  "75009|2026-03-23": {
+    "zip": "75009",
+    "date": "2026-03-23",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 66
+  },
+  "75010|2026-03-23": {
+    "zip": "75010",
+    "date": "2026-03-23",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 102
+  },
+  "75001|2026-03-22": {
+    "zip": "75001",
+    "date": "2026-03-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 67
+  },
+  "75002|2026-03-22": {
+    "zip": "75002",
+    "date": "2026-03-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 73
+  },
+  "75003|2026-03-22": {
+    "zip": "75003",
+    "date": "2026-03-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 80
+  },
+  "75004|2026-03-22": {
+    "zip": "75004",
+    "date": "2026-03-22",
+    "condition": "snow",
+    "precipitation_in": 0.61,
+    "visibility_mi": 1.8,
+    "temp_f": 22
+  },
+  "75005|2026-03-22": {
+    "zip": "75005",
+    "date": "2026-03-22",
+    "condition": "rain",
+    "precipitation_in": 1.1,
+    "visibility_mi": 3.0,
+    "temp_f": 67
+  },
+  "75006|2026-03-22": {
+    "zip": "75006",
+    "date": "2026-03-22",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 86
+  },
+  "75007|2026-03-22": {
+    "zip": "75007",
+    "date": "2026-03-22",
+    "condition": "rain",
+    "precipitation_in": 1.0,
+    "visibility_mi": 6.0,
+    "temp_f": 48
+  },
+  "75008|2026-03-22": {
+    "zip": "75008",
+    "date": "2026-03-22",
+    "condition": "rain",
+    "precipitation_in": 0.8,
+    "visibility_mi": 7.0,
+    "temp_f": 57
+  },
+  "75009|2026-03-22": {
+    "zip": "75009",
+    "date": "2026-03-22",
+    "condition": "rain",
+    "precipitation_in": 0.31,
+    "visibility_mi": 5.9,
+    "temp_f": 61
+  },
+  "75010|2026-03-22": {
+    "zip": "75010",
+    "date": "2026-03-22",
+    "condition": "rain",
+    "precipitation_in": 0.32,
+    "visibility_mi": 5.3,
+    "temp_f": 83
+  },
+  "75001|2026-03-21": {
+    "zip": "75001",
+    "date": "2026-03-21",
+    "condition": "rain",
+    "precipitation_in": 0.88,
+    "visibility_mi": 4.8,
+    "temp_f": 53
+  },
+  "75002|2026-03-21": {
+    "zip": "75002",
+    "date": "2026-03-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 87
+  },
+  "75003|2026-03-21": {
+    "zip": "75003",
+    "date": "2026-03-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 62
+  },
+  "75004|2026-03-21": {
+    "zip": "75004",
+    "date": "2026-03-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.8,
+    "temp_f": 80
+  },
+  "75005|2026-03-21": {
+    "zip": "75005",
+    "date": "2026-03-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 83
+  },
+  "75006|2026-03-21": {
+    "zip": "75006",
+    "date": "2026-03-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 86
+  },
+  "75007|2026-03-21": {
+    "zip": "75007",
+    "date": "2026-03-21",
+    "condition": "snow",
+    "precipitation_in": 0.42,
+    "visibility_mi": 2.3,
+    "temp_f": 18
+  },
+  "75008|2026-03-21": {
+    "zip": "75008",
+    "date": "2026-03-21",
+    "condition": "storm",
+    "precipitation_in": 2.37,
+    "visibility_mi": 3.8,
+    "temp_f": 61
+  },
+  "75009|2026-03-21": {
+    "zip": "75009",
+    "date": "2026-03-21",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.7,
+    "temp_f": 99
+  },
+  "75010|2026-03-21": {
+    "zip": "75010",
+    "date": "2026-03-21",
+    "condition": "storm",
+    "precipitation_in": 2.53,
+    "visibility_mi": 3.9,
+    "temp_f": 65
+  },
+  "75001|2026-03-20": {
+    "zip": "75001",
+    "date": "2026-03-20",
+    "condition": "rain",
+    "precipitation_in": 0.12,
+    "visibility_mi": 4.5,
+    "temp_f": 78
+  },
+  "75002|2026-03-20": {
+    "zip": "75002",
+    "date": "2026-03-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 101
+  },
+  "75003|2026-03-20": {
+    "zip": "75003",
+    "date": "2026-03-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 96
+  },
+  "75004|2026-03-20": {
+    "zip": "75004",
+    "date": "2026-03-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 92
+  },
+  "75005|2026-03-20": {
+    "zip": "75005",
+    "date": "2026-03-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 85
+  },
+  "75006|2026-03-20": {
+    "zip": "75006",
+    "date": "2026-03-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.9,
+    "temp_f": 94
+  },
+  "75007|2026-03-20": {
+    "zip": "75007",
+    "date": "2026-03-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 61
+  },
+  "75008|2026-03-20": {
+    "zip": "75008",
+    "date": "2026-03-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 86
+  },
+  "75009|2026-03-20": {
+    "zip": "75009",
+    "date": "2026-03-20",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.7,
+    "temp_f": 87
+  },
+  "75010|2026-03-20": {
+    "zip": "75010",
+    "date": "2026-03-20",
+    "condition": "rain",
+    "precipitation_in": 0.9,
+    "visibility_mi": 4.6,
+    "temp_f": 61
+  },
+  "75001|2026-03-19": {
+    "zip": "75001",
+    "date": "2026-03-19",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.0,
+    "temp_f": 103
+  },
+  "75002|2026-03-19": {
+    "zip": "75002",
+    "date": "2026-03-19",
+    "condition": "rain",
+    "precipitation_in": 0.23,
+    "visibility_mi": 5.3,
+    "temp_f": 67
+  },
+  "75003|2026-03-19": {
+    "zip": "75003",
+    "date": "2026-03-19",
+    "condition": "storm",
+    "precipitation_in": 1.21,
+    "visibility_mi": 3.2,
+    "temp_f": 81
+  },
+  "75004|2026-03-19": {
+    "zip": "75004",
+    "date": "2026-03-19",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 10.0,
+    "temp_f": 89
+  },
+  "75005|2026-03-19": {
+    "zip": "75005",
+    "date": "2026-03-19",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 76
+  },
+  "75006|2026-03-19": {
+    "zip": "75006",
+    "date": "2026-03-19",
+    "condition": "rain",
+    "precipitation_in": 0.43,
+    "visibility_mi": 5.3,
+    "temp_f": 79
+  },
+  "75007|2026-03-19": {
+    "zip": "75007",
+    "date": "2026-03-19",
+    "condition": "rain",
+    "precipitation_in": 0.58,
+    "visibility_mi": 3.2,
+    "temp_f": 53
+  },
+  "75008|2026-03-19": {
+    "zip": "75008",
+    "date": "2026-03-19",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 83
+  },
+  "75009|2026-03-19": {
+    "zip": "75009",
+    "date": "2026-03-19",
+    "condition": "snow",
+    "precipitation_in": 0.61,
+    "visibility_mi": 4.2,
+    "temp_f": 30
+  },
+  "75010|2026-03-19": {
+    "zip": "75010",
+    "date": "2026-03-19",
+    "condition": "storm",
+    "precipitation_in": 2.45,
+    "visibility_mi": 3.5,
+    "temp_f": 78
+  },
+  "75001|2026-03-18": {
+    "zip": "75001",
+    "date": "2026-03-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 88
+  },
+  "75002|2026-03-18": {
+    "zip": "75002",
+    "date": "2026-03-18",
+    "condition": "rain",
+    "precipitation_in": 0.49,
+    "visibility_mi": 5.6,
+    "temp_f": 84
+  },
+  "75003|2026-03-18": {
+    "zip": "75003",
+    "date": "2026-03-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.9,
+    "temp_f": 76
+  },
+  "75004|2026-03-18": {
+    "zip": "75004",
+    "date": "2026-03-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.4,
+    "temp_f": 79
+  },
+  "75005|2026-03-18": {
+    "zip": "75005",
+    "date": "2026-03-18",
+    "condition": "fog",
+    "precipitation_in": 0.09,
+    "visibility_mi": 1.8,
+    "temp_f": 58
+  },
+  "75006|2026-03-18": {
+    "zip": "75006",
+    "date": "2026-03-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.1,
+    "temp_f": 96
+  },
+  "75007|2026-03-18": {
+    "zip": "75007",
+    "date": "2026-03-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 8.6,
+    "temp_f": 67
+  },
+  "75008|2026-03-18": {
+    "zip": "75008",
+    "date": "2026-03-18",
+    "condition": "rain",
+    "precipitation_in": 0.93,
+    "visibility_mi": 4.3,
+    "temp_f": 76
+  },
+  "75009|2026-03-18": {
+    "zip": "75009",
+    "date": "2026-03-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.3,
+    "temp_f": 90
+  },
+  "75010|2026-03-18": {
+    "zip": "75010",
+    "date": "2026-03-18",
+    "condition": "clear",
+    "precipitation_in": 0.0,
+    "visibility_mi": 9.5,
+    "temp_f": 90
+  }
+}

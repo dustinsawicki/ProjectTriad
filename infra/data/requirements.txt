@@ -1,0 +1,13 @@
+azure-identity>=1.17.0
+azure-cosmos>=4.7.0
+azure-storage-blob>=12.21.0
+azure-eventhub>=5.12.0
+azure-search-documents>=11.6.0
+azure-ai-projects>=2.0.0
+pyodbc>=5.1.0
+Faker>=28.0.0
+Pillow>=10.4.0
+reportlab>=4.2.0
+numpy>=2.0.0
+networkx>=3.3
+tenacity>=8.5.0

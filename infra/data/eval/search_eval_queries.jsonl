@@ -1,0 +1,25 @@
+{"query": "auto collision single vehicle total loss", "relevant_ids": ["hist-001", "hist-023", "hist-045"], "loss_type": "auto_collision"}
+{"query": "water damage burst pipe mitigation invoice", "relevant_ids": ["hist-002", "hist-011", "hist-094"], "loss_type": "home_property"}
+{"query": "rear end collision whiplash therapy bills", "relevant_ids": ["hist-003", "hist-021", "hist-106"], "loss_type": "liability"}
+{"query": "hail storm cracked windshield glass claim", "relevant_ids": ["hist-004", "hist-088", "hist-140"], "loss_type": "auto_comp"}
+{"query": "kitchen leak cabinets flooring replacement", "relevant_ids": ["hist-005", "hist-063", "hist-201"], "loss_type": "home_property"}
+{"query": "multi car intersection police report estimate", "relevant_ids": ["hist-006", "hist-132", "hist-205"], "loss_type": "auto_collision"}
+{"query": "slip and fall homeowner liability medical review", "relevant_ids": ["hist-007", "hist-117", "hist-244"], "loss_type": "liability"}
+{"query": "tree limb roof tarp emergency service", "relevant_ids": ["hist-008", "hist-076", "hist-320"], "loss_type": "home_property"}
+{"query": "deer strike front end repair estimate", "relevant_ids": ["hist-009", "hist-109", "hist-333"], "loss_type": "auto_comp"}
+{"query": "fraud ring repeated phone address vehicle", "relevant_ids": ["hist-010", "hist-164", "hist-377"], "loss_type": "auto_collision"}
+{"query": "single vehicle hard brake telematics support", "relevant_ids": ["hist-012", "hist-154", "hist-411"], "loss_type": "auto_collision"}
+{"query": "water backup endorsement sewer drain", "relevant_ids": ["endrs-001", "endrs-014", "endrs-037"], "loss_type": "home_property"}
+{"query": "california prompt acknowledgement bulletin", "relevant_ids": ["reg-CA-001", "reg-CA-002", "reg-CA-003"], "loss_type": "regulatory"}
+{"query": "texas prompt pay settlement bulletin", "relevant_ids": ["reg-TX-001", "reg-TX-002", "reg-TX-003"], "loss_type": "regulatory"}
+{"query": "florida ninety day payment denial rule", "relevant_ids": ["reg-FL-001", "reg-FL-002", "reg-FL-003"], "loss_type": "regulatory"}
+{"query": "medical bill cpt fair pricing comparison", "relevant_ids": ["hist-013", "hist-219", "hist-420"], "loss_type": "liability"}
+{"query": "totaled vehicle salvage value comparable", "relevant_ids": ["hist-014", "hist-231", "hist-444"], "loss_type": "auto_collision"}
+{"query": "fire smoke dwelling contents settlement", "relevant_ids": ["hist-015", "hist-260", "hist-462"], "loss_type": "home_property"}
+{"query": "subrogation third party red light evidence", "relevant_ids": ["hist-016", "hist-282", "hist-487"], "loss_type": "auto_collision"}
+{"query": "medical payments low impact injury claimant", "relevant_ids": ["hist-017", "hist-291", "hist-498"], "loss_type": "liability"}
+{"query": "garage theft catalytic converter report", "relevant_ids": ["hist-018", "hist-299", "hist-352"], "loss_type": "auto_comp"}
+{"query": "storm surge basement cleanup contents", "relevant_ids": ["hist-019", "hist-307", "hist-365"], "loss_type": "home_property"}
+{"query": "multi claimant bodily injury reserve setting", "relevant_ids": ["hist-020", "hist-318", "hist-376"], "loss_type": "liability"}
+{"query": "estimate variance above comparable repairs", "relevant_ids": ["hist-022", "hist-341", "hist-399"], "loss_type": "auto_collision"}
+{"query": "endorsement rental reimbursement daily limit", "relevant_ids": ["endrs-005", "endrs-021", "endrs-044"], "loss_type": "auto_collision"}

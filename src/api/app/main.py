@@ -8,7 +8,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from .config import get_settings
-from .routers import audit, claims, health, queue
+from .routers import audit, claims, health, queue, events, siu, supervisor
 
 logging.basicConfig(level=os.environ.get("LOG_LEVEL", "INFO"))
 log = logging.getLogger("claims-api")
@@ -17,8 +17,8 @@ settings = get_settings()
 
 app = FastAPI(
     title="Agentic Claims Processing API",
-    version="1.0.0",
-    description="FSI PoC — Four-agent claims pipeline over Azure SQL.",
+    version="2.0.0",
+    description="FSI PoC v2 — Event-driven multi-agent claims pipeline with RAG, vision, and link-graph fraud detection.",
 )
 
 app.add_middleware(
@@ -33,6 +33,9 @@ app.include_router(health.router)
 app.include_router(queue.router)
 app.include_router(claims.router)
 app.include_router(audit.router)
+app.include_router(events.router)
+app.include_router(siu.router)
+app.include_router(supervisor.router)
 
 
 # Optional: Application Insights via OpenTelemetry
@@ -51,5 +54,5 @@ if settings.applicationinsights_connection_string:
 
 @app.on_event("startup")
 def _startup() -> None:
-    log.info("Claims API starting; SQL=%s/%s", settings.sql_server_fqdn, settings.sql_database_name)
-    # Register agents lazily — first /api/claims request creates them on demand
+    log.info("Claims API v2 starting; SQL=%s/%s", settings.sql_server_fqdn, settings.sql_database_name)
+    log.info("Cosmos=%s, Blob=%s, Search=%s", settings.cosmos_endpoint, settings.blob_account_name, settings.search_endpoint)

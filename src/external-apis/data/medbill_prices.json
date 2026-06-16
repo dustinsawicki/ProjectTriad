@@ -1,0 +1,202 @@
+{
+  "12001": {
+    "description": "Simple repair of superficial wound",
+    "fair_price": 1489.33
+  },
+  "12002": {
+    "description": "Simple repair, scalp, neck, axillae, external genitalia, trunk and/or extremities",
+    "fair_price": 1692.36
+  },
+  "20550": {
+    "description": "Injection(s), single tendon sheath, or ligament",
+    "fair_price": 1262.52
+  },
+  "20610": {
+    "description": "Arthrocentesis, aspiration and/or injection; major joint",
+    "fair_price": 299.47
+  },
+  "21310": {
+    "description": "Closed treatment of nasal bone fracture without manipulation",
+    "fair_price": 1915.8
+  },
+  "22551": {
+    "description": "Cervical discectomy and fusion",
+    "fair_price": 1586.69
+  },
+  "23500": {
+    "description": "Closed treatment of clavicular fracture",
+    "fair_price": 1883.53
+  },
+  "23600": {
+    "description": "Closed treatment of proximal humeral fracture",
+    "fair_price": 2197.34
+  },
+  "24500": {
+    "description": "Closed treatment of humeral shaft fracture",
+    "fair_price": 586.83
+  },
+  "24650": {
+    "description": "Closed treatment of radial head fracture",
+    "fair_price": 2227.11
+  },
+  "25500": {
+    "description": "Closed treatment of radial shaft fracture",
+    "fair_price": 657.12
+  },
+  "25600": {
+    "description": "Closed treatment of distal radial fracture",
+    "fair_price": 1610.57
+  },
+  "26720": {
+    "description": "Closed treatment of phalangeal shaft fracture",
+    "fair_price": 902.3
+  },
+  "27130": {
+    "description": "Total hip arthroplasty",
+    "fair_price": 2141.09
+  },
+  "27236": {
+    "description": "Open treatment of femoral fracture, proximal end",
+    "fair_price": 2372.1
+  },
+  "27506": {
+    "description": "Open treatment of femoral shaft fracture",
+    "fair_price": 744.64
+  },
+  "27786": {
+    "description": "Closed treatment of distal fibular fracture",
+    "fair_price": 2077.77
+  },
+  "28470": {
+    "description": "Closed treatment of metatarsal fracture",
+    "fair_price": 1315.61
+  },
+  "29075": {
+    "description": "Application of short arm cast",
+    "fair_price": 888.07
+  },
+  "29515": {
+    "description": "Application of short leg splint",
+    "fair_price": 176.93
+  },
+  "29881": {
+    "description": "Knee arthroscopy with meniscectomy",
+    "fair_price": 1785.72
+  },
+  "36415": {
+    "description": "Collection of venous blood by venipuncture",
+    "fair_price": 1055.52
+  },
+  "36475": {
+    "description": "Endovenous ablation therapy, first vein",
+    "fair_price": 501.04
+  },
+  "51798": {
+    "description": "Measurement of post-void residual urine",
+    "fair_price": 2317.62
+  },
+  "70450": {
+    "description": "CT head/brain without contrast",
+    "fair_price": 2266.82
+  },
+  "71045": {
+    "description": "Radiologic examination, chest; single view",
+    "fair_price": 1590.13
+  },
+  "72040": {
+    "description": "Radiologic exam, spine, cervical; two or three views",
+    "fair_price": 1447.16
+  },
+  "72125": {
+    "description": "CT cervical spine without contrast",
+    "fair_price": 768.42
+  },
+  "72148": {
+    "description": "MRI lumbar spine without contrast",
+    "fair_price": 1825.67
+  },
+  "73030": {
+    "description": "Radiologic exam, shoulder; complete",
+    "fair_price": 592.78
+  },
+  "73110": {
+    "description": "Radiologic exam, wrist; complete",
+    "fair_price": 696.21
+  },
+  "73564": {
+    "description": "Radiologic exam, knee; complete, four or more views",
+    "fair_price": 985.73
+  },
+  "73610": {
+    "description": "Radiologic exam, ankle; complete",
+    "fair_price": 804.32
+  },
+  "73721": {
+    "description": "MRI lower extremity joint without contrast",
+    "fair_price": 1053.94
+  },
+  "74177": {
+    "description": "CT abdomen and pelvis with contrast",
+    "fair_price": 1329.28
+  },
+  "76700": {
+    "description": "Ultrasound, abdominal, complete",
+    "fair_price": 2312.08
+  },
+  "76830": {
+    "description": "Ultrasound, transvaginal",
+    "fair_price": 1463.2
+  },
+  "80048": {
+    "description": "Basic metabolic panel",
+    "fair_price": 1955.59
+  },
+  "80053": {
+    "description": "Comprehensive metabolic panel",
+    "fair_price": 732.68
+  },
+  "81001": {
+    "description": "Urinalysis, automated with microscopy",
+    "fair_price": 117.96
+  },
+  "85025": {
+    "description": "Complete blood count with differential",
+    "fair_price": 1525.78
+  },
+  "85730": {
+    "description": "Thromboplastin time, partial",
+    "fair_price": 1349.82
+  },
+  "87086": {
+    "description": "Urine culture",
+    "fair_price": 1469.02
+  },
+  "90791": {
+    "description": "Psychiatric diagnostic evaluation",
+    "fair_price": 1781.72
+  },
+  "90834": {
+    "description": "Psychotherapy, 45 minutes",
+    "fair_price": 1323.21
+  },
+  "93000": {
+    "description": "Electrocardiogram with interpretation",
+    "fair_price": 668.16
+  },
+  "93224": {
+    "description": "External electrocardiographic recording, 24 hours",
+    "fair_price": 515.56
+  },
+  "97110": {
+    "description": "Therapeutic exercises",
+    "fair_price": 2388.36
+  },
+  "97140": {
+    "description": "Manual therapy techniques",
+    "fair_price": 83.76
+  },
+  "97530": {
+    "description": "Therapeutic activities",
+    "fair_price": 1273.55
+  }
+}

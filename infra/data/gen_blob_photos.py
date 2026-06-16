@@ -1,0 +1,139 @@
+"""Generate and upload synthetic damage photos for the Claims PoC."""
+from __future__ import annotations
+
+import argparse
+import io
+import json
+import os
+import random
+import struct
+from collections.abc import Sequence
+from pathlib import Path
+
+import numpy as np
+import pyodbc
+from azure.core.exceptions import ResourceExistsError
+from azure.identity import DefaultAzureCredential
+from azure.storage.blob import BlobServiceClient
+from faker import Faker
+from PIL import Image, ImageDraw, ImageFont
+from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential
+
+SEED = 42
+random.seed(SEED)
+Faker.seed(SEED)
+fake = Faker("en_US")
+fake.seed_instance(SEED)
+RNG = np.random.default_rng(SEED)
+SCRIPT_DIR = Path(__file__).resolve().parent
+MANIFEST_PATH = SCRIPT_DIR / ".seed_state" / "gen_sql_output.json"
+CAR_COLORS = ["#374151", "#1d4ed8", "#166534", "#b91c1c", "#7c3aed", "#ea580c"]
+DAMAGE_COLORS = {"DENT": "#facc15", "SCRATCH": "#e11d48", "BROKEN GLASS": "#60a5fa", "CRACKED": "#a855f7"}
+
+
+def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--blob-account-name", default=os.getenv("BLOB_ACCOUNT_NAME"))
+    parser.add_argument("--sql-server-fqdn", default=os.getenv("SQL_SERVER_FQDN"))
+    parser.add_argument("--sql-database-name", default=os.getenv("SQL_DATABASE_NAME"))
+    parser.add_argument("--manifest-path", type=Path, default=MANIFEST_PATH)
+    parser.add_argument("--reseed", action="store_true")
+    args = parser.parse_args(argv)
+    if not args.blob_account_name:
+        parser.error("BLOB_ACCOUNT_NAME is required via args or env vars.")
+    return args
+
+
+def _credential() -> DefaultAzureCredential:
+    return DefaultAzureCredential(exclude_interactive_browser_credential=False)
+
+
+def _blob_service(account_name: str) -> BlobServiceClient:
+    return BlobServiceClient(account_url=f"https://{account_name}.blob.core.windows.net", credential=_credential())
+
+
+def _access_token_struct() -> dict[int, bytes]:
+    token = _credential().get_token("https://database.windows.net/.default").token
+    encoded = b"".join(bytes([byte]) + b"\0" for byte in token.encode("utf-8"))
+    return {1256: struct.pack("=i", len(encoded)) + encoded}
+
+
+def _load_claim_numbers(args: argparse.Namespace) -> list[str]:
+    if args.manifest_path.exists():
+        payload = json.loads(args.manifest_path.read_text(encoding="utf-8"))
+        return [claim["claim_number"] for claim in payload["claims"][:200]]
+    if not args.sql_server_fqdn or not args.sql_database_name:
+        raise FileNotFoundError("SQL manifest not found and SQL connection info not supplied.")
+    conn_str = (
+        "DRIVER={ODBC Driver 18 for SQL Server};"
+        f"SERVER={args.sql_server_fqdn},1433;DATABASE={args.sql_database_name};"
+        "Encrypt=yes;TrustServerCertificate=no;Connection Timeout=60;"
+    )
+    with pyodbc.connect(conn_str, attrs_before=_access_token_struct()) as conn:
+        rows = conn.cursor().execute("SELECT TOP 200 ClaimNumber FROM dbo.Claim ORDER BY ClaimNumber").fetchall()
+    return [row[0] for row in rows]
+
+
+def _render_photo(claim_number: str, ordinal: int) -> bytes:
+    image = Image.new("RGB", (1280, 900), random.choice(CAR_COLORS))
+    draw = ImageDraw.Draw(image)
+    font = ImageFont.load_default()
+    plate = f"{claim_number[-4:]}-{ordinal}"
+    draw.rectangle((80, 80, 1200, 820), outline="#f8fafc", width=8)
+    draw.rectangle((910, 700, 1180, 800), fill="#111827")
+    draw.text((930, 735), plate, fill="#f8fafc", font=font)
+    labels = list(DAMAGE_COLORS.keys())
+    for idx in range(2):
+        x1 = int(RNG.integers(140, 850))
+        y1 = int(RNG.integers(140, 620))
+        x2 = x1 + int(RNG.integers(180, 320))
+        y2 = y1 + int(RNG.integers(70, 180))
+        label = labels[(ordinal + idx) % len(labels)]
+        draw.rectangle((x1, y1, x2, y2), outline=DAMAGE_COLORS[label], width=6)
+        draw.text((x1 + 12, y1 + 12), label, fill=DAMAGE_COLORS[label], font=font)
+    draw.text((90, 845), f"Synthetic seed={SEED} claim={claim_number} photo={ordinal}", fill="#f8fafc", font=font)
+    buffer = io.BytesIO()
+    image.save(buffer, format="JPEG", quality=88)
+    return buffer.getvalue()
+
+
+@retry(stop=stop_after_attempt(5), wait=wait_exponential(multiplier=1, min=1, max=16), retry=retry_if_exception_type(Exception), reraise=True)
+def _upload_blob(container, name: str, payload: bytes) -> None:
+    container.upload_blob(name=name, data=payload, overwrite=True)
+
+
+def _clear_existing(container, claim_numbers: Sequence[str]) -> int:
+    deleted = 0
+    for claim_number in claim_numbers:
+        for blob in container.list_blobs(name_starts_with=f"{claim_number}/"):
+            container.delete_blob(blob.name)
+            deleted += 1
+    return deleted
+
+
+def main(argv: Sequence[str] | None = None) -> int:
+    args = parse_args(argv)
+    print(f"[gen_blob_photos] Deterministic seed={SEED}")
+    claim_numbers = _load_claim_numbers(args)
+    container = _blob_service(args.blob_account_name).get_container_client("photos")
+    try:
+        container.create_container()
+    except ResourceExistsError:
+        pass
+    deleted = _clear_existing(container, claim_numbers)
+    print(f"[gen_blob_photos] Cleared {deleted} existing photo blobs")
+    uploaded = 0
+    for claim_number in claim_numbers:
+        for ordinal in range(1, 4):
+            blob_name = f"{claim_number}/photo-{ordinal}.jpg"
+            _upload_blob(container, blob_name, _render_photo(claim_number, ordinal))
+            uploaded += 1
+        if uploaded % 60 == 0:
+            print(f"[gen_blob_photos] Uploaded {uploaded} photos ...")
+    summary = {"generator": "gen_blob_photos", "claims": len(claim_numbers), "photos": uploaded}
+    print(f"SUMMARY {json.dumps(summary, sort_keys=True)}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

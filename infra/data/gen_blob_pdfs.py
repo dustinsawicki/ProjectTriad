@@ -1,0 +1,206 @@
+"""Generate realistic PDF claim documents and upload them to Blob Storage."""
+from __future__ import annotations
+
+import argparse
+import io
+import json
+import os
+import random
+import struct
+from collections.abc import Sequence
+from pathlib import Path
+
+import numpy as np
+import pyodbc
+from azure.core.exceptions import ResourceExistsError
+from azure.identity import DefaultAzureCredential
+from azure.storage.blob import BlobServiceClient
+from faker import Faker
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
+from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential
+
+SEED = 42
+random.seed(SEED)
+Faker.seed(SEED)
+fake = Faker("en_US")
+fake.seed_instance(SEED)
+RNG = np.random.default_rng(SEED)
+PDF_DOC_TYPES = {"police_report", "estimate", "medical"}
+
+
+def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--blob-account-name", default=os.getenv("BLOB_ACCOUNT_NAME"))
+    parser.add_argument("--sql-server-fqdn", default=os.getenv("SQL_SERVER_FQDN"))
+    parser.add_argument("--sql-database-name", default=os.getenv("SQL_DATABASE_NAME"))
+    parser.add_argument("--reseed", action="store_true")
+    args = parser.parse_args(argv)
+    if not args.blob_account_name or not args.sql_server_fqdn or not args.sql_database_name:
+        parser.error("BLOB_ACCOUNT_NAME, SQL_SERVER_FQDN, and SQL_DATABASE_NAME are required.")
+    return args
+
+
+def _credential() -> DefaultAzureCredential:
+    return DefaultAzureCredential(exclude_interactive_browser_credential=False)
+
+
+def _blob_service(account_name: str) -> BlobServiceClient:
+    return BlobServiceClient(account_url=f"https://{account_name}.blob.core.windows.net", credential=_credential())
+
+
+def _access_token_struct() -> dict[int, bytes]:
+    token = _credential().get_token("https://database.windows.net/.default").token
+    encoded = b"".join(bytes([byte]) + b"\0" for byte in token.encode("utf-8"))
+    return {1256: struct.pack("=i", len(encoded)) + encoded}
+
+
+def _read_documents(args: argparse.Namespace) -> list[dict[str, str]]:
+    conn_str = (
+        "DRIVER={ODBC Driver 18 for SQL Server};"
+        f"SERVER={args.sql_server_fqdn},1433;DATABASE={args.sql_database_name};"
+        "Encrypt=yes;TrustServerCertificate=no;Connection Timeout=60;"
+    )
+    sql = """
+    SELECT TOP 800 c.ClaimNumber, c.LossDateTime, c.LossType, d.DocType, d.Title, d.RawText, d.BlobUrl
+    FROM dbo.Document d
+    INNER JOIN dbo.Claim c ON c.ClaimId = d.ClaimId
+    WHERE d.DocType IN ('police_report', 'estimate', 'medical') AND d.BlobUrl IS NOT NULL
+    ORDER BY c.ClaimNumber, d.Title, d.DocumentId
+    """
+    with pyodbc.connect(conn_str, attrs_before=_access_token_struct()) as conn:
+        rows = conn.cursor().execute(sql).fetchall()
+    return [
+        {
+            "claim_number": row[0],
+            "loss_datetime": row[1].isoformat(sep=" ") if hasattr(row[1], "isoformat") else str(row[1]),
+            "loss_type": row[2],
+            "doc_type": row[3],
+            "title": row[4],
+            "raw_text": row[5],
+            "blob_url": row[6],
+        }
+        for row in rows
+    ]
+
+
+def _draw_key_values(pdf: canvas.Canvas, items: list[tuple[str, str]], top: int = 740) -> int:
+    y = top
+    for label, value in items:
+        pdf.setFont("Helvetica-Bold", 11)
+        pdf.drawString(56, y, f"{label}:")
+        pdf.setFont("Helvetica", 11)
+        pdf.drawString(180, y, value)
+        y -= 20
+    return y
+
+
+def _render_pdf(document: dict[str, str]) -> bytes:
+    buffer = io.BytesIO()
+    pdf = canvas.Canvas(buffer, pagesize=letter)
+    width, height = letter
+    pdf.setTitle(document["title"])
+    pdf.setFont("Helvetica-Bold", 16)
+    header = {
+        "police_report": "Police Incident Report",
+        "estimate": "Repair Estimate",
+        "medical": "Medical Billing Statement",
+    }[document["doc_type"]]
+    pdf.drawString(50, height - 50, header)
+    pdf.setFont("Helvetica", 10)
+    pdf.drawString(50, height - 66, f"Synthetic Claims PoC seed={SEED}")
+    fields = [
+        ("Claim", document["claim_number"]),
+        ("Loss Type", document["loss_type"].replace("_", " ")),
+        ("Document Type", document["doc_type"].replace("_", " ")),
+        ("Loss Date", document["loss_datetime"]),
+        ("Prepared By", fake.name()),
+    ]
+    y = _draw_key_values(pdf, fields)
+    pdf.setLineWidth(1)
+    pdf.line(50, y, width - 50, y)
+    y -= 24
+    if document["doc_type"] == "estimate":
+        line_items = [
+            ("Front bumper", round(float(RNG.uniform(650, 2200)), 2)),
+            ("Paint labor", round(float(RNG.uniform(300, 950)), 2)),
+            ("Calibration", round(float(RNG.uniform(125, 480)), 2)),
+        ]
+        for item, amount in line_items:
+            pdf.drawString(60, y, item)
+            pdf.drawRightString(width - 70, y, f"${amount:,.2f}")
+            y -= 18
+    elif document["doc_type"] == "medical":
+        bill_items = [
+            (random.choice(["99213", "97110", "72141", "97014"]), round(float(RNG.uniform(180, 2400)), 2))
+            for _ in range(3)
+        ]
+        for cpt_code, amount in bill_items:
+            pdf.drawString(60, y, f"CPT {cpt_code}")
+            pdf.drawRightString(width - 70, y, f"${amount:,.2f}")
+            y -= 18
+    else:
+        parties = [fake.name(), fake.name()]
+        pdf.drawString(60, y, f"Officer: {fake.name()}")
+        y -= 18
+        pdf.drawString(60, y, f"Parties: {parties[0]} / {parties[1]}")
+        y -= 18
+    y -= 10
+    pdf.setFont("Helvetica-Bold", 11)
+    pdf.drawString(56, y, "Narrative")
+    y -= 18
+    pdf.setFont("Helvetica", 10)
+    for line in document["raw_text"].splitlines():
+        pdf.drawString(56, y, line[:110])
+        y -= 14
+        if y < 72:
+            pdf.showPage()
+            y = height - 72
+            pdf.setFont("Helvetica", 10)
+    pdf.showPage()
+    pdf.save()
+    return buffer.getvalue()
+
+
+@retry(stop=stop_after_attempt(5), wait=wait_exponential(multiplier=1, min=1, max=16), retry=retry_if_exception_type(Exception), reraise=True)
+def _upload_blob(container, name: str, payload: bytes) -> None:
+    container.upload_blob(name=name, data=payload, overwrite=True)
+
+
+def main(argv: Sequence[str] | None = None) -> int:
+    args = parse_args(argv)
+    print(f"[gen_blob_pdfs] Deterministic seed={SEED}")
+    documents = _read_documents(args)
+    container = _blob_service(args.blob_account_name).get_container_client("documents")
+    try:
+        container.create_container()
+    except ResourceExistsError:
+        pass
+    deleted = 0
+    for document in documents:
+        blob_name = document["blob_url"].split("/documents/", 1)[1]
+        if container.exists() and any(True for _ in container.list_blobs(name_starts_with=document["claim_number"] + "/")):
+            break
+    seen_claims: set[str] = set()
+    for document in documents:
+        if document["claim_number"] in seen_claims:
+            continue
+        for blob in container.list_blobs(name_starts_with=document["claim_number"] + "/"):
+            container.delete_blob(blob.name)
+            deleted += 1
+        seen_claims.add(document["claim_number"])
+    print(f"[gen_blob_pdfs] Cleared {deleted} existing document blobs")
+    uploaded = 0
+    for document in documents:
+        blob_name = document["blob_url"].split("/documents/", 1)[1]
+        _upload_blob(container, blob_name, _render_pdf(document))
+        uploaded += 1
+        if uploaded % 80 == 0:
+            print(f"[gen_blob_pdfs] Uploaded {uploaded} PDFs ...")
+    summary = {"generator": "gen_blob_pdfs", "pdfs": uploaded, "claims": len({document['claim_number'] for document in documents})}
+    print(f"SUMMARY {json.dumps(summary, sort_keys=True)}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

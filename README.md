@@ -1,112 +1,150 @@
-# Agentic Claims Processing PoC
+# Agentic Claims Processing PoC (v2)
 
 > **Industry:** Financial Services — Property & Casualty Insurance
-> **Pattern:** Four-agent claims pipeline on Microsoft Foundry Agent Service
-> **Sole datasource:** Azure SQL Database (synthetic P&C dataset seeded at deploy)
+> **Pattern:** Event-driven multi-agent claims pipeline on Microsoft Foundry Agent Service
+> **Datasources:** Azure SQL + Cosmos DB + Blob Storage + Event Hubs + AI Search + 6 mock external APIs
+> **AI:** GPT-4o (text + vision), Document Intelligence, AI Search RAG, link-graph fraud detection
 > **Deploy:** `azd up` into the customer's own Azure subscription
 
-This repository implements the [Functional Specification](../../../Scratchpad/contoso-insurance-poc-spec.md) for an agentic claims-processing PoC. A Next.js adjuster portal sits on top of a FastAPI orchestrator that drives four Foundry agents (FNOL/Doc, Triage/Coverage, Assessment/Settlement, Responsible-AI Guardrails) reading and writing a single Azure SQL Database.
+This repository implements an agentic claims-processing PoC. A Next.js adjuster portal sits on top of a FastAPI orchestrator that drives four Foundry agents (FNOL/Doc, Triage/Coverage, Assessment/Settlement, Responsible-AI Guardrails). The system spans six Azure datastores and integrates with six mock external APIs to demonstrate a production-shaped architecture.
 
 ## Architecture
 
 ```mermaid
 graph TD
-  Adjuster["Adjuster / Supervisor / SIU<br/>Browser"]
-  subgraph Azure
-    Web["Next.js Adjuster Portal<br/>(Container App)"]
-    API["FastAPI Orchestrator<br/>(Container App, MI)"]
-    Foundry["Microsoft Foundry Agent Service<br/>4 agents"]
-    SQL[("Azure SQL Database<br/>Serverless Gen5")]
-    KV["Key Vault"]
-    AI["App Insights + Log Analytics"]
-  end
-  Adjuster --> Web --> API --> Foundry
-  API --> SQL
-  API --> KV
-  API --> AI
-  Web --> AI
+    subgraph Customer["Customer Environment"]
+        Adjuster["Adjuster / Supervisor / SIU<br/>Browser"]
+    end
+
+    subgraph Azure["Azure Subscription"]
+        subgraph ACA["Container Apps"]
+            Web["Next.js Portal"]
+            API["FastAPI Orchestrator + Agents"]
+            ExtAPI["Mock External APIs"]
+        end
+        subgraph AI["AI Services"]
+            Foundry["Foundry Agent Service<br/>4 agents + vision"]
+            DocIntel["Document Intelligence"]
+            Search["AI Search (RAG)"]
+        end
+        subgraph Data["Data Tier"]
+            SQL[("Azure SQL")]
+            Cosmos[("Cosmos DB")]
+            Blob[("Blob Storage")]
+            EH[("Event Hubs")]
+        end
+        KV["Key Vault"]
+        AppIns["Application Insights"]
+    end
+
+    Adjuster --> Web --> API
+    API --> Foundry & DocIntel & Search
+    API --> SQL & Cosmos & Blob & EH & KV & ExtAPI
+    API --> AppIns
 ```
 
-## Quick Start for the Customer
+## Quick Start
 
-You will deploy this into your own Azure subscription. You need:
-
-- An Azure subscription with quota for Azure SQL (Serverless GP), Azure Container Apps, and an Azure AI Foundry project with `gpt-4o` deployment.
-- The [Azure Developer CLI (`azd`)](https://learn.microsoft.com/azure/developer/azure-developer-cli/install-azd) and Docker.
-- Owner or Contributor + User Access Administrator on the target subscription (for the deploy-time role assignments).
+Prerequisites:
+- Azure subscription with quota for: SQL Serverless, Container Apps, Cosmos serverless, AI Search Basic, Document Intelligence S0, Event Hubs Standard, Foundry (gpt-4o + gpt-4o-mini + text-embedding-3-large)
+- [Azure Developer CLI (`azd`)](https://learn.microsoft.com/azure/developer/azure-developer-cli/install-azd) and Docker
+- Owner or Contributor + User Access Administrator on the subscription
 
 ```bash
 # 1. Clone
-git clone https://github.com/<microsoft-org>/<repo>.git
-cd <repo>
+git clone https://github.com/dustinsawicki/ProjectTriad.git
+cd ProjectTriad
 
-# 2. Initialize an azd environment for your tenant/subscription
+# 2. Login and create environment
 azd auth login
 azd env new claims-poc-dev
 
-# 3. Tell azd which subscription, region, and Entra IDs to wire up
+# 3. Configure
 azd env set AZURE_SUBSCRIPTION_ID  <your-subscription-id>
-azd env set AZURE_LOCATION         eastus2
+azd env set AZURE_LOCATION         swedencentral
 azd env set AZURE_TENANT_ID        <your-tenant-id>
 azd env set AZURE_OPENAI_MODEL     gpt-4o
 azd env set ADJUSTER_USER_OBJECT_IDS "<entra-object-id-1>,<entra-object-id-2>"
 
-# 4. Deploy infra, build & deploy containers, seed synthetic data
+# 4. Deploy (~20 min: infra + containers + seed all datastores)
 azd up
 ```
 
-After `azd up` finishes it will print the portal URL. Sign in with one of the Entra users you added above.
+After deployment, the portal URL is printed. Sign in with one of your configured Entra users.
 
-## Demo script
+## Demo Claims (CLM-200001..CLM-200010)
 
-Five seeded claims walk through the pipeline:
+| Claim # | Loss type | Demo intent |
+|---------|-----------|-------------|
+| CLM-200001 | Auto collision (single) | Happy path — all sources lit |
+| CLM-200002 | Home water damage | PDF + photo citations |
+| CLM-200003 | Auto, telematics-led | Telematics as primary evidence |
+| CLM-200004 | Auto, inflated estimate | Guardrail block via AVM mismatch |
+| CLM-200005 | Auto, 3rd-party at fault | Subrogation + recovery |
+| CLM-200006 | Bodily injury | Medical bill review |
+| CLM-200007 | Home liability | Liability + cross-product |
+| CLM-200008 | Auto, fraud ring | Link analysis + ISO lookup |
+| CLM-200009 | Auto, fraud ring | Same ring as 200008 |
+| CLM-200010 | Auto, fraud ring | Full 3-node SIU graph |
 
-| Claim # | Loss type | Expected route | What to highlight |
-|---------|-----------|----------------|-------------------|
-| CLM-100001 | Auto collision, single vehicle | STP | Full happy-path: FNOL → coverage → settlement → guardrail pass → adjuster approve |
-| CLM-100002 | Home water damage | Desk | Coverage agent cites policy endorsement; subrogation flag false |
-| CLM-100003 | Auto, suspected fraud ring | SIU | Fraud signal cites shared address + phone with 2 prior claims |
-| CLM-100004 | Auto, inflated estimate | Desk + Guardrail block | Assessment proposes settlement, Guardrails blocks vs. coverage limit |
-| CLM-100005 | Auto, third-party at fault | Desk | Subrogation flag true; estimate + recovery memo |
+## Key UI Surfaces
+
+- **Adjuster Portal** (`/claims`) — Claim workspace with evidence, agent decisions, weather/telematics chips
+- **SIU Link Graph** (`/siu/graph?claim=CLM-200008`) — Force-directed fraud ring visualization
+- **Supervisor Dashboard** (`/supervisor`) — Live event log, App Insights workbook, telematics replay
 
 ## Reseed and Teardown
 
 ```bash
-# Re-run the seed (idempotent — truncates then re-inserts)
+# Re-run all data generators (idempotent — truncates then re-inserts)
 azd hooks run reseed
 
 # Tear everything down
 azd down --purge
 ```
 
-## Production hardening roadmap
+## Azure Services
 
-This PoC is deliberately public-ingress and single-region for fast deployment. Hardening path (each drops in as additional Bicep modules):
+| Service | Purpose |
+|---------|---------|
+| Azure Container Apps (×3) | Web + API + External APIs |
+| Azure SQL Database | Canonical claim/policy state |
+| Cosmos DB (serverless) | Telematics, feature store, link graph |
+| Blob Storage | Photos, PDFs, telematics-raw, historical corpus |
+| Event Hubs (Standard) | Claim lifecycle events, fraud scoring, telematics stream |
+| AI Search (Basic) | RAG over historical claims + policy endorsements |
+| Document Intelligence (S0) | PDF extraction (police reports, estimates, medical bills) |
+| Foundry Agent Service | 4 agents (gpt-4o with vision + gpt-4o-mini) |
+| Key Vault | Secrets |
+| Application Insights | Distributed tracing across all services |
 
-1. VNet + Private Endpoints for SQL, Key Vault, ACR, Foundry
-2. Defender for SQL, Defender for Containers
-3. Customer-Managed Keys on SQL and Key Vault
-4. Azure Front Door + WAF in front of Container Apps
-5. Per-environment isolation (dev/test/prod) with separate Bicep parameter files
-
-## Repository layout
+## Repository Layout
 
 ```
-infra/                    Bicep + SQL schema + Python seed
+infra/                    Bicep + data generators
   main.bicep              Subscription-scope entry point
-  modules/                Per-service Bicep modules
-  sql/                    schema.sql + seed.py
+  modules/                Per-service Bicep modules (10 modules)
+  data/                   seed_all.py + 10 generators
+  sql/                    schema.sql (v1 compat)
 src/api/                  Python 3.12 FastAPI + Foundry agents
-  app/agents/             Foundry agent JSON definitions
-  app/tools/              Typed Python tools the agents invoke
-  app/repositories/       SQL access (the only layer that touches SQL)
-  app/routers/            REST endpoints
-  app/services/           Orchestrator state machine
+  app/clients/            Azure service clients (Cosmos, Blob, EH, Search, DI)
+  app/consumers/          Event Hub consumer dispatcher
+  app/tools/              Agent tools (vision, RAG, link-graph, externals)
+  app/routers/            REST endpoints (claims, events, siu, supervisor)
+  app/services/           Event-driven orchestrator
 src/web/                  Next.js 14 (App Router) + Tailwind + MSAL
-.github/workflows/        GitHub Actions: lint, test, azd up via OIDC
-azure.yaml                azd service map
+  app/siu/graph/          SIU link-graph visualization
+  app/supervisor/         Dashboard + workbook embed
+  components/Graph.tsx    vis-network wrapper
+src/external-apis/        FastAPI mock service (ISO, weather, police, AVM, medbill, payment)
+azure.yaml                azd service map (3 services)
 ```
 
-## Status
+## Production Hardening Roadmap
 
-PoC scaffold — ready for `azd up` and demo. See the full spec for in-scope/out-of-scope, NFRs, and risks: [`Scratchpad/contoso-insurance-poc-spec.md`](../../../Scratchpad/contoso-insurance-poc-spec.md).
+1. VNet + Private Endpoints for all services
+2. Defender for SQL, Containers
+3. Customer-Managed Keys
+4. Azure Front Door + WAF
+5. Per-environment isolation (dev/test/prod)
+6. Replace mock external APIs with real connectors
