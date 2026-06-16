@@ -3,7 +3,6 @@
 from azure.storage.blob import BlobServiceClient, generate_blob_sas, BlobSasPermissions
 from azure.identity import DefaultAzureCredential
 from datetime import datetime, timedelta, timezone
-from typing import Any
 
 from app.config import settings
 
