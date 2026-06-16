@@ -36,8 +36,12 @@ export async function getAccessToken(): Promise<string | null> {
     const r = await msal.acquireTokenSilent({ account, scopes: [apiScope] });
     return r.accessToken;
   } catch {
-    const r = await msal.acquireTokenPopup({ scopes: [apiScope] });
-    return r.accessToken;
+    try {
+      const r = await msal.acquireTokenPopup({ scopes: [apiScope] });
+      return r.accessToken;
+    } catch {
+      return null;
+    }
   }
 }
 
