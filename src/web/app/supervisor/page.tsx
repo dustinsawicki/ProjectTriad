@@ -7,16 +7,38 @@ interface ClaimEvent {
   event_id: string;
   event_type: string;
   claim_number: string;
+  claim_id: string;
+  agent?: string;
+  correlation_id?: string;
   occurred_utc: string;
+  detail?: Record<string, unknown>;
+}
+
+const EVENT_STYLES: Record<string, string> = {
+  fnol_complete: "bg-sky-50 text-sky-700 ring-1 ring-sky-200",
+  triage_complete: "bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200",
+  assessment_complete: "bg-amber-50 text-amber-700 ring-1 ring-amber-200",
+  guardrail_complete: "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200",
+  pipeline_complete: "bg-slate-700 text-white",
+  policy_invalid: "bg-red-50 text-red-700 ring-1 ring-red-200",
+};
+
+function EventBadge({ type }: { type: string }) {
+  const label = type.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+  return (
+    <span className={`px-2.5 py-1 rounded-full text-xs font-medium ${EVENT_STYLES[type] ?? "bg-slate-100 text-slate-600"}`}>
+      {label}
+    </span>
+  );
 }
 
 export default function SupervisorPage() {
   const [events, setEvents] = useState<ClaimEvent[]>([]);
-  const [replaying, setReplaying] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const loadEvents = useCallback(() => {
-    api<ClaimEvent[]>("/api/events/recent?limit=50")
-      .then(setEvents)
+    api<ClaimEvent[]>("/api/events/recent?limit=100")
+      .then((data) => { setEvents(data); setLoading(false); })
       .catch(console.error);
   }, []);
 
@@ -26,72 +48,96 @@ export default function SupervisorPage() {
     return () => clearInterval(interval);
   }, [loadEvents]);
 
-  const handleReplay = async () => {
-    setReplaying(true);
-    try {
-      await api("/api/supervisor/replay-telematics", { method: "POST" });
-    } catch (e) {
-      console.error("Replay failed:", e);
-    } finally {
-      setTimeout(() => setReplaying(false), 3000);
-    }
+  const handleSeed = async () => {
+    await api("/api/events/seed", { method: "POST" });
+    loadEvents();
   };
 
+  // Stats
+  const pipelineEvents = events.filter(e => e.event_type === "pipeline_complete");
+  const guardrailBlocks = events.filter(e => e.event_type === "guardrail_complete" && (e.detail as Record<string, unknown>)?.outcome === "block");
+  const uniqueClaims = new Set(events.map(e => e.claim_id)).size;
+  const agents = new Set(events.filter(e => e.agent).map(e => e.agent));
+
   return (
-    <div className="p-6">
-      <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold">Supervisor Dashboard</h1>
-        <button
-          onClick={handleReplay}
-          disabled={replaying}
-          className="px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 rounded text-white text-sm"
-        >
-          {replaying ? "Replaying..." : "Replay Telematics"}
+    <div className="space-y-6">
+      <div className="flex items-end justify-between flex-wrap gap-3">
+        <div>
+          <h1 className="text-2xl font-bold text-slate-800">Supervisor Dashboard</h1>
+          <p className="text-sm text-slate-400 mt-0.5">Real-time agent pipeline activity</p>
+        </div>
+        <button onClick={handleSeed}
+          className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-sm font-medium transition-colors shadow-sm">
+          Seed Demo Events
         </button>
       </div>
 
-      {/* App Insights Workbook Embed Placeholder */}
-      <div className="mb-8 border border-gray-700 rounded-lg p-4 bg-gray-900">
-        <h2 className="text-lg font-semibold mb-2">App Insights Workbook</h2>
-        <p className="text-gray-400 text-sm mb-4">
-          Claims/hour · Agent latency · Fraud rate · Guardrail blocks
-        </p>
-        <div className="w-full h-[400px] bg-gray-800 rounded flex items-center justify-center text-gray-500">
-          {/* In production, this iframe embeds the App Insights workbook */}
-          <p>Workbook embed renders here when deployed with PKCE auth configured</p>
+      {/* Stats */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-4">
+          <span className="text-xs font-medium text-slate-400 uppercase tracking-wider">Pipeline Runs</span>
+          <p className="text-2xl font-bold text-slate-800 mt-1">{pipelineEvents.length}</p>
+        </div>
+        <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-4">
+          <span className="text-xs font-medium text-slate-400 uppercase tracking-wider">Unique Claims</span>
+          <p className="text-2xl font-bold text-sky-600 mt-1">{uniqueClaims}</p>
+        </div>
+        <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-4">
+          <span className="text-xs font-medium text-slate-400 uppercase tracking-wider">Active Agents</span>
+          <p className="text-2xl font-bold text-indigo-600 mt-1">{agents.size}</p>
+        </div>
+        <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-4">
+          <span className="text-xs font-medium text-slate-400 uppercase tracking-wider">Guardrail Blocks</span>
+          <p className="text-2xl font-bold text-red-500 mt-1">{guardrailBlocks.length}</p>
         </div>
       </div>
 
-      {/* Live Event Log */}
-      <div>
-        <h2 className="text-lg font-semibold mb-3">Recent Claim Events</h2>
-        <div className="overflow-auto max-h-[400px] border border-gray-700 rounded-lg">
+      {/* Event Log */}
+      <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+        <div className="px-5 py-3 border-b border-slate-100 flex items-center justify-between">
+          <h2 className="text-sm font-semibold text-slate-600">Live Event Stream</h2>
+          <span className="flex items-center gap-1.5 text-xs text-emerald-500">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            Auto-refreshing
+          </span>
+        </div>
+        <div className="overflow-auto max-h-[500px]">
           <table className="w-full text-sm">
-            <thead className="bg-gray-800 sticky top-0">
+            <thead className="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider sticky top-0">
               <tr>
-                <th className="px-3 py-2 text-left">Time</th>
-                <th className="px-3 py-2 text-left">Claim</th>
-                <th className="px-3 py-2 text-left">Event</th>
+                <th className="px-4 py-3 text-left">Time</th>
+                <th className="px-4 py-3 text-left">Claim</th>
+                <th className="px-4 py-3 text-left">Event</th>
+                <th className="px-4 py-3 text-left">Agent</th>
+                <th className="px-4 py-3 text-left">Details</th>
               </tr>
             </thead>
-            <tbody>
-              {events.length === 0 && (
-                <tr>
-                  <td colSpan={3} className="px-3 py-4 text-center text-gray-500">
-                    No events yet. Process a claim to see events appear.
-                  </td>
-                </tr>
+            <tbody className="divide-y divide-slate-100">
+              {loading && (
+                <tr><td colSpan={5} className="px-4 py-12 text-center text-slate-400">
+                  <div className="flex items-center justify-center gap-2">
+                    <div className="w-4 h-4 rounded-full border-2 border-sky-200 border-t-sky-500 animate-spin" />
+                    Loading events…
+                  </div>
+                </td></tr>
+              )}
+              {!loading && events.length === 0 && (
+                <tr><td colSpan={5} className="px-4 py-12 text-center text-slate-400">
+                  No events yet. Process a claim or click &quot;Seed Demo Events&quot;.
+                </td></tr>
               )}
               {events.map((evt) => (
-                <tr key={evt.event_id} className="border-t border-gray-700 hover:bg-gray-800">
-                  <td className="px-3 py-2 text-gray-400 font-mono text-xs">
-                    {new Date(evt.occurred_utc).toLocaleTimeString()}
+                <tr key={evt.event_id} className="hover:bg-sky-50/50 transition-colors">
+                  <td className="px-4 py-3 font-mono text-xs text-slate-400 whitespace-nowrap">
+                    {new Date(evt.occurred_utc).toLocaleString()}
                   </td>
-                  <td className="px-3 py-2">{evt.claim_number}</td>
-                  <td className="px-3 py-2">
-                    <span className="px-2 py-0.5 rounded text-xs bg-blue-900 text-blue-200">
-                      {evt.event_type}
-                    </span>
+                  <td className="px-4 py-3 font-mono text-sm font-medium text-sky-600">{evt.claim_number}</td>
+                  <td className="px-4 py-3"><EventBadge type={evt.event_type} /></td>
+                  <td className="px-4 py-3 text-xs text-slate-500">{evt.agent ?? "—"}</td>
+                  <td className="px-4 py-3 text-xs text-slate-400 max-w-xs truncate">
+                    {evt.detail && Object.keys(evt.detail).length > 0
+                      ? <code className="bg-slate-50 px-2 py-0.5 rounded">{JSON.stringify(evt.detail)}</code>
+                      : <span className="text-slate-300">—</span>}
                   </td>
                 </tr>
               ))}

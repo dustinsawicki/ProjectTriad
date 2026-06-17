@@ -17,9 +17,23 @@ from dataclasses import dataclass, field
 from typing import Any
 
 from ..agents.registry import ensure_agents, get_project_client
+from ..routers.events import record_event
 from ..tools.registry import TOOL_REGISTRY
 
 log = logging.getLogger(__name__)
+
+
+def _emit(claim_id: str, event_type: str, correlation_id: str, detail: dict | None = None) -> None:
+    """Push a pipeline lifecycle event into the supervisor event buffer."""
+    record_event({
+        "event_id": f"evt-{uuid.uuid4().hex[:12]}",
+        "event_type": event_type,
+        "claim_id": claim_id,
+        "claim_number": f"CLM-{claim_id[:8]}",
+        "correlation_id": correlation_id,
+        "occurred_utc": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),
+        "detail": detail or {},
+    })
 
 
 @dataclass
@@ -128,8 +142,10 @@ def run_pipeline(claim_id: str, policy_number: str) -> PipelineResult:
     fnol_input = json.dumps({"claim_id": claim_id, "policy_number": policy_number, "correlation_id": correlation_id})
     fnol_raw = _run_agent(agent_names["FnolDocumentAgent"], fnol_input, correlation_id)
     result.fnol = _safe_json(fnol_raw)
+    _emit(claim_id, "fnol_complete", correlation_id, result.fnol)
     if result.fnol.get("validated") is False:
         result.route = "invalid_policy"
+        _emit(claim_id, "policy_invalid", correlation_id)
         return result
 
     # 2. Triage & Coverage
@@ -137,12 +153,14 @@ def run_pipeline(claim_id: str, policy_number: str) -> PipelineResult:
     triage_raw = _run_agent(agent_names["TriageCoverageAgent"], triage_input, correlation_id)
     result.triage = _safe_json(triage_raw)
     result.route = result.triage.get("route", "desk")
+    _emit(claim_id, "triage_complete", correlation_id, {"route": result.route, "fraud_score": result.triage.get("fraud_score")})
 
     # 3. Assessment (only for stp/desk)
     if result.route in ("stp", "desk"):
         a_input = json.dumps({"claim_id": claim_id, "triage": result.triage, "correlation_id": correlation_id})
         a_raw = _run_agent(agent_names["AssessmentSettlementAgent"], a_input, correlation_id)
         result.assessment = _safe_json(a_raw)
+        _emit(claim_id, "assessment_complete", correlation_id, {"settlement_amount": result.assessment.get("settlement_amount")})
 
         # 4. Guardrails
         g_input = json.dumps({
@@ -152,5 +170,7 @@ def run_pipeline(claim_id: str, policy_number: str) -> PipelineResult:
         })
         g_raw = _run_agent(agent_names["GuardrailsAgent"], g_input, correlation_id)
         result.guardrail = _safe_json(g_raw)
+        _emit(claim_id, "guardrail_complete", correlation_id, {"outcome": result.guardrail.get("outcome")})
 
+    _emit(claim_id, "pipeline_complete", correlation_id, {"route": result.route})
     return result
