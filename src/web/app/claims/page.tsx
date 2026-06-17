@@ -57,10 +57,30 @@ const SAMPLE_DOCS: Record<string, { doc_type: string; title: string; raw_text: s
 };
 
 function NewClaimModal({ onClose, onSuccess }: { onClose: () => void; onSuccess: (r: CreateClaimOut) => void }) {
+  // Randomize defaults each time the modal opens
+  const [defaults] = useState(() => {
+    const types = LOSS_TYPES;
+    const randomType = types[Math.floor(Math.random() * types.length)];
+    const amounts: Record<string, [number, number]> = {
+      auto_collision: [3500, 45000],
+      auto_comp: [2000, 25000],
+      home_property: [8000, 95000],
+      liability: [2500, 35000],
+    };
+    const [min, max] = amounts[randomType] ?? [3000, 40000];
+    const amount = Math.round((min + Math.random() * (max - min)) / 100) * 100;
+    const daysAgo = Math.floor(Math.random() * 14) + 1;
+    const hours = Math.floor(Math.random() * 14) + 6;
+    const d = new Date();
+    d.setDate(d.getDate() - daysAgo);
+    d.setHours(hours, Math.floor(Math.random() * 60), 0, 0);
+    return { lossType: randomType, amount: amount.toString(), lossDate: d.toISOString().slice(0, 16) };
+  });
+
   const [policyNumber, setPolicyNumber] = useState("");
-  const [lossType, setLossType] = useState("auto_collision");
-  const [reportedAmount, setReportedAmount] = useState("12500");
-  const [lossDate, setLossDate] = useState(new Date().toISOString().slice(0, 16));
+  const [lossType, setLossType] = useState(defaults.lossType);
+  const [reportedAmount, setReportedAmount] = useState(defaults.amount);
+  const [lossDate, setLossDate] = useState(defaults.lossDate);
   const [includeDocuments, setIncludeDocuments] = useState(true);
 
   const policiesQuery = useQuery({
@@ -69,9 +89,10 @@ function NewClaimModal({ onClose, onSuccess }: { onClose: () => void; onSuccess:
   });
   const policies = policiesQuery.data ?? [];
 
-  // Set first policy as default once loaded
+  // Set a random policy as default once loaded
   if (policies.length > 0 && !policyNumber) {
-    setPolicyNumber(policies[0].policy_number);
+    const idx = Math.floor(Math.random() * policies.length);
+    setPolicyNumber(policies[idx].policy_number);
   }
 
   const mutation = useMutation({
