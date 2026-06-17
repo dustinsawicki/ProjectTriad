@@ -57,11 +57,22 @@ const SAMPLE_DOCS: Record<string, { doc_type: string; title: string; raw_text: s
 };
 
 function NewClaimModal({ onClose, onSuccess }: { onClose: () => void; onSuccess: (r: CreateClaimOut) => void }) {
-  const [policyNumber, setPolicyNumber] = useState("POL-2024-1001");
+  const [policyNumber, setPolicyNumber] = useState("");
   const [lossType, setLossType] = useState("auto_collision");
   const [reportedAmount, setReportedAmount] = useState("12500");
   const [lossDate, setLossDate] = useState(new Date().toISOString().slice(0, 16));
   const [includeDocuments, setIncludeDocuments] = useState(true);
+
+  const policiesQuery = useQuery({
+    queryKey: ["policies"],
+    queryFn: () => api<{ policy_number: string; product_line: string }[]>("/api/seed/policies"),
+  });
+  const policies = policiesQuery.data ?? [];
+
+  // Set first policy as default once loaded
+  if (policies.length > 0 && !policyNumber) {
+    setPolicyNumber(policies[0].policy_number);
+  }
 
   const mutation = useMutation({
     mutationFn: () => {
@@ -93,8 +104,9 @@ function NewClaimModal({ onClose, onSuccess }: { onClose: () => void; onSuccess:
               <span className="text-xs font-medium text-slate-500 uppercase tracking-wider">Policy Number</span>
               <select className="border border-slate-200 rounded-lg px-3 py-2 bg-white shadow-sm focus:ring-2 focus:ring-sky-200 focus:border-sky-400 outline-none text-sm"
                 value={policyNumber} onChange={(e) => setPolicyNumber(e.target.value)}>
-                {Array.from({ length: 10 }, (_, i) => `POL-2024-${1001 + i}`).map((p) => (
-                  <option key={p} value={p}>{p}</option>
+                {policiesQuery.isLoading && <option>Loading…</option>}
+                {policies.map((p) => (
+                  <option key={p.policy_number} value={p.policy_number}>{p.policy_number} ({p.product_line})</option>
                 ))}
               </select>
             </label>

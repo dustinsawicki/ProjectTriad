@@ -178,6 +178,16 @@ def fix_routes(s: Session = Depends(get_session)) -> dict:
     return {"status": "fixed", "updated": len(rows)}
 
 
+@router.get("/policies")
+def list_policies(s: Session = Depends(get_session)) -> list[dict]:
+    """Return available policy numbers for the new claim form."""
+    result = s.execute(text(
+        "SELECT TOP 20 PolicyNumber, ProductLine, Status FROM dbo.Policy "
+        "WHERE Status = 'active' ORDER BY PolicyNumber"
+    ))
+    return [{"policy_number": r[0], "product_line": r[1], "status": r[2]} for r in result.fetchall()]
+
+
 @router.post("")
 def seed_demo_data(s: Session = Depends(get_session)) -> dict:
     """Seed the database with demo data for PoC demonstrations."""
