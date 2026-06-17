@@ -160,6 +160,24 @@ def _seed_audit_events(s: Session, claims: list[dict]) -> None:
             })
 
 
+@router.post("/fix-routes")
+def fix_routes(s: Session = Depends(get_session)) -> dict:
+    """Backfill TriageDecisionJson for claims missing route data."""
+    result = s.execute(text(
+        "SELECT ClaimId FROM dbo.Claim WHERE TriageDecisionJson IS NULL AND Status != 'open'"
+    ))
+    rows = result.fetchall()
+    routes = ["fast_track", "standard", "siu_referral"]
+    for row in rows:
+        route = choice(routes)
+        conf = round(uniform(0.7, 0.99), 2)
+        triage = json.dumps({"route": route, "confidence": conf})
+        s.execute(text("UPDATE dbo.Claim SET TriageDecisionJson = :t WHERE ClaimId = :id"),
+                  {"t": triage, "id": str(row[0])})
+    s.commit()
+    return {"status": "fixed", "updated": len(rows)}
+
+
 @router.post("")
 def seed_demo_data(s: Session = Depends(get_session)) -> dict:
     """Seed the database with demo data for PoC demonstrations."""
