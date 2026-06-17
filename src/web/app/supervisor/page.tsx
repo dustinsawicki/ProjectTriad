@@ -48,11 +48,6 @@ export default function SupervisorPage() {
     return () => clearInterval(interval);
   }, [loadEvents]);
 
-  const handleSeed = async () => {
-    await api("/api/events/seed", { method: "POST" });
-    loadEvents();
-  };
-
   // Stats
   const pipelineEvents = events.filter(e => e.event_type === "pipeline_complete");
   const guardrailBlocks = events.filter(e => e.event_type === "guardrail_complete" && (e.detail as Record<string, unknown>)?.outcome === "block");
@@ -66,10 +61,6 @@ export default function SupervisorPage() {
           <h1 className="text-2xl font-bold text-slate-800">Supervisor Dashboard</h1>
           <p className="text-sm text-slate-400 mt-0.5">Real-time agent pipeline activity</p>
         </div>
-        <button onClick={handleSeed}
-          className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-sm font-medium transition-colors shadow-sm">
-          Seed Demo Events
-        </button>
       </div>
 
       {/* Stats */}

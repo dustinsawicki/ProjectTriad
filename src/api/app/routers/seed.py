@@ -217,3 +217,29 @@ def clear_demo_data(s: Session = Depends(get_session)) -> dict:
     s.execute(text("EXEC dbo.usp_TruncateAll"))
     s.commit()
     return {"status": "cleared"}
+
+
+@router.post("/init-events-table")
+def init_events_table(s: Session = Depends(get_session)) -> dict:
+    """Create the PipelineEvent table if it doesn't exist."""
+    import traceback
+    try:
+        s.execute(text("""
+            IF NOT EXISTS (SELECT 1 FROM sys.tables WHERE name = 'PipelineEvent' AND schema_id = SCHEMA_ID('dbo'))
+            CREATE TABLE dbo.PipelineEvent (
+                EventId      NVARCHAR(50)   NOT NULL PRIMARY KEY,
+                EventType    NVARCHAR(50)   NOT NULL,
+                ClaimId      NVARCHAR(50)   NULL,
+                ClaimNumber  NVARCHAR(30)   NULL,
+                Agent        NVARCHAR(50)   NULL,
+                CorrelationId NVARCHAR(50)  NULL,
+                OccurredUtc  DATETIME2      NOT NULL DEFAULT SYSUTCDATETIME(),
+                DetailJson   NVARCHAR(MAX)  NULL
+            );
+        """))
+        s.commit()
+        # Verify
+        exists = s.execute(text("SELECT 1 FROM sys.tables WHERE name = 'PipelineEvent'")).fetchone()
+        return {"status": "ok", "table_exists": exists is not None}
+    except Exception as e:
+        return {"status": "error", "error": str(e), "traceback": traceback.format_exc()}
