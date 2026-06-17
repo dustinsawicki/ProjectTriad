@@ -8,7 +8,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from .config import get_settings
-from .routers import audit, claims, health, queue, events, siu, supervisor
+from .routers import audit, claims, health, queue, events, seed, siu, supervisor
 
 logging.basicConfig(level=os.environ.get("LOG_LEVEL", "INFO"))
 log = logging.getLogger("claims-api")
@@ -34,6 +34,7 @@ app.include_router(queue.router)
 app.include_router(claims.router)
 app.include_router(audit.router)
 app.include_router(events.router)
+app.include_router(seed.router)
 app.include_router(siu.router)
 app.include_router(supervisor.router)
 

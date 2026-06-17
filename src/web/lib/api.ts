@@ -30,18 +30,14 @@ if (typeof window !== "undefined") {
 }
 
 export async function getAccessToken(): Promise<string | null> {
-  const account = msal.getActiveAccount();
-  if (!account) return null;
   try {
+    const account = msal.getActiveAccount();
+    if (!account) return null;
     const r = await msal.acquireTokenSilent({ account, scopes: [apiScope] });
     return r.accessToken;
   } catch {
-    try {
-      const r = await msal.acquireTokenPopup({ scopes: [apiScope] });
-      return r.accessToken;
-    } catch {
-      return null;
-    }
+    // MSAL not initialized or no valid auth config — skip token
+    return null;
   }
 }
 

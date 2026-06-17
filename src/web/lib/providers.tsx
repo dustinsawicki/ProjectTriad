@@ -6,7 +6,9 @@ import { useState, type ReactNode } from "react";
 import { msal } from "./api";
 
 export function Providers({ children }: { children: ReactNode }) {
-  const [qc] = useState(() => new QueryClient());
+  const [qc] = useState(() => new QueryClient({
+    defaultOptions: { queries: { retry: 2, refetchOnWindowFocus: false } },
+  }));
   return (
     <MsalProvider instance={msal}>
       <QueryClientProvider client={qc}>{children}</QueryClientProvider>
