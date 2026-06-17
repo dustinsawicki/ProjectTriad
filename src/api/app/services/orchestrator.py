@@ -29,13 +29,14 @@ from ..routers.events import record_event
 log = logging.getLogger(__name__)
 
 
-def _emit(claim_id: str, event_type: str, correlation_id: str, detail: dict | None = None) -> None:
+def _emit(claim_id: str, event_type: str, correlation_id: str, detail: dict | None = None, agent: str | None = None) -> None:
     """Push a pipeline lifecycle event into the supervisor event buffer."""
     record_event({
         "event_id": f"evt-{uuid.uuid4().hex[:12]}",
         "event_type": event_type,
         "claim_id": claim_id,
         "claim_number": f"CLM-{claim_id[:8]}",
+        "agent": agent,
         "correlation_id": correlation_id,
         "occurred_utc": datetime.now(timezone.utc).isoformat(),
         "detail": detail or {},
@@ -67,7 +68,7 @@ def _simulate_pipeline(claim_id: str, policy_number: str) -> PipelineResult:
         "documents_processed": random.randint(1, 3),
         "extraction_confidence": round(random.uniform(0.85, 0.99), 2),
     }
-    _emit(claim_id, "fnol_complete", correlation_id, result.fnol)
+    _emit(claim_id, "fnol_complete", correlation_id, result.fnol, agent="FnolDocumentAgent")
 
     # Simulate Triage (1-3s)
     time.sleep(random.uniform(1.0, 3.0))
@@ -81,7 +82,7 @@ def _simulate_pipeline(claim_id: str, policy_number: str) -> PipelineResult:
         "flags": random.sample(["high_value", "new_policy", "repeat_claimant", "consistent_docs", "low_risk"], k=random.randint(1, 3)),
     }
     result.route = route
-    _emit(claim_id, "triage_complete", correlation_id, {"route": route, "fraud_score": fraud_score})
+    _emit(claim_id, "triage_complete", correlation_id, {"route": route, "fraud_score": fraud_score}, agent="TriageCoverageAgent")
 
     # Simulate Assessment (2-4s) — only for fast_track/standard
     if route in ("fast_track", "standard"):
@@ -94,7 +95,7 @@ def _simulate_pipeline(claim_id: str, policy_number: str) -> PipelineResult:
             "comparable_claims": random.randint(3, 12),
             "recommendation": "approve" if fraud_score < 0.4 else "review",
         }
-        _emit(claim_id, "assessment_complete", correlation_id, {"settlement_amount": settlement})
+        _emit(claim_id, "assessment_complete", correlation_id, {"settlement_amount": settlement}, agent="AssessmentSettlementAgent")
 
         # Simulate Guardrails (1-2s)
         time.sleep(random.uniform(1.0, 2.0))
@@ -110,14 +111,14 @@ def _simulate_pipeline(claim_id: str, policy_number: str) -> PipelineResult:
                 "Repair estimate exceeds vehicle market value",
             ])],
         }
-        _emit(claim_id, "guardrail_complete", correlation_id, {"outcome": outcome})
+        _emit(claim_id, "guardrail_complete", correlation_id, {"outcome": outcome}, agent="GuardrailsAgent")
 
     _emit(claim_id, "pipeline_complete", correlation_id, {"route": result.route, "mode": "simulation"})
     return result
 
 
 def _persist_results(result: PipelineResult) -> None:
-    """Write pipeline results back to the database so the queue reflects them."""
+    """Write pipeline results back to the database so queue, audit, and supervisor reflect them."""
     try:
         s = SessionLocal()
         cid = uuid.UUID(result.claim_id)
@@ -129,13 +130,92 @@ def _persist_results(result: PipelineResult) -> None:
             if fraud is not None:
                 repo.insert_fraud_signal(s, cid, "pipeline_triage", float(fraud), result.triage)
 
+            repo.insert_agent_decision(
+                s, claim_id=cid, agent_name="TriageCoverageAgent",
+                decision_type="triage", payload=result.triage, status="accepted",
+            )
+            repo.insert_audit_event(
+                s, claim_id=cid, decision_id=None, rule_id=None,
+                actor="agent", actor_name="TriageCoverageAgent",
+                action="triage_claim",
+                outcome=result.triage.get("route", "unknown"),
+                rationale=result.triage,
+                correlation_id=result.correlation_id,
+            )
+
+        # FNOL audit
+        if result.fnol:
+            repo.insert_agent_decision(
+                s, claim_id=cid, agent_name="FnolDocumentAgent",
+                decision_type="fnol_validation", payload=result.fnol, status="accepted",
+            )
+            repo.insert_audit_event(
+                s, claim_id=cid, decision_id=None, rule_id=None,
+                actor="agent", actor_name="FnolDocumentAgent",
+                action="validate_fnol",
+                outcome="validated" if result.fnol.get("validated") else "rejected",
+                rationale=result.fnol,
+                correlation_id=result.correlation_id,
+            )
+
         # Assessment → reserve + settlement
         if result.assessment:
             amt = result.assessment.get("settlement_amount")
             if amt is not None:
                 repo.set_reserve(s, cid, float(amt))
-                if result.guardrail and result.guardrail.get("outcome") == "pass":
+
+            repo.insert_agent_decision(
+                s, claim_id=cid, agent_name="AssessmentSettlementAgent",
+                decision_type="assessment", payload=result.assessment, status="accepted",
+            )
+            repo.insert_audit_event(
+                s, claim_id=cid, decision_id=None, rule_id=None,
+                actor="agent", actor_name="AssessmentAgent",
+                action="assess_claim",
+                outcome=result.assessment.get("recommendation", "approve"),
+                rationale=result.assessment,
+                correlation_id=result.correlation_id,
+            )
+
+        # Guardrail
+        if result.guardrail:
+            g_outcome = result.guardrail.get("outcome", "pass")
+            repo.insert_agent_decision(
+                s, claim_id=cid, agent_name="GuardrailsAgent",
+                decision_type="guardrail_check", payload=result.guardrail, status="accepted",
+            )
+            repo.insert_audit_event(
+                s, claim_id=cid, decision_id=None, rule_id=None,
+                actor="agent", actor_name="GuardrailsAgent",
+                action="guardrail_review",
+                outcome=g_outcome,
+                rationale=result.guardrail,
+                correlation_id=result.correlation_id,
+            )
+
+            # Only settle if guardrails pass
+            if g_outcome == "pass" and result.assessment:
+                amt = result.assessment.get("settlement_amount")
+                if amt is not None:
                     repo.settle(s, cid, float(amt))
+                    repo.insert_audit_event(
+                        s, claim_id=cid, decision_id=None, rule_id=None,
+                        actor="system", actor_name="Orchestrator",
+                        action="auto_settle",
+                        outcome="settled",
+                        rationale={"settlement_amount": amt, "route": result.route},
+                        correlation_id=result.correlation_id,
+                    )
+
+        # Pipeline completion audit
+        repo.insert_audit_event(
+            s, claim_id=cid, decision_id=None, rule_id=None,
+            actor="system", actor_name="Orchestrator",
+            action="pipeline_complete",
+            outcome=result.route,
+            rationale={"route": result.route, "correlation_id": result.correlation_id},
+            correlation_id=result.correlation_id,
+        )
 
         s.commit()
     except Exception:  # noqa: BLE001
