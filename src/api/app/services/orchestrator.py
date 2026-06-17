@@ -22,6 +22,8 @@ from datetime import datetime, timezone
 from typing import Any
 
 from ..config import get_settings
+from ..db import SessionLocal
+from ..repositories import claims as repo
 from ..routers.events import record_event
 
 log = logging.getLogger(__name__)
@@ -112,6 +114,34 @@ def _simulate_pipeline(claim_id: str, policy_number: str) -> PipelineResult:
 
     _emit(claim_id, "pipeline_complete", correlation_id, {"route": result.route, "mode": "simulation"})
     return result
+
+
+def _persist_results(result: PipelineResult) -> None:
+    """Write pipeline results back to the database so the queue reflects them."""
+    try:
+        s = SessionLocal()
+        cid = uuid.UUID(result.claim_id)
+
+        # Triage decision → route + fraud
+        if result.triage:
+            repo.set_triage_decision(s, cid, result.triage)
+            fraud = result.triage.get("fraud_score")
+            if fraud is not None:
+                repo.insert_fraud_signal(s, cid, "pipeline_triage", float(fraud), result.triage)
+
+        # Assessment → reserve + settlement
+        if result.assessment:
+            amt = result.assessment.get("settlement_amount")
+            if amt is not None:
+                repo.set_reserve(s, cid, float(amt))
+                if result.guardrail and result.guardrail.get("outcome") == "pass":
+                    repo.settle(s, cid, float(amt))
+
+        s.commit()
+    except Exception:  # noqa: BLE001
+        log.exception("Failed to persist pipeline results for %s", result.claim_id)
+    finally:
+        s.close()
 
 
 def _execute_tool_calls(tool_calls: list[Any]) -> list[dict[str, Any]]:
@@ -237,8 +267,11 @@ def run_pipeline(claim_id: str, policy_number: str) -> PipelineResult:
             _emit(claim_id, "guardrail_complete", correlation_id, {"outcome": result.guardrail.get("outcome")})
 
         _emit(claim_id, "pipeline_complete", correlation_id, {"route": result.route})
+        _persist_results(result)
         return result
 
     except Exception as e:  # noqa: BLE001
         log.warning("Foundry agents unavailable (%s), using simulation mode", e)
-        return _simulate_pipeline(claim_id, policy_number)
+        sim = _simulate_pipeline(claim_id, policy_number)
+        _persist_results(sim)
+        return sim
